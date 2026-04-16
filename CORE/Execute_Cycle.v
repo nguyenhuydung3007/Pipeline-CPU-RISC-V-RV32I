@@ -116,38 +116,18 @@ module Execute_Cycle (
 		.d			(ForwardB_out)
 	);
 	
-	// Fix bug Flush
-	wire [31:0] ForwardA_safe;
-	wire [31:0] ForwardB_safe;
-	
-	assign ForwardA_safe	= (FlushE) ? 32'b0 : ForwardA_out;
-	assign ForwardB_safe = (FlushE) ? 32'b0 : ForwardB_out;
-	
 	
 	// =============== ALU Source ===============
 	
 	wire [31:0] SrcA;
 	wire [31:0] SrcB;
 	
-	wire [31:0] SrcA_pre;
-	wire [31:0] SrcB_pre;
-	
-	
 	// Chọn giá trị cho ALU In 
 	
-	assign SrcA_pre = (AluSrcAE) ? PCE : ForwardA_safe;
-	assign SrcB_pre = (AluSrcBE) ? Imm_Ext_E : ForwardB_safe;
-	
-	assign SrcA = (FlushE) ? 32'b0 : SrcA_pre;
-	assign SrcB = (FlushE) ? 32'b0 : SrcB_pre;
+	assign SrcA = (AluSrcAE) ? PCE : ForwardA_out;
+	assign SrcB = (AluSrcBE) ? Imm_Ext_E : ForwardB_out;
 	
 	
-//	wire [31:0] SrcA_final;
-//	wire [31:0] SrcB_final;
-//	
-//	assign SrcA_final = (FlushE) ? 32'b0 : SrcA;
-//	assign SrcB_final = (FlushE) ? 32'b0 : SrcB;
-//	
 	// =============== ALU ===============
 	
 	wire [31:0] ALU_ResultE;
@@ -173,10 +153,10 @@ module Execute_Cycle (
 	Branch_Unit branch_unit (
 	
 		// Input 
-		.A					(ForwardA_safe),
-		.B					(ForwardB_safe),
+		.A					(ForwardA_out),
+		.B					(ForwardB_out),
 		.funct3			(funct3E),
-		.Branch			(FlushE ? 1'b0 : BranchE),
+		.Branch			(BranchE),
 		.BrUn				(BrUnE),
 		
 		// Output
@@ -228,9 +208,9 @@ module Execute_Cycle (
 			MemWriteE_r		<= 0;
 			ResultSrcE_r	<= 0;
 			RD_E_r			<= 0;
-			// ALU_ResultE_r	<= 0;
+			ALU_ResultE_r	<= 0;
 			WriteDataE_r	<= 0;
-			// PCPlus4E_r		<= 0;
+			PCPlus4E_r		<= 0;
 		end
 		
 		else begin
@@ -240,7 +220,7 @@ module Execute_Cycle (
 			ResultSrcE_r	<= ResultSrcE;
 			RD_E_r			<= RD_E;
 			ALU_ResultE_r	<= ALU_ResultE;
-			WriteDataE_r	<= ForwardB_safe;		// Store data
+			WriteDataE_r	<= ForwardB_out;		// Store data
 			PCPlus4E_r		<= PCPlus4E;
 		end
 		
