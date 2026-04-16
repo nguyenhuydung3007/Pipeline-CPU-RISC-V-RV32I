@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Apr 15 18:04:39 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : pipeline_riscv
+Top-level Entity Name : Memory_Cycle
+Family : MAX 10
+Total logic elements : 104
+    Total combinational functions : 0
+    Dedicated logic registers : 104
+Total registers : 104
+Total pins : 212
+Total virtual pins : 0
+Total memory bits : 32,768
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

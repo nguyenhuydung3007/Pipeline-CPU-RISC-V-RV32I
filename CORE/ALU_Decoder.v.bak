@@ -1,0 +1,8 @@
+// =================================================
+// Module ALU_Decoder
+// + Xác định các phép toán mà ALU cần thưc hiện
+// =================================================
+
+module ALU_Decoder (
+);
+endmodule

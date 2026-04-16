@@ -1,0 +1,210 @@
+`timescale 1ns/1ps
+
+module tb_Execute_Cycle;
+
+    // =============================
+    // Clock & Reset
+    // =============================
+    reg clk;
+    reg reset;
+
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;   // 10ns period
+    end
+
+    initial begin
+        reset = 0;
+        #20;
+        reset = 1;
+    end
+
+    // =============================
+    // INPUTS
+    // =============================
+    reg [31:0] RD1_E, RD2_E;
+    reg [31:0] Imm_Ext_E;
+    reg [4:0] RD_E;
+    reg [31:0] PCE, PCPlus4E;
+
+    reg RegWriteE, MemReadE, MemWriteE;
+    reg AluSrcAE, AluSrcBE;
+    reg [1:0] ResultSrcE;
+    reg BranchE, JumpE, BrUnE;
+    reg [3:0] ALUControlE;
+    reg [2:0] funct3E;
+
+    reg [31:0] ResultW;
+    reg [1:0] ForwardA_E, ForwardB_E;
+    reg [31:0] ALU_ResultM;
+
+    reg FlushE;
+
+    // =============================
+    // OUTPUTS
+    // =============================
+    wire RegWriteM, MemWriteM, MemReadM;
+    wire [1:0] ResultSrcM;
+    wire [4:0] RD_M;
+    wire [31:0] ALU_ResultM_out;
+    wire [31:0] WriteDataM;
+    wire [31:0] PCPlus4M;
+    wire PCSrcE;
+    wire [31:0] PCTargetE;
+
+    // =============================
+    // DUT
+    // =============================
+    Execute_Cycle dut (
+        .clk(clk),
+        .reset(reset),
+
+        .RD1_E(RD1_E),
+        .RD2_E(RD2_E),
+        .Imm_Ext_E(Imm_Ext_E),
+        .RD_E(RD_E),
+
+        .PCE(PCE),
+        .PCPlus4E(PCPlus4E),
+
+        .RegWriteE(RegWriteE),
+        .MemReadE(MemReadE),
+        .MemWriteE(MemWriteE),
+        .AluSrcAE(AluSrcAE),
+        .AluSrcBE(AluSrcBE),
+        .ResultSrcE(ResultSrcE),
+        .BranchE(BranchE),
+        .JumpE(JumpE),
+        .BrUnE(BrUnE),
+        .ALUControlE(ALUControlE),
+        .funct3E(funct3E),
+
+        .ResultW(ResultW),
+        .ForwardA_E(ForwardA_E),
+        .ForwardB_E(ForwardB_E),
+        .ALU_ResultM(ALU_ResultM),
+
+        .FlushE(FlushE),
+
+        .RegWriteM(RegWriteM),
+        .MemWriteM(MemWriteM),
+        .MemReadM(MemReadM),
+        .ResultSrcM(ResultSrcM),
+        .RD_M(RD_M),
+        .ALU_ResultM_out(ALU_ResultM_out),
+        .WriteDataM(WriteDataM),
+        .PCPlus4M(PCPlus4M),
+        .PCSrcE(PCSrcE),
+        .PCTargetE(PCTargetE)
+    );
+
+    // =============================
+    // TEST SEQUENCE
+    // =============================
+    initial begin
+
+        // Default
+        RD1_E = 0; RD2_E = 0; Imm_Ext_E = 0;
+        RD_E = 0;
+        PCE = 0; PCPlus4E = 4;
+
+        RegWriteE = 0; MemReadE = 0; MemWriteE = 0;
+        AluSrcAE = 0; AluSrcBE = 0;
+        ResultSrcE = 0;
+        BranchE = 0; JumpE = 0; BrUnE = 0;
+        ALUControlE = 4'b0010; // ADD
+        funct3E = 3'b000;
+
+        ResultW = 0;
+        ForwardA_E = 2'b00;
+        ForwardB_E = 2'b00;
+        ALU_ResultM = 0;
+
+        FlushE = 0;
+
+        #30;
+
+        // ===================================
+        // TEST 1: ALU ADD
+        // ===================================
+        $display("TEST 1: ALU ADD");
+        RD1_E = 10;
+        RD2_E = 5;
+        AluSrcAE = 0;
+        AluSrcBE = 0;
+        ALUControlE = 4'b0010; // ADD
+
+        #10;
+        $display("Result = %d (expected 15)", ALU_ResultM_out);
+
+        // ===================================
+        // TEST 2: FORWARDING từ MEM
+        // ===================================
+        $display("TEST 2: Forwarding MEM");
+        ForwardA_E = 2'b10;
+        ALU_ResultM = 20;
+
+        #10;
+        $display("SrcA forwarded = %d", ALU_ResultM_out);
+
+        ForwardA_E = 2'b00;
+
+        // ===================================
+        // TEST 3: BRANCH BEQ
+        // ===================================
+        $display("TEST 3: BEQ branch");
+        RD1_E = 10;
+        RD2_E = 10;
+        BranchE = 1;
+        funct3E = 3'b000; // BEQ
+
+        #10;
+        $display("PCSrcE = %b (expected 1)", PCSrcE);
+
+        BranchE = 0;
+
+        // ===================================
+        // TEST 4: JAL
+        // ===================================
+        $display("TEST 4: JAL");
+        JumpE = 1;
+        AluSrcAE = 1; // dùng PC
+        Imm_Ext_E = 32'd16;
+        PCE = 100;
+
+        #10;
+        $display("PCTarget = %d (expected 116)", PCTargetE);
+
+        JumpE = 0;
+
+        // ===================================
+        // TEST 5: JALR
+        // ===================================
+        $display("TEST 5: JALR");
+        JumpE = 1;
+        AluSrcAE = 0;
+        RD1_E = 200;
+        Imm_Ext_E = 4;
+
+        #10;
+        $display("PCTarget = %d (expected 204)", PCTargetE);
+
+        JumpE = 0;
+
+        // ===================================
+        // TEST 6: FLUSH
+        // ===================================
+        $display("TEST 6: FLUSH");
+        RegWriteE = 1;
+        FlushE = 1;
+
+        #10;
+        $display("RegWriteM = %b (expected 0)", RegWriteM);
+
+        FlushE = 0;
+
+        #50;
+        $stop;
+    end
+
+endmodule

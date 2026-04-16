@@ -1,0 +1,8 @@
+// =====================================
+// Module Control
+// + Control Signal
+// =====================================
+
+module Control (
+);
+endmodule

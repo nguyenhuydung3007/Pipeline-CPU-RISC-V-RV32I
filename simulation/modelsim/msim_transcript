@@ -1,0 +1,101 @@
+# Reading pref.tcl
+# do pipeline_riscv_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:41:41 on Apr 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v 
+# -- Compiling module Forwarding_Unit
+# 
+# Top level modules:
+# 	Forwarding_Unit
+# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:41:41 on Apr 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v 
+# -- Compiling module Stall_Unit
+# 
+# Top level modules:
+# 	Stall_Unit
+# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:41:41 on Apr 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v 
+# -- Compiling module Hazard_Unit
+# 
+# Top level modules:
+# 	Hazard_Unit
+# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:41:41 on Apr 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v 
+# -- Compiling module tb_Hazard_Unit
+# 
+# Top level modules:
+# 	tb_Hazard_Unit
+# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Hazard_Unit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Hazard_Unit 
+# Start time: 17:41:41 on Apr 15,2026
+# Loading work.tb_Hazard_Unit
+# Loading work.Hazard_Unit
+# Loading work.Forwarding_Unit
+# Loading work.Stall_Unit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# ===== HAZARD UNIT TEST START =====
+# 
+# TEST 1: NO HAZARD
+# PASS
+# 
+# TEST 2: FORWARD MEM
+# PASS
+# 
+# TEST 3: FORWARD WB
+# PASS
+# 
+# TEST 4: PRIORITY MEM
+# PASS
+# 
+# TEST 5: LOAD-USE STALL
+# PASS
+# 
+# TEST 6: BRANCH
+# PASS
+# 
+# TEST 7: LOAD + BRANCH
+# PASS
+# 
+# TEST 8: MIXED
+# PASS
+# 
+# ✅ ALL TEST DONE
+# ** Note: $stop    : D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v(219)
+#    Time: 26 ns  Iteration: 0  Instance: /tb_Hazard_Unit
+# Break in Module tb_Hazard_Unit at D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v line 219
+# End time: 17:43:05 on Apr 15,2026, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 0

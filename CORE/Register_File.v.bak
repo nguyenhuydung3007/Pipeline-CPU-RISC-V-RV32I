@@ -1,0 +1,8 @@
+// ==========================================
+// Module Register_File
+// + Các thanh ghi lưu dữ liệu của CPU
+// ==========================================
+
+module Register_File (
+);
+endmodule

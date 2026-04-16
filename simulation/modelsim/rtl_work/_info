@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/simulation/modelsim
+vForwarding_Unit
+Z1 !s110 1776249701
+!i10b 1
+!s100 CBmGdYX33L[Bb1MZPbNFF2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ia7mkRJFOie4lN>[<a9QJ13
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1776247267
+8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v
+FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v
+!i122 0
+L0 5 63
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1776249701.000000
+!s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE}
+Z8 tCvgOpt 0
+n@forwarding_@unit
+vHazard_Unit
+R1
+!i10b 1
+!s100 _<8cYW5k>2PkZWn>BQPLB2
+R2
+Im6BhAaM;K8hfDb`=[ZLcS1
+R3
+R0
+w1776249488
+8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v
+FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v
+!i122 2
+L0 6 71
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v|
+!i113 1
+R6
+R7
+R8
+n@hazard_@unit
+vStall_Unit
+R1
+!i10b 1
+!s100 >E`ed<RP01[O^G0YbNjOM2
+R2
+IemaE[H6?TMNDPW<f8^gVn0
+R3
+R0
+w1776248632
+8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v
+FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v
+!i122 1
+L0 6 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v|
+!i113 1
+R6
+R7
+R8
+n@stall_@unit
+vtb_Hazard_Unit
+R1
+!i10b 1
+!s100 3llm5?@HCWJAhKK5R4ZkM2
+R2
+I0@4c?3`^^4MUcheka:hKP2
+R3
+R0
+w1776249632
+8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v
+FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v
+!i122 3
+L0 3 221
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v|
+!i113 1
+R6
+R7
+R8
+ntb_@hazard_@unit

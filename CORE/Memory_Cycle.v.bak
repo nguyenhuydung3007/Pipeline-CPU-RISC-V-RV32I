@@ -1,0 +1,8 @@
+// ======================================
+// module Memory_Cycle
+// + MEM stage
+// ======================================
+
+module Memory_Cycle (
+);
+endmodule

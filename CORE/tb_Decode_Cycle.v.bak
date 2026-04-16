@@ -1,0 +1,167 @@
+`timescale 1ns/1ps
+
+module tb_Decode_Cycle;
+
+    // ================= CLOCK =================
+    reg clk;
+    initial clk = 0;
+    always #5 clk = ~clk;  // 10ns period
+
+    // ================= INPUT =================
+    reg reset;
+
+    // WB stage
+    reg RegWriteW;
+    reg [4:0] RDW;
+    reg [31:0] ResultW;
+
+    // IF stage
+    reg [31:0] InstrD;
+    reg [31:0] PCD;
+    reg [31:0] PCPlus4D;
+
+    // ================= OUTPUT =================
+    wire RegWriteE;
+    wire AluSrcAE;
+    wire AluSrcBE;
+    wire MemWriteE;
+    wire MemReadE;
+    wire [1:0] ResultSrcE;
+    wire BranchE;
+    wire JumpE;
+    wire BrUnE;
+    wire [3:0] ALUControlE;
+
+    wire [31:0] RD1_E;
+    wire [31:0] RD2_E;
+    wire [31:0] Imm_Ext_E;
+
+    wire [4:0] RS1_E;
+    wire [4:0] RS2_E;
+    wire [4:0] RD_E;
+
+    wire [31:0] PCE;
+    wire [31:0] PCPlus4E;
+
+    // ================= DUT =================
+    Decode_Cycle dut (
+        .clk(clk),
+        .reset(reset),
+
+        .RegWriteW(RegWriteW),
+        .RDW(RDW),
+        .ResultW(ResultW),
+
+        .InstrD(InstrD),
+        .PCD(PCD),
+        .PCPlus4D(PCPlus4D),
+
+        .RegWriteE(RegWriteE),
+        .AluSrcAE(AluSrcAE),
+        .AluSrcBE(AluSrcBE),
+        .MemWriteE(MemWriteE),
+        .MemReadE(MemReadE),
+        .ResultSrcE(ResultSrcE),
+        .BranchE(BranchE),
+        .JumpE(JumpE),
+        .BrUnE(BrUnE),
+        .ALUControlE(ALUControlE),
+
+        .RD1_E(RD1_E),
+        .RD2_E(RD2_E),
+        .Imm_Ext_E(Imm_Ext_E),
+
+        .RS1_E(RS1_E),
+        .RS2_E(RS2_E),
+        .RD_E(RD_E),
+
+        .PCE(PCE),
+        .PCPlus4E(PCPlus4E)
+    );
+
+    // ================= TASK PRINT =================
+    task show;
+        begin
+            $display("------------------------------------------------");
+            $display("Instr = %h", InstrD);
+            $display("RS1=%d RS2=%d RD=%d", RS1_E, RS2_E, RD_E);
+            $display("RD1=%h RD2=%h Imm=%h", RD1_E, RD2_E, Imm_Ext_E);
+            $display("RegWrite=%b MemRead=%b MemWrite=%b", RegWriteE, MemReadE, MemWriteE);
+            $display("ALUSrcA=%b ALUSrcB=%b ALUCtrl=%b", AluSrcAE, AluSrcBE, ALUControlE);
+            $display("Branch=%b Jump=%b BrUn=%b", BranchE, JumpE, BrUnE);
+        end
+    endtask
+
+    // ================= INIT =================
+    initial begin
+	 
+        // Reset
+        reset = 0;
+        RegWriteW = 0;
+        RDW = 0;
+        ResultW = 0;
+        InstrD = 0;
+        PCD = 32'h1000;
+        PCPlus4D = 32'h1004;
+
+        #12;
+        reset = 1;
+
+        // =========================================
+        // TEST 1: WRITE BACK → RegFile
+        // =========================================
+        RegWriteW = 1;
+        RDW = 5'd1;
+        ResultW = 32'hAAAA_BBBB;
+        #10;
+
+        RegWriteW = 0;
+
+        // =========================================
+        // TEST 2: ADD x3 = x1 + x2
+        // =========================================
+        // rs1 = x1, rs2 = x2
+        InstrD = 32'b0000000_00010_00001_000_00011_0110011;
+        #10 show();
+
+        // =========================================
+        // TEST 3: ADDI x4 = x1 + 5
+        // =========================================
+        InstrD = 32'b000000000101_00001_000_00100_0010011;
+        #10 show();
+
+        // =========================================
+        // TEST 4: LOAD LW
+        // =========================================
+        InstrD = 32'b000000000100_00001_010_00101_0000011;
+        #10 show();
+
+        // =========================================
+        // TEST 5: STORE SW
+        // =========================================
+        InstrD = 32'b0000000_00101_00001_010_00000_0100011;
+        #10 show();
+
+        // =========================================
+        // TEST 6: BRANCH BEQ
+        // =========================================
+        InstrD = 32'b0000000_00010_00001_000_00000_1100011;
+        #10 show();
+
+        // =========================================
+        // TEST 7: JAL
+        // =========================================
+        InstrD = 32'b00000000000100000000_00001_1101111;
+        #10 show();
+
+        // =========================================
+        // TEST 8: LUI
+        // =========================================
+        InstrD = 32'b00000000000000000001_00001_0110111;
+        #10 show();
+
+        $display("========= DONE =========");
+        $stop;
+    end
+
+endmodule
