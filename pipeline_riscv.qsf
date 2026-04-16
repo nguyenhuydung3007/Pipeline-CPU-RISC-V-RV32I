@@ -87,41 +87,9 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_Forwarding_Unit -secti
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_Hazard_Unit -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_Hazard_Unit
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_Hazard_Unit -section_id tb_Hazard_Unit
-set_global_assignment -name VERILOG_FILE CORE/CPU.v
-set_global_assignment -name VERILOG_FILE CORE/Fetch_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/PC_MUX.v
-set_global_assignment -name VERILOG_FILE CORE/Program_Counter.v
-set_global_assignment -name VERILOG_FILE CORE/Instr_Memory.v
-set_global_assignment -name VERILOG_FILE CORE/PC_Adder.v
-set_global_assignment -name VERILOG_FILE CORE/Decode_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Fetch_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/Control_Unit.v
-set_global_assignment -name VERILOG_FILE CORE/Main_Decoder.v
-set_global_assignment -name VERILOG_FILE CORE/Control.v
-set_global_assignment -name VERILOG_FILE CORE/ALU_Decoder.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Control_Unit.v
-set_global_assignment -name VERILOG_FILE CORE/Register_File.v
-set_global_assignment -name VERILOG_FILE CORE/ImmGen.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Decode_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/Execute_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/Mux_3_by_1.v
-set_global_assignment -name VERILOG_FILE CORE/ALU.v
-set_global_assignment -name VERILOG_FILE CORE/Branch_Unit.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Execute_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/Data_RAM.v
-set_global_assignment -name VERILOG_FILE CORE/Memory_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Memory_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/Writeback_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Writeback_Cycle.v
-set_global_assignment -name VERILOG_FILE CORE/Forwarding_Unit.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Forwarding_Unit.v
-set_global_assignment -name VERILOG_FILE CORE/Stall_Unit.v
-set_global_assignment -name VERILOG_FILE CORE/Hazard_Unit.v
-set_global_assignment -name VERILOG_FILE CORE/tb_Hazard_Unit.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE CORE/tb_CPU.v
 set_global_assignment -name EDA_TEST_BENCH_FILE CORE/tb_Fetch_Cycle.v -section_id tb_Fetch_Cycle
 set_global_assignment -name EDA_TEST_BENCH_FILE CORE/tb_Control_Unit.v -section_id tb_Control_Unit
 set_global_assignment -name EDA_TEST_BENCH_FILE CORE/tb_Decode_Cycle.v -section_id tb_Decode_Cycle
@@ -135,3 +103,35 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_CPU
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_CPU -section_id tb_CPU
 set_global_assignment -name EDA_TEST_BENCH_FILE CORE/tb_CPU.v -section_id tb_CPU
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE Testbench/tb_Writeback_Cycle.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_Memory_Cycle.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_Hazard_Unit.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_Forwarding_Unit.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_Fetch_Cycle.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_Execute_Cycle.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_Decode_Cycle.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_CPU.v
+set_global_assignment -name VERILOG_FILE Testbench/tb_Control_Unit.v
+set_global_assignment -name VERILOG_FILE CORE/CPU.v
+set_global_assignment -name VERILOG_FILE CORE/Fetch_Cycle.v
+set_global_assignment -name VERILOG_FILE CORE/PC_MUX.v
+set_global_assignment -name VERILOG_FILE CORE/Program_Counter.v
+set_global_assignment -name VERILOG_FILE CORE/Instr_Memory.v
+set_global_assignment -name VERILOG_FILE CORE/PC_Adder.v
+set_global_assignment -name VERILOG_FILE CORE/Decode_Cycle.v
+set_global_assignment -name VERILOG_FILE CORE/Control_Unit.v
+set_global_assignment -name VERILOG_FILE CORE/Main_Decoder.v
+set_global_assignment -name VERILOG_FILE CORE/Control.v
+set_global_assignment -name VERILOG_FILE CORE/ALU_Decoder.v
+set_global_assignment -name VERILOG_FILE CORE/Register_File.v
+set_global_assignment -name VERILOG_FILE CORE/ImmGen.v
+set_global_assignment -name VERILOG_FILE CORE/Execute_Cycle.v
+set_global_assignment -name VERILOG_FILE CORE/Mux_3_by_1.v
+set_global_assignment -name VERILOG_FILE CORE/ALU.v
+set_global_assignment -name VERILOG_FILE CORE/Branch_Unit.v
+set_global_assignment -name VERILOG_FILE CORE/Data_RAM.v
+set_global_assignment -name VERILOG_FILE CORE/Memory_Cycle.v
+set_global_assignment -name VERILOG_FILE CORE/Writeback_Cycle.v
+set_global_assignment -name VERILOG_FILE CORE/Forwarding_Unit.v
+set_global_assignment -name VERILOG_FILE CORE/Stall_Unit.v
+set_global_assignment -name VERILOG_FILE CORE/Hazard_Unit.v

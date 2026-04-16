@@ -8,7 +8,6 @@ module Fetch_Cycle (
 	// --------------------------
 	// Nhóm Input từ hệ thống
 	// --------------------------
-	
 	input clk,					// Clock hệ thống 50MHz
 	input reset,
 	
@@ -19,11 +18,9 @@ module Fetch_Cycle (
 	// Được tính ở EX (PCTarget = PC + Imm)
 	input [31:0] PCTargetE,		// Nếu Branch --> PC nhảy tới đây
 	
-	
 	// ---------------------------
 	// Hazard
 	// ---------------------------
-	
 	input StallF,
 	input StallD,
 	input FlushD,
@@ -32,7 +29,6 @@ module Fetch_Cycle (
 	// ---------------------------
 	// Output sang Decode
 	// ---------------------------
-	
 	output [31:0] InstrD,		// Instruction tại Decode stage
 	
 	output [31:0] PCD,			// PC tại Decode stage
@@ -42,7 +38,6 @@ module Fetch_Cycle (
 	// ====================================
 	// Tín hiệu nội bộ Fetch
 	// ====================================
-	
 	wire [31:0] PCF;			// PC Current (Giá trị hiện tại của PC)
 	wire [31:0] PC_F;			// PC next (Ouput của PC_MUX)
 	wire [31:0] PCPlus4F;	// PC + 4 tại Fetch (PCF + 4)
@@ -53,7 +48,6 @@ module Fetch_Cycle (
 	// ====================================
 	// Pipeline Register (IF --> ID)
 	// ====================================
-	
 	reg [31:0] InstrF_reg;		// Instruction đã được chốt sang Decode stage (InstrF --> InstrD)
 	
 	reg [31:0] PCF_reg;			// PC của InstrF_reg
@@ -63,7 +57,6 @@ module Fetch_Cycle (
 	// ====================================
 	// Declare PC MUX
 	// ====================================
-	
 	PC_MUX pc_mux (
 	
 		// Input
@@ -79,7 +72,6 @@ module Fetch_Cycle (
 	// ====================================
 	// Declare PC Counter
 	// ====================================
-	
 	Program_Counter pc_counter (
 	
 		// Input
@@ -96,7 +88,6 @@ module Fetch_Cycle (
 	// ===================================
 	// Instrction Memory
 	// ===================================
-	
 	Instr_Memory instruction_memory (
 	
 		// Input
@@ -117,7 +108,6 @@ module Fetch_Cycle (
 	// ===================================
 	// PC Adder (Plus 4)
 	// ===================================
-	
 	PC_Adder pc_adder (
 	
 		// Input
@@ -132,7 +122,6 @@ module Fetch_Cycle (
 	// ===================================
 	// Fetch Cycle Register Logic
 	// ===================================
-	
 	always @(posedge clk or negedge reset) begin
 		
 		if (!reset) begin
@@ -143,7 +132,6 @@ module Fetch_Cycle (
 		
 		
 		// =============== FLUSH - HAZARD ===============
-		
 		else if (FlushD) begin
 			InstrF_reg		<= 32'h0000_0000;
 			PCF_reg			<= 32'h0000_0000;
@@ -152,7 +140,6 @@ module Fetch_Cycle (
 		
 		
 		// =============== STALL - HAZARD ===============
-		
 		else if (!StallD) begin
 			InstrF_reg		<= InstrF;
 			PCF_reg			<= PCF;
@@ -172,7 +159,6 @@ module Fetch_Cycle (
 	// Ouput (Chuyển sang Decode)
 	// IF --> ID
 	// ===================================
-	
 	assign InstrD		= InstrF_reg;
 	assign PCD			= PCF_reg;
 	assign PCPlus4D	= PCPlus4F_reg;

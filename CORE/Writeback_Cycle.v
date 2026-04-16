@@ -8,7 +8,6 @@ module Writeback_Cycle (
 	// ---------------------------
 	// Input từ Memory stage
 	// ---------------------------
-	
 	input RegWriteW,
 	input [1:0] ResultSrcW,
 	input [4:0] RD_W,
@@ -20,7 +19,6 @@ module Writeback_Cycle (
 	// ---------------------------
 	// Output về Register
 	// ---------------------------
-	
 	output RegWriteW_out,
 	output [4:0] RD_out,
 	output reg [31:0] ResultW
@@ -29,7 +27,6 @@ module Writeback_Cycle (
 	// ===============================
 	// MUX chọn dữ liệu về Register
 	// ===============================
-	
 	always @(*) begin
 	
 		case (ResultSrcW) 
@@ -47,10 +44,7 @@ module Writeback_Cycle (
 	
 	
 	// =============== OUTPUT ===============
-	
 	assign RegWriteW_out	= RegWriteW;
 	assign RD_out			= RD_W;
-	
-
 
 endmodule

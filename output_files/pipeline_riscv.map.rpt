@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline_riscv
-Thu Apr 16 16:14:39 2026
+Thu Apr 16 23:18:03 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 16 16:14:39 2026       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 16 23:18:03 2026       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; pipeline_riscv                              ;
 ; Top-level Entity Name              ; CPU                                         ;
@@ -349,7 +349,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Apr 16 16:14:33 2026
+    Info: Processing started: Thu Apr 16 23:17:57 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline_riscv -c pipeline_riscv
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -424,18 +424,18 @@ Info (12128): Elaborating entity "Program_Counter" for hierarchy "Fetch_Cycle:Fe
 Info (12128): Elaborating entity "Instr_Memory" for hierarchy "Fetch_Cycle:Fetch|Instr_Memory:instruction_memory" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v Line: 114
 Info (12128): Elaborating entity "PC_Adder" for hierarchy "Fetch_Cycle:Fetch|PC_Adder:pc_adder" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v Line: 129
 Info (12128): Elaborating entity "Decode_Cycle" for hierarchy "Decode_Cycle:Decode" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v Line: 150
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "Decode_Cycle:Decode|Control_Unit:control_top" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v Line: 145
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "Decode_Cycle:Decode|Control_Unit:control_top" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v Line: 141
 Info (12128): Elaborating entity "Main_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control_top|Main_Decoder:decode" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v Line: 74
 Warning (10270): Verilog HDL Case Statement warning at Main_Decoder.v(58): incomplete case statement has no default case item File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v Line: 58
 Info (12128): Elaborating entity "Control" for hierarchy "Decode_Cycle:Decode|Control_Unit:control_top|Control:control_signal" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v Line: 106
 Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control_top|ALU_Decoder:alu_control" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v Line: 122
-Info (12128): Elaborating entity "Register_File" for hierarchy "Decode_Cycle:Decode|Register_File:regfile" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v Line: 167
+Info (12128): Elaborating entity "Register_File" for hierarchy "Decode_Cycle:Decode|Register_File:regfile" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v Line: 163
 Warning (10240): Verilog HDL Always Construct warning at Register_File.v(32): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Register_File.v Line: 32
-Info (12128): Elaborating entity "ImmGen" for hierarchy "Decode_Cycle:Decode|ImmGen:imm_type" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v Line: 180
+Info (12128): Elaborating entity "ImmGen" for hierarchy "Decode_Cycle:Decode|ImmGen:imm_type" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v Line: 176
 Info (12128): Elaborating entity "Execute_Cycle" for hierarchy "Execute_Cycle:Execute" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v Line: 202
 Info (12128): Elaborating entity "Mux_3_by_1" for hierarchy "Execute_Cycle:Execute|Mux_3_by_1:muxA" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v Line: 105
-Info (12128): Elaborating entity "ALU" for hierarchy "Execute_Cycle:Execute|ALU:alu" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v Line: 166
-Info (12128): Elaborating entity "Branch_Unit" for hierarchy "Execute_Cycle:Execute|Branch_Unit:branch_unit" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v Line: 184
+Info (12128): Elaborating entity "ALU" for hierarchy "Execute_Cycle:Execute|ALU:alu" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v Line: 146
+Info (12128): Elaborating entity "Branch_Unit" for hierarchy "Execute_Cycle:Execute|Branch_Unit:branch_unit" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v Line: 164
 Info (12128): Elaborating entity "Memory_Cycle" for hierarchy "Memory_Cycle:Memory" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v Line: 234
 Info (12128): Elaborating entity "Data_RAM" for hierarchy "Memory_Cycle:Memory|Data_RAM:dmem" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v Line: 54
 Info (12128): Elaborating entity "Writeback_Cycle" for hierarchy "Writeback_Cycle:Writeback" File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v Line: 253
@@ -453,8 +453,8 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Thu Apr 16 16:14:39 2026
+    Info: Processing ended: Thu Apr 16 23:18:03 2026
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:16
 
 

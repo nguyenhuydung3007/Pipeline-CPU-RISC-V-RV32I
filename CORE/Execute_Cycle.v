@@ -11,7 +11,7 @@ module Execute_Cycle (
 	// ----------------------------
 	// Nhóm Input (Từ ID sang EX)
 	// ----------------------------
-	
+
 	// Dữ liệu từ Register
 	input [31:0] RD1_E,
 	input [31:0] RD2_E,
@@ -40,7 +40,6 @@ module Execute_Cycle (
 	
 	input [2:0] funct3E,
 	
-	
 	// -------------------------------------------
 	// Nhóm Input (Từ các stage khác (forwarding)
 	// -------------------------------------------
@@ -58,7 +57,6 @@ module Execute_Cycle (
 	// Flush
 	input FlushE,
 	
-	
 	// -------------------------------
 	// Nhóm Output sang Memory stage
 	// -------------------------------
@@ -71,7 +69,7 @@ module Execute_Cycle (
 	
 	// Thanh ghi đích
 	output [4:0] RD_M,						// Pass xuống WB để biết ghi vào đâu
-	output [31:0] ALU_ResultM_out,		// Kết quả chính xác của EX (Kết quả của instruction hiện tại (tính ở EX) --> MEM stage)	
+	output [31:0] ALU_ResultM_out,			// Kết quả chính xác của EX (Kết quả của instruction hiện tại (tính ở EX) --> MEM stage)	
 	
 	// Write data (Cho store)
 	output [31:0] WriteDataM,				// Giá trị của rs2 sau khi forwarding
@@ -88,7 +86,6 @@ module Execute_Cycle (
 );
 
 	// =============== FORWARDING ===============
-	
 	wire [31:0] ForwardA_out;
 	wire [31:0] ForwardB_out;
 	
@@ -118,7 +115,6 @@ module Execute_Cycle (
 	
 	
 	// =============== ALU Source ===============
-	
 	wire [31:0] SrcA;
 	wire [31:0] SrcB;
 	
@@ -129,7 +125,6 @@ module Execute_Cycle (
 	
 	
 	// =============== ALU ===============
-	
 	wire [31:0] ALU_ResultE;
 	wire Zero;
 	
@@ -147,7 +142,6 @@ module Execute_Cycle (
 	
 	
 	// =============== BRANCH UNIT ===============
-	
 	wire PCSrc_Branch;
 	
 	Branch_Unit branch_unit (
@@ -165,12 +159,10 @@ module Execute_Cycle (
 	
 	
 	// =============== JUMP LOGIC ===============
-	
 	assign PCSrcE = PCSrc_Branch | JumpE;
 	
 	
 	// =============== PC TARGET ADDRESS ===============
-	
 	wire [31:0] PC_jalr = (SrcA + Imm_Ext_E) & ~32'b1;
 	
 	assign PCTargetE = (JumpE && (AluSrcAE == 0)) ?
@@ -179,7 +171,6 @@ module Execute_Cycle (
 							 
 	
 	// =============== PIPELINE REGISTER ===============
-	
 	reg RegWriteE_r;
 	reg MemReadE_r;
 	reg MemWriteE_r;
@@ -228,7 +219,6 @@ module Execute_Cycle (
 	
 	
 	// =============== OUTPUT MEM ===============
-	
 	assign RegWriteM			= RegWriteE_r;
 	assign MemReadM			= MemReadE_r;
 	assign MemWriteM			= MemWriteE_r;

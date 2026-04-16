@@ -3,8 +3,8 @@
 // Forward + Stall
 // =====================================
 
-`include "Forwarding_Unit.v"
-`include "Stall_Unit.v"
+//`include "Forwarding_Unit.v"
+//`include "Stall_Unit.v"
 
 module Hazard_Unit (
 
@@ -36,7 +36,6 @@ module Hazard_Unit (
 );
 
 	// =============== FORWARDING ===============
-	
 	Forwarding_Unit forward (
 	
 		// Input 
@@ -54,7 +53,6 @@ module Hazard_Unit (
 	
 	
 	// =============== STALL ===============
-	
 	wire FlushE_stall;
 	
 	Stall_Unit stall (
@@ -72,7 +70,6 @@ module Hazard_Unit (
 	
 	
 	// =============== Flush Logic ===============
-	
 	assign FlushD	= PCSrcE;
 	assign FlushE	= FlushE_stall | PCSrcE;
 

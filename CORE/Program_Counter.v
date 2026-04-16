@@ -10,9 +10,9 @@ module Program_Counter (
 	
 	input stall,				// Điều khiển PC
 	
-	input [31:0] PCNextF,	// Đưa Ouput của MUX vào PC Counter
+	input [31:0] PCNextF,		// Đưa Ouput của MUX vào PC Counter
 	
-	output reg [31:0] PCF	// Giá trị PC hiện tại
+	output reg [31:0] PCF		// Giá trị PC hiện tại
 );
 	
 	always @(posedge clk) begin

@@ -15,7 +15,6 @@ module ALU (
 );
 
 	// =============== ALU Encoding ===============
-	
 	localparam ALU_ADD	= 4'b0000;
 	localparam ALU_SUB	= 4'b0001;
 	localparam ALU_AND	= 4'b0010;
@@ -30,7 +29,6 @@ module ALU (
 	
 	
 	// =============== ALU Logic ===============
-	
 	always @(*) begin
 	
 		case (ALUControlE) 
@@ -38,20 +36,20 @@ module ALU (
 			ALU_ADD:	ResultE	= SrcA + SrcB;
 			ALU_SUB:	ResultE	= SrcA - SrcB;
 			
-			ALU_AND: ResultE	= SrcA & SrcB;
-			ALU_OR:	ResultE	= SrcA | SrcB;
+			ALU_AND: 	ResultE	= SrcA & SrcB;
+			ALU_OR:		ResultE	= SrcA | SrcB;
 			ALU_XOR:	ResultE	= SrcA ^ SrcB;
 			
-			ALU_SLL: ResultE	= SrcA << SrcB[4:0];
-			ALU_SRL: ResultE	= SrcA >> SrcB[4:0];
+			ALU_SLL: 	ResultE	= SrcA << SrcB[4:0];
+			ALU_SRL: 	ResultE	= SrcA >> SrcB[4:0];
 			ALU_SRA:	ResultE	= $signed(SrcA) >>> SrcB[4:0];
 			
 			ALU_SLT:	ResultE	= ($signed(SrcA) < $signed(SrcB)) ? 32'd1 : 32'd0;
-			ALU_SLTU: ResultE = (SrcA < SrcB) ? 32'd1 : 32'd0;
+			ALU_SLTU: 	ResultE = (SrcA < SrcB) ? 32'd1 : 32'd0;
 			
-			ALU_PASS: ResultE = SrcB;		// Dùng cho LUI/AUIPC nếu cần
+			ALU_PASS: 	ResultE = SrcB;		// Dùng cho LUI/AUIPC nếu cần
 			
-			default: ResultE	= 32'd0;
+			default: 	ResultE	= 32'd0;
 		
 		endcase
 	
@@ -59,7 +57,6 @@ module ALU (
 	
 	
 	// =============== ZERO FLAG ===============
-	
 	assign Zero = (ResultE == 32'd0);
 
 endmodule

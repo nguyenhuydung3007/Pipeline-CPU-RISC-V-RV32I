@@ -19,7 +19,7 @@ module Instr_Memory (
 );
 
 	(* ramstyle = "M9K" *)
-	reg [31:0] mem [0:1023];		// 4KB
+	reg [31:0] mem [0:1023];			// 4KB
 	
 	// Load firmware mặc định
 	initial begin

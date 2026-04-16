@@ -25,7 +25,6 @@ module Control_Unit (
 	// =====================================
 	// Decode --> Control
 	// =====================================
-	
 	wire [6:0] opcode;
 	wire [2:0] funct3;
 	wire [6:0] funct7;
@@ -46,7 +45,6 @@ module Control_Unit (
 	wire [1:0] ALUOp;
 
 	// ============== DECODE ==============
-	
 	Main_Decoder decode (
 	
 		// Input
@@ -59,33 +57,32 @@ module Control_Unit (
 		.funct7			(funct7),
 		.rs1_addr		(rs1_addr),
 		.rs2_addr		(rs2_addr),
-		.rd_addr			(rd_addr),
+		.rd_addr		(rd_addr),
 		
 		// Type Flag
 		.is_rtype		(is_rtype),
 		.is_itype		(is_itype),
-		.is_load			(is_load),
+		.is_load		(is_load),
 		.is_store		(is_store),
 		.is_branch		(is_branch),
 		.is_jal			(is_jal),
-		.is_jalr			(is_jalr),
+		.is_jalr		(is_jalr),
 		.is_lui			(is_lui),
 		.is_auipc		(is_auipc)
 	);
 	
 	
 	// ============== CONTROL ==============
-	
 	Control control_signal (
 	
 		// Input
 		.is_rtype		(is_rtype),
 		.is_itype		(is_itype),
-		.is_load			(is_load),
+		.is_load		(is_load),
 		.is_store		(is_store),
 		.is_branch		(is_branch),
 		.is_jal			(is_jal),
-		.is_jalr			(is_jalr),
+		.is_jalr		(is_jalr),
 		.is_lui			(is_lui),
 		.is_auipc		(is_auipc),
 		
@@ -93,23 +90,22 @@ module Control_Unit (
 		
 		// Ouput
 		.RegWrite		(RegWrite),
-		.MemRead			(MemRead),
+		.MemRead		(MemRead),
 		.MemWrite		(MemWrite),
 		.ResultSrc		(ResultSrc),
-		.AluSrcA			(AluSrcA),
-		.AluSrcB			(AluSrcB),
+		.AluSrcA		(AluSrcA),
+		.AluSrcB		(AluSrcB),
 		.ALUOp			(ALUOp),
 		.ImmSel			(ImmSel),
 		.Branch			(Branch),
-		.Jump				(Jump),
-		.BrUn				(BrUn)
+		.Jump			(Jump),
+		.BrUn			(BrUn)
 	);
 	
 	
 	// =====================================
 	// ALU Control
 	// =====================================
-	
 	ALU_Decoder alu_control (
 		
 		// Input

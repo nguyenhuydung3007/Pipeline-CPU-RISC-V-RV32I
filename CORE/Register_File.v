@@ -27,7 +27,6 @@ module Register_File (
 	// + Reset toàn bộ Register
 	// + Ghi data vào thanh ghi đích (Từ Write Back)
 	// ==================================================
-	
 	integer i;
 	always @(posedge clk or negedge reset) begin
 	
@@ -47,7 +46,6 @@ module Register_File (
 	// ==================================================
 	// Đọc dữ liệu từ các thanh ghi nguồn
 	// ==================================================
-	
 	assign rs1_data = (rs1_addr == 0) ? 32'h0 : 
 							(we && rd_addr == rs1_addr) ? write_data : Register[rs1_addr];
 							

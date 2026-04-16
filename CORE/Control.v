@@ -34,22 +34,20 @@ module Control (
 	always @(*) begin
 	
 		// =============== DEFAULT ===============
-		
-		RegWrite		= 0;
+		RegWrite	= 0;
 		MemRead		= 0;
-		MemWrite		= 0;
+		MemWrite	= 0;
 		ResultSrc	= 2'b00;
 		AluSrcA		= 0;
 		AluSrcB		= 0;
-		ALUOp			= 2'b00;
+		ALUOp		= 2'b00;
 		ImmSel		= 3'b000;
 		Branch		= 0;
-		Jump			= 0;
-		BrUn			= 0;
+		Jump		= 0;
+		BrUn		= 0;
 		
 		
 		// =============== R_Type ================
-		
 		if (is_rtype) begin
 			AluSrcA		= 0;
 			AluSrcB		= 0;
@@ -60,7 +58,6 @@ module Control (
 		
 		
 		// =============== I_Type ================
-		
 		else if (is_itype) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
@@ -72,7 +69,6 @@ module Control (
 		
 		
 		// =============== LOAD ==================
-		
 		else if (is_load) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
@@ -84,7 +80,6 @@ module Control (
 		
 		
 		// =============== STORE =================
-		
 		else if (is_store) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
@@ -94,7 +89,6 @@ module Control (
 		
 		
 		// =============== BRANCH ================
-		
 		else if (is_branch) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
@@ -106,7 +100,7 @@ module Control (
 			case (funct3) 
 			
 				3'b110,
-				3'b111: BrUn = 1;
+				3'b111:  BrUn = 1;
 				
 				default: BrUn = 0;
 			
@@ -116,7 +110,6 @@ module Control (
 		
 		
 		// =============== JAL ===================
-		
 		else if (is_jal) begin
 			AluSrcA		= 1;
 			AluSrcB		= 1;
@@ -128,7 +121,6 @@ module Control (
 		
 		
 		// =============== JALR ==================
-		
 		else if (is_jalr) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
@@ -140,7 +132,6 @@ module Control (
 		
 		
 		// =============== LUI ===================
-		
 		else if (is_lui) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
@@ -152,7 +143,6 @@ module Control (
 		
 		
 		// =============== AUIPC =================
-		
 		else if (is_auipc) begin
 			AluSrcA		= 1;
 			AluSrcB		= 1;

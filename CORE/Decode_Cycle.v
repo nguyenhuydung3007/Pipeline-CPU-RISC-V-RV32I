@@ -11,63 +11,54 @@ module Decode_Cycle (
 	// -----------------------------
 	// Từ Write Back (WB stage)
 	// -----------------------------
-	
 	input RegWriteW,			// Tín hiệu có ghi vào Register hay không
 	input [4:0] RDW,			// Địa chỉ thanh ghi đích
-	input [31:0] ResultW,	// Dữ liệu ghi vào Register
+	input [31:0] ResultW,		// Dữ liệu ghi vào Register
 	
 	
 	// -----------------------------
 	// Từ Fetch (IF stage)
 	// -----------------------------
-	
 	input [31:0] InstrD,
-	input	[31:0] PCD,					// Địa chỉ PC hiện tại
+	input [31:0] PCD,					// Địa chỉ PC hiện tại
 	input [31:0] PCPlus4D,
 	
 	// Hazard
 	input FlushD,
 	input StallD,
 	
-	
 	// -----------------------------
 	// Output đi sang Exceucte
 	// -----------------------------
-	
 	output RegWriteE,					// Tín hiện điều khiển Instr ở EX có ghi vào Register không
 	output AluSrcAE,
 	output AluSrcBE,
 	output MemWriteE,					// Tín hiệu điều khiển Instr ở EX có ghi vào Data Memory không
 	output MemReadE,
-	output [1:0] ResultSrcE,		// Chọn dữ liệu WB
-	output BranchE,					// Lệnh Branch
+	output [1:0] ResultSrcE,			// Chọn dữ liệu WB
+	output BranchE,						// Lệnh Branch
 	output JumpE,						// Lệnh Jump
 	output BrUnE,
 	output [3:0] ALUControlE,	
 
 	output [2:0] funct3E,
 	
-	
 	// -----------------------------
 	// Data Path
 	// -----------------------------
-	
-	output [31:0] RD1_E,		// Giá trị rs1 (data)
-	output [31:0] RD2_E,		// Giá trị rs2 (data)
+	output [31:0] RD1_E,				// Giá trị rs1 (data)
+	output [31:0] RD2_E,				// Giá trị rs2 (data)
 	output [31:0] Imm_Ext_E,
-	
 	
 	// -----------------------------
 	// Register Address
 	// -----------------------------
-	
 	output [4:0] RS1_E,
 	output [4:0] RS2_E,
 	output [4:0] RD_E,
 	
 	output [4:0] RS1_D,
 	output [4:0] RS2_D,
-	
 	
 	// -----------------------------
 	// PC
@@ -120,7 +111,6 @@ module Decode_Cycle (
 	reg [31:0] PCPlus4D_r;
 
 	// =============== Control Unit ===============
-	
 	Control_Unit control_top (
 		
 		// Input
@@ -140,9 +130,8 @@ module Decode_Cycle (
 		.ALUControl		(ALUControlD)
 	);
 	
-	
+
 	// =============== Register File ===============
-	
 	Register_File regfile (
 		
 		// Input
@@ -164,7 +153,6 @@ module Decode_Cycle (
 	
 	
 	// =============== Imm Generator ===============
-	
 	ImmGen imm_type (
 		
 		// Input
@@ -177,7 +165,6 @@ module Decode_Cycle (
 	
 	
 	// =============== Instruction ===============
-	
 	assign funct3D = InstrD[14:12];
 	
 	always @(posedge clk or negedge reset) begin
@@ -230,7 +217,7 @@ module Decode_Cycle (
 			RS2_D_r			<= 5'b00000;
 			RD_D_r			<= 5'b00000;
 			
-			PCD_r				<= 32'h0000_0000;
+			PCD_r			<= 32'h0000_0000;
 			PCPlus4D_r		<= 32'h0000_0000;
 		end
 		
@@ -256,7 +243,7 @@ module Decode_Cycle (
 			RS2_D_r			<= InstrD[24:20];
 			RD_D_r			<= InstrD[11:7];
 			
-			PCD_r				<= PCD;
+			PCD_r			<= PCD;
 			PCPlus4D_r		<= PCPlus4D;
 		end
 		
@@ -266,15 +253,15 @@ module Decode_Cycle (
 	// =============== OUTPUT ===============
 	
 	assign RegWriteE		= RegWriteD_r;
-	assign MemReadE		= MemReadD_r;
+	assign MemReadE			= MemReadD_r;
 	assign MemWriteE		= MemWriteD_r;
-	assign AluSrcAE		= AluSrcAD_r;
-	assign AluSrcBE		= AluSrcBD_r;
+	assign AluSrcAE			= AluSrcAD_r;
+	assign AluSrcBE			= AluSrcBD_r;
 	assign ResultSrcE		= ResultSrcD_r;
 	assign BranchE			= BranchD_r;
 	assign JumpE			= JumpD_r;
 	assign BrUnE			= BrUnD_r;
-	assign ALUControlE	= ALUControlD_r;
+	assign ALUControlE		= ALUControlD_r;
 	
 	assign funct3E			= funct3D_r;
 	
@@ -290,6 +277,6 @@ module Decode_Cycle (
 	assign RS2_D			= InstrD[24:20];
 	
 	assign PCE				= PCD_r;
-	assign PCPlus4E		= PCPlus4D_r;
+	assign PCPlus4E			= PCPlus4D_r;
 	
 endmodule

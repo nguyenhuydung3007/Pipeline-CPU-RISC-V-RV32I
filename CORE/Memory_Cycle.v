@@ -11,7 +11,6 @@ module Memory_Cycle (
 	// ---------------------------------
 	// Từ Execute stage (EX --> MEM)
 	// ---------------------------------
-	
 	input RegWriteM,
 	input MemReadM,
 	input MemWriteM,
@@ -27,7 +26,6 @@ module Memory_Cycle (
 	// ----------------------------------
 	// Output sang Write Back (WB stage)
 	// ----------------------------------
-	
 	output RegWriteW,
 	output [1:0] ResultSrcW,
 	output [4:0] RD_W,
@@ -38,7 +36,6 @@ module Memory_Cycle (
 
 
 	// =============== DATA RAM ===============
-	
 	wire [31:0] ReadDataM;
 	
 	Data_RAM dmem (
@@ -55,7 +52,6 @@ module Memory_Cycle (
 	
 	
 	// =============== PIPELINE REGISTER ===============
-	
 	reg RegWriteM_r;
 	reg [1:0] ResultSrcM_r;
 	reg [4:0] RD_M_r;
@@ -96,7 +92,6 @@ module Memory_Cycle (
 	
 	
 	// =============== OUPUT sang WB ===============
-	
 	assign RegWriteW		= RegWriteM_r;
 	assign ResultSrcW		= ResultSrcM_r;
 	assign RD_W				= RD_M_r;

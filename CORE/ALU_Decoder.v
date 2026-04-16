@@ -13,7 +13,6 @@ module ALU_Decoder (
 );
 
 	// =============== ALU Encoding ===============
-	
 	localparam ALU_ADD	= 4'b0000;
 	localparam ALU_SUB	= 4'b0001;
 	localparam ALU_AND	= 4'b0010;
@@ -32,30 +31,27 @@ module ALU_Decoder (
 		case (ALUOp)
 			
 			// =============== LOAD / STORE / AUIPC ===============
-			
 			2'b00:	ALUControl = ALU_ADD;
 			
 			// =============== BRANCH ===============
-			
 			2'b01: 	ALUControl = ALU_SUB;
 			
 			// =============== R-TYPE / I-TYPE ===============
-			
 			2'b10: begin
 			
 				case (funct3) 
 				
 					3'b000:	ALUControl = (funct7[5]) ? ALU_SUB : ALU_ADD;
 					
-					3'b111: 	ALUControl = ALU_AND;
+					3'b111: ALUControl = ALU_AND;
 					
 					3'b110:	ALUControl = ALU_OR;
 					
 					3'b100:	ALUControl = ALU_XOR;
 					
-					3'b001: 	ALUControl = ALU_SLL;
+					3'b001: ALUControl = ALU_SLL;
 					
-					3'b101: 	ALUControl = (funct7[5]) ? ALU_SRA : ALU_SRL;
+					3'b101: ALUControl = (funct7[5]) ? ALU_SRA : ALU_SRL;
 					
 					3'b010:	ALUControl = ALU_SLT;
 					
@@ -66,7 +62,7 @@ module ALU_Decoder (
 			
 			end
 			
-			2'b11:	ALUControl = ALU_PASS;
+			2'b11:	 ALUControl = ALU_PASS;
 			
 			default: ALUControl = ALU_ADD;
 		endcase

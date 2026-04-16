@@ -30,7 +30,6 @@ module Main_Decoder (
 	// ==================================
 	// Fields
 	// ==================================
-	
 	assign opcode		= InstrD[6:0];
 	assign funct3		= InstrD[14:12];
 	assign funct7		= InstrD[31:25];
@@ -41,7 +40,6 @@ module Main_Decoder (
 	// ==================================
 	// Decode opcode
 	// ==================================
-	
 	always @(*) begin
 		
 		// Khởi tạo giá trị ban đầu
@@ -61,17 +59,17 @@ module Main_Decoder (
 			
 			7'b0010011: is_itype		= 1;	// I_Type (ADDI, ANDI,...)
 			
-			7'b0000011: is_load		= 1;	// LW
+			7'b0000011: is_load			= 1;	// LW
 			
 			7'b0100011: is_store		= 1;	// SW
 			
-			7'b1100011: is_branch	= 1;	// BEQ, BNE, BLT, BGE
+			7'b1100011: is_branch		= 1;	// BEQ, BNE, BLT, BGE
 			
-			7'b1101111: is_jal		= 1;	// JAL
+			7'b1101111: is_jal			= 1;	// JAL
 			
-			7'b1100111: is_jalr		= 1;	// JALR
+			7'b1100111: is_jalr			= 1;	// JALR
 			
-			7'b0110111: is_lui		= 1;	// LUI
+			7'b0110111: is_lui			= 1;	// LUI
 			
 			7'b0010111: is_auipc		= 1;	// AUIPC
 		
