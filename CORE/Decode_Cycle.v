@@ -14,7 +14,7 @@ module Decode_Cycle (
 	
 	input RegWriteW,			// Tín hiệu có ghi vào Register hay không
 	input [4:0] RDW,			// Địa chỉ thanh ghi đích
-	input [31:0] ResultW,	// Dữ liệu ghi vào Register
+	input [31:0] ResultW,		// Dữ liệu ghi vào Register
 	
 	
 	// -----------------------------
@@ -118,13 +118,17 @@ module Decode_Cycle (
 	
 	reg [31:0] PCD_r;
 	reg [31:0] PCPlus4D_r;
+	
+	// Fix bug Instr
+	wire [31:0] InstrD_safe;
+	assign InstrD_safe = (FlushD) ? 32'b0 : InstrD;
 
 	// =============== Control Unit ===============
 	
 	Control_Unit control_top (
 		
 		// Input
-		.InstrD			(InstrD),
+		.InstrD			(InstrD_safe),
 		
 		// Ouput
 		.RegWrite		(RegWriteD),
@@ -151,8 +155,8 @@ module Decode_Cycle (
 		
 		.we				(RegWriteW),
 		
-		.rs1_addr		(InstrD[19:15]),
-		.rs2_addr		(InstrD[24:20]),
+		.rs1_addr		(InstrD_safe[19:15]),
+		.rs2_addr		(InstrD_safe[24:20]),
 		.rd_addr			(RDW),
 		
 		.write_data		(ResultW),
@@ -168,7 +172,7 @@ module Decode_Cycle (
 	ImmGen imm_type (
 		
 		// Input
-		.InstrD			(InstrD),
+		.InstrD			(InstrD_safe),
 		.ImmSrc			(ImmSrcD),
 		
 		// Output
@@ -178,7 +182,7 @@ module Decode_Cycle (
 	
 	// =============== Instruction ===============
 	
-	assign funct3D = InstrD[14:12];
+	assign funct3D = InstrD_safe[14:12];
 	
 	always @(posedge clk or negedge reset) begin
 	
@@ -286,8 +290,8 @@ module Decode_Cycle (
 	assign RS2_E			= RS2_D_r;
 	assign RD_E				= RD_D_r;
 	
-	assign RS1_D			= InstrD[19:15];
-	assign RS2_D			= InstrD[24:20];
+	assign RS1_D			= InstrD_safe[19:15];
+	assign RS2_D			= InstrD_safe[24:20];
 	
 	assign PCE				= PCD_r;
 	assign PCPlus4E		= PCPlus4D_r;
