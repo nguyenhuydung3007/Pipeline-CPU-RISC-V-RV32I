@@ -1,4 +1,4 @@
-//`include "Hazard_Unit.v"
+`include "Hazard_Unit.v"
 
 `timescale 1ns/1ps
 

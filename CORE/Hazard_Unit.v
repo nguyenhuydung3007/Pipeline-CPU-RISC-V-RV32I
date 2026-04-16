@@ -3,8 +3,8 @@
 // Forward + Stall
 // =====================================
 
-`include "Forwarding_Unit.v"
-`include "Stall_Unit.v"
+//`include "Forwarding_Unit.v"
+//`include "Stall_Unit.v"
 
 module Hazard_Unit (
 

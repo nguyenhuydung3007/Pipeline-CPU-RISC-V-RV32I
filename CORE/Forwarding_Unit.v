@@ -52,16 +52,4 @@ module Forwarding_Unit (
 		
 	end
 
-
-
-
-
-
-
-
-
-
-
-
-
 endmodule

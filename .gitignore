@@ -1,0 +1,7 @@
+# Quartus / build files
+db/
+*.lock
+*.flock
+*.cdb
+*.hdb
+

@@ -10,55 +10,282 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:14:59 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 16:14:59 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:14:59 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v 
+# -- Compiling module Fetch_Cycle
+# 
+# Top level modules:
+# 	Fetch_Cycle
+# End time: 16:14:59 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:14:59 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v 
+# -- Compiling module PC_MUX
+# 
+# Top level modules:
+# 	PC_MUX
+# End time: 16:14:59 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:14:59 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v 
+# -- Compiling module Program_Counter
+# 
+# Top level modules:
+# 	Program_Counter
+# End time: 16:14:59 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v 
+# -- Compiling module PC_Adder
+# 
+# Top level modules:
+# 	PC_Adder
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v 
+# -- Compiling module Decode_Cycle
+# 
+# Top level modules:
+# 	Decode_Cycle
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v 
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v 
+# -- Compiling module Main_Decoder
+# 
+# Top level modules:
+# 	Main_Decoder
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v 
+# -- Compiling module Control
+# 
+# Top level modules:
+# 	Control
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v 
+# -- Compiling module ALU_Decoder
+# 
+# Top level modules:
+# 	ALU_Decoder
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Register_File.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Register_File.v 
+# -- Compiling module Register_File
+# 
+# Top level modules:
+# 	Register_File
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ImmGen.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ImmGen.v 
+# -- Compiling module ImmGen
+# 
+# Top level modules:
+# 	ImmGen
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v 
+# -- Compiling module Execute_Cycle
+# 
+# Top level modules:
+# 	Execute_Cycle
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Mux_3_by_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Mux_3_by_1.v 
+# -- Compiling module Mux_3_by_1
+# 
+# Top level modules:
+# 	Mux_3_by_1
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v 
+# -- Compiling module Branch_Unit
+# 
+# Top level modules:
+# 	Branch_Unit
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v 
+# -- Compiling module Data_RAM
+# 
+# Top level modules:
+# 	Data_RAM
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v 
+# -- Compiling module Memory_Cycle
+# 
+# Top level modules:
+# 	Memory_Cycle
+# End time: 16:15:00 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:00 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v 
+# -- Compiling module Writeback_Cycle
+# 
+# Top level modules:
+# 	Writeback_Cycle
+# End time: 16:15:01 on Apr 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:41:41 on Apr 15,2026
+# Start time: 16:15:01 on Apr 16,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v 
 # -- Compiling module Forwarding_Unit
 # 
 # Top level modules:
 # 	Forwarding_Unit
-# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 16:15:01 on Apr 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:41:41 on Apr 15,2026
+# Start time: 16:15:01 on Apr 16,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v 
 # -- Compiling module Stall_Unit
 # 
 # Top level modules:
 # 	Stall_Unit
-# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 16:15:01 on Apr 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:41:41 on Apr 15,2026
+# Start time: 16:15:01 on Apr 16,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v 
 # -- Compiling module Hazard_Unit
 # 
 # Top level modules:
 # 	Hazard_Unit
-# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 16:15:01 on Apr 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v}
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:41:41 on Apr 15,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v 
-# -- Compiling module tb_Hazard_Unit
+# Start time: 16:15:01 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v 
+# -- Compiling module Instr_Memory
 # 
 # Top level modules:
-# 	tb_Hazard_Unit
-# End time: 17:41:41 on Apr 15,2026, Elapsed time: 0:00:00
+# 	Instr_Memory
+# End time: 16:15:01 on Apr 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Hazard_Unit
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Hazard_Unit 
-# Start time: 17:41:41 on Apr 15,2026
-# Loading work.tb_Hazard_Unit
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_CPU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:01 on Apr 16,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_CPU.v 
+# -- Compiling module tb_CPU
+# 
+# Top level modules:
+# 	tb_CPU
+# End time: 16:15:01 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_CPU
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_CPU 
+# Start time: 16:15:01 on Apr 16,2026
+# Loading work.tb_CPU
+# Loading work.CPU
+# Loading work.Fetch_Cycle
+# Loading work.PC_MUX
+# Loading work.Program_Counter
+# Loading work.Instr_Memory
+# Loading work.PC_Adder
+# Loading work.Decode_Cycle
+# Loading work.Control_Unit
+# Loading work.Main_Decoder
+# Loading work.Control
+# Loading work.ALU_Decoder
+# Loading work.Register_File
+# Loading work.ImmGen
+# Loading work.Execute_Cycle
+# Loading work.Mux_3_by_1
+# Loading work.ALU
+# Loading work.Branch_Unit
+# Loading work.Memory_Cycle
+# Loading work.Data_RAM
+# Loading work.Writeback_Cycle
 # Loading work.Hazard_Unit
 # Loading work.Forwarding_Unit
 # Loading work.Stall_Unit
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'addr_boot'. The port definition is at: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_CPU/dut/Fetch/instruction_memory File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v Line: 100
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data_boot'. The port definition is at: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_CPU/dut/Fetch/instruction_memory File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v Line: 100
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'Execute'.  Expected 34, found 33.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_CPU/dut/Execute File: D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v Line: 155
+# ** Warning: (vsim-3722) D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v(155): [TFMPC] - Missing connection for port 'BrUnE'.
 # 
 # add wave *
 # view structure
@@ -66,36 +293,32 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# 
-# ===== HAZARD UNIT TEST START =====
-# 
-# TEST 1: NO HAZARD
-# PASS
-# 
-# TEST 2: FORWARD MEM
-# PASS
-# 
-# TEST 3: FORWARD WB
-# PASS
-# 
-# TEST 4: PRIORITY MEM
-# PASS
-# 
-# TEST 5: LOAD-USE STALL
-# PASS
-# 
-# TEST 6: BRANCH
-# PASS
-# 
-# TEST 7: LOAD + BRANCH
-# PASS
-# 
-# TEST 8: MIXED
-# PASS
-# 
-# ✅ ALL TEST DONE
-# ** Note: $stop    : D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v(219)
-#    Time: 26 ns  Iteration: 0  Instance: /tb_Hazard_Unit
-# Break in Module tb_Hazard_Unit at D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_Hazard_Unit.v line 219
-# End time: 17:43:05 on Apr 15,2026, Elapsed time: 0:01:24
-# Errors: 0, Warnings: 0
+# =====================================================================================
+# Time | PC | Instr | RegW | RD | Result | Stall | Flush | FwdA | FwdB | ALU | MemWrite
+# =====================================================================================
+# =========================================
+# CHECK INSTRUCTION MEMORY
+# MEM[0] = 00001117
+# MEM[1] = 00010113
+# =========================================
+# 50000 | 00000000 | 00000000 |  0   |  0 | 00000000 |   00   |  00   |  00  |  00  | 00000000 |    0
+# 70000 | 00000000 | 00001117 |  0   |  0 | 00000000 |   00   |  00   |  00  |  00  | 00000000 |    0
+# 90000 | 00000004 | 00001117 |  0   |  0 | 00000000 |   00   |  00   |  00  |  00  | 00000000 |    0
+# 110000 | 00000008 | 00010113 |  0   |  0 | 00000000 |   00   |  00   |  00  |  00  | 00001000 |    0
+# 130000 | 0000000c | 004000ef |  1   |  2 | 00001000 |   00   |  00   |  10  |  00  | 00001004 |    0
+# >>> WB: x2 = 00001000
+# 150000 | 00000010 | ff010113 |  1   |  2 | 00001004 |   00   |  11   |  00  |  00  | xxxxxxxx |    0
+# >>> WB: x2 = 00001004
+# >>> BRANCH TAKEN at time 150000
+# >>> PIPELINE FLUSH at time 150000
+# ❌ ERROR: ALU = X at 150000
+# 170000 | 00000000 | 00000000 |  1   |  2 | xxxxxxxx |   00   |  00   |  00  |  00  | xxxxxxxx |    0
+# >>> WB: x2 = xxxxxxxx
+# ❌ ERROR: ResultW = X at 170000
+# ❌ ERROR: ALU = X at 170000
+# 🔥 FATAL: WRITEBACK X DETECTED
+# ** Note: $stop    : D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_CPU.v(151)
+#    Time: 170 ns  Iteration: 1  Instance: /tb_CPU
+# Break in Module tb_CPU at D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/tb_CPU.v line 151
+# End time: 17:11:41 on Apr 16,2026, Elapsed time: 0:56:40
+# Errors: 0, Warnings: 4

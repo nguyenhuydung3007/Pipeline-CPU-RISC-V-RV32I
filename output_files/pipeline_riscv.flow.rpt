@@ -1,5 +1,5 @@
 Flow report for pipeline_riscv
-Wed Apr 15 18:04:57 2026
+Thu Apr 16 16:14:50 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 15 18:04:57 2026       ;
+; Flow Status                        ; Successful - Thu Apr 16 16:14:50 2026       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; pipeline_riscv                              ;
-; Top-level Entity Name              ; Memory_Cycle                                ;
+; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 73 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 1 / 49,760 ( < 1 % )                        ;
 ;     Total combinational functions  ; 1 / 49,760 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 72 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 72                                          ;
-; Total pins                         ; 212 / 360 ( 59 % )                          ;
+;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2 / 360 ( < 1 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 32,768 / 1,677,312 ( 2 % )                  ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
@@ -67,69 +67,73 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/15/2026 18:04:33 ;
+; Start date & time ; 04/16/2026 16:14:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline_riscv      ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                   ;
-+--------------------------------------+----------------------------------------+----------------+--------------+--------------------+
-; Assignment Name                      ; Value                                  ; Default Value  ; Entity Name  ; Section Id         ;
-+--------------------------------------+----------------------------------------+----------------+--------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 10995770589194.177625107314092         ; --             ; --           ; --                 ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Hazard_Unit     ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Forwarding_Unit ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Fetch_Cycle     ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Writeback_Cycle ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Memory_Cycle    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Decode_Cycle    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Control_Unit    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --           ; tb_Execute_Cycle   ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_Hazard_Unit                         ; --             ; --           ; eda_simulation     ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --             ; --           ; eda_simulation     ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>         ; --           ; --                 ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Hazard_Unit.v                  ; --             ; --           ; tb_Hazard_Unit     ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Forwarding_Unit.v              ; --             ; --           ; tb_Forwarding_Unit ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Fetch_Cycle.v                  ; --             ; --           ; tb_Fetch_Cycle     ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Writeback_Cycle.v              ; --             ; --           ; tb_Writeback_Cycle ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Memory_Cycle.v                 ; --             ; --           ; tb_Memory_Cycle    ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Decode_Cycle.v                 ; --             ; --           ; tb_Decode_Cycle    ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Control_Unit.v                 ; --             ; --           ; tb_Control_Unit    ;
-; EDA_TEST_BENCH_FILE                  ; CORE/tb_Execute_Cycle.v                ; --             ; --           ; tb_Execute_Cycle   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Hazard_Unit                         ; --             ; --           ; tb_Hazard_Unit     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Forwarding_Unit                     ; --             ; --           ; tb_Forwarding_Unit ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Fetch_Cycle                         ; --             ; --           ; tb_Fetch_Cycle     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Writeback_Cycle                     ; --             ; --           ; tb_Writeback_Cycle ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Memory_Cycle                        ; --             ; --           ; tb_Memory_Cycle    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Decode_Cycle                        ; --             ; --           ; tb_Decode_Cycle    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Control_Unit                        ; --             ; --           ; tb_Control_Unit    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_Execute_Cycle                       ; --             ; --           ; tb_Execute_Cycle   ;
-; EDA_TEST_BENCH_NAME                  ; tb_Fetch_Cycle                         ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Control_Unit                        ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Decode_Cycle                        ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Execute_Cycle                       ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Memory_Cycle                        ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Writeback_Cycle                     ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Forwarding_Unit                     ; --             ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; tb_Hazard_Unit                         ; --             ; --           ; eda_simulation     ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --             ; --           ; eda_simulation     ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --             ; --           ; --                 ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --             ; --           ; --                 ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --             ; --           ; --                 ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --             ; --           ; --                 ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --             ; --           ; --                 ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --             ; --           ; --                 ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --             ; Memory_Cycle ; Top                ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --             ; Memory_Cycle ; Top                ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --             ; Memory_Cycle ; Top                ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --             ; --           ; --                 ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --             ; --           ; --                 ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --             ; --           ; --                 ;
-; TOP_LEVEL_ENTITY                     ; Memory_Cycle                           ; pipeline_riscv ; --           ; --                 ;
-+--------------------------------------+----------------------------------------+----------------+--------------+--------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                  ;
++--------------------------------------+----------------------------------------+----------------+-------------+--------------------+
+; Assignment Name                      ; Value                                  ; Default Value  ; Entity Name ; Section Id         ;
++--------------------------------------+----------------------------------------+----------------+-------------+--------------------+
+; COMPILER_SIGNATURE_ID                ; 91760909734.177633087315060            ; --             ; --          ; --                 ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_CPU             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Hazard_Unit     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Forwarding_Unit ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Fetch_Cycle     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Writeback_Cycle ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Memory_Cycle    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Decode_Cycle    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Control_Unit    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --             ; --          ; tb_Execute_Cycle   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_CPU                                 ; --             ; --          ; eda_simulation     ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --             ; --          ; eda_simulation     ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>         ; --          ; --                 ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_CPU.v                          ; --             ; --          ; tb_CPU             ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Hazard_Unit.v                  ; --             ; --          ; tb_Hazard_Unit     ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Forwarding_Unit.v              ; --             ; --          ; tb_Forwarding_Unit ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Fetch_Cycle.v                  ; --             ; --          ; tb_Fetch_Cycle     ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Writeback_Cycle.v              ; --             ; --          ; tb_Writeback_Cycle ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Memory_Cycle.v                 ; --             ; --          ; tb_Memory_Cycle    ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Decode_Cycle.v                 ; --             ; --          ; tb_Decode_Cycle    ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Control_Unit.v                 ; --             ; --          ; tb_Control_Unit    ;
+; EDA_TEST_BENCH_FILE                  ; CORE/tb_Execute_Cycle.v                ; --             ; --          ; tb_Execute_Cycle   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_CPU                                 ; --             ; --          ; tb_CPU             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Hazard_Unit                         ; --             ; --          ; tb_Hazard_Unit     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Forwarding_Unit                     ; --             ; --          ; tb_Forwarding_Unit ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Fetch_Cycle                         ; --             ; --          ; tb_Fetch_Cycle     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Writeback_Cycle                     ; --             ; --          ; tb_Writeback_Cycle ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Memory_Cycle                        ; --             ; --          ; tb_Memory_Cycle    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Decode_Cycle                        ; --             ; --          ; tb_Decode_Cycle    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Control_Unit                        ; --             ; --          ; tb_Control_Unit    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_Execute_Cycle                       ; --             ; --          ; tb_Execute_Cycle   ;
+; EDA_TEST_BENCH_NAME                  ; tb_Fetch_Cycle                         ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Control_Unit                        ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Decode_Cycle                        ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Execute_Cycle                       ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Memory_Cycle                        ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Writeback_Cycle                     ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Forwarding_Unit                     ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_Hazard_Unit                         ; --             ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; tb_CPU                                 ; --             ; --          ; eda_simulation     ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --             ; --          ; eda_simulation     ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --             ; --          ; --                 ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --             ; --          ; --                 ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --             ; --          ; --                 ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --             ; --          ; --                 ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --             ; --          ; --                 ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --             ; --          ; --                 ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --             ; CPU         ; Top                ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --             ; CPU         ; Top                ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --             ; CPU         ; Top                ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --             ; --          ; --                 ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --             ; --          ; --                 ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --             ; --          ; --                 ;
+; TOP_LEVEL_ENTITY                     ; CPU                                    ; pipeline_riscv ; --          ; --                 ;
++--------------------------------------+----------------------------------------+----------------+-------------+--------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -137,12 +141,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4798 MB             ; 00:00:15                           ;
-; Fitter               ; 00:00:10     ; 1.1                     ; 5927 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4710 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 4892 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4672 MB             ; 00:00:00                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4742 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:04     ; 1.0                     ; 5917 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4705 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4869 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4657 MB             ; 00:00:00                           ;
+; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
