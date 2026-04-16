@@ -1,7 +1,31 @@
-# Quartus / build files
-db/
-*.lock
-*.flock
-*.cdb
-*.hdb
+# =========================
+# Quartus
+# =========================
+*.qpf
+*.qsf
+*.sof
+*.pof
+*.jic
 
+# build files
+db/
+incremental_db/
+output_files/
+*.rpt
+*.summary
+*.smsg
+
+# simulation
+transcript
+vsim.wlf
+work/
+
+# backup
+*.bak
+
+# vscode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
