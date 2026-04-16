@@ -1,9 +1,0 @@
-// ======================================================
-// Module Control_Unit
-// + Decoder
-// + Control signal CPU
-// ======================================================
-
-module Control_Unit (
-);
-endmodule

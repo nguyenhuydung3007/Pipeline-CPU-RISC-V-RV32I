@@ -1,8 +1,0 @@
-// ==============================================
-// Module tb_Fetch_Cycle
-// ==============================================
-
-`timescale 1ns/1ps
-
-module tb_Fetch_Cycle;
-endmodule

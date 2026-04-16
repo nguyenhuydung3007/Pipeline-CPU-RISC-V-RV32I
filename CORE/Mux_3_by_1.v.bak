@@ -1,9 +1,0 @@
-// ===============================================
-// Module Mux_3_by_1
-// + Module chọn giá trị cho AluIn1, AluIn2
-// + Có Forwarding
-// ===============================================
-
-module Mux_3_by_1 (
-);
-endmodule

@@ -1,8 +1,0 @@
-// ==========================================
-// Module Program_Counter
-// PC counter
-// ==========================================
-
-module Program_Counter (
-);
-endmodule

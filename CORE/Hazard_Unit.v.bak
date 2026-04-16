@@ -1,8 +1,0 @@
-// =====================================
-// Module Hazard_Unit
-// Forward + Stall
-// =====================================
-
-module Hazard_Unit (
-);
-endmodule

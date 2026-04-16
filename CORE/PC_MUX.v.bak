@@ -1,8 +1,0 @@
-// ======================================================
-// Module PC_MUX (Fetch)
-// + Chọn địa chỉ tiếp theo cho PC (Program Counter)
-// ======================================================
-
-module PC_MUX (
-);
-endmodule

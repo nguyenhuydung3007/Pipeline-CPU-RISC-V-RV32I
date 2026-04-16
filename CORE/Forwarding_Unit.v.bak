@@ -1,7 +1,0 @@
-// ====================================
-// Module Forwarding_Unit
-// ====================================
-
-module Forwarding_Unit (
-);
-endmodule

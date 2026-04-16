@@ -1,8 +1,0 @@
-// =======================================
-// Module Instr_Memory
-// + Bộ nhớ lưu firmware
-// =======================================
-
-module Instr_Memory (
-);
-endmodule
