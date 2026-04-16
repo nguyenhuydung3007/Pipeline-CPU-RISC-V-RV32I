@@ -1,4 +1,3 @@
-# Pipeline-CPU-RISC-V-RV32I
 # Pipeline RISC-V CPU (RV32I)
 
 ## Description
