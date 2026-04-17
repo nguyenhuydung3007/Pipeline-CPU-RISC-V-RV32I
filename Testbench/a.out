@@ -1,0 +1,27 @@
+#! /mnt/c/Users/Admin/Downloads/oss-cad-suite-linux-x64-20260226/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20251012-105-g8c9cd25ef)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/mnt/c/Users/Admin/Downloads/oss-cad-suite-linux-x64-20260226/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/mnt/c/Users/Admin/Downloads/oss-cad-suite-linux-x64-20260226/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/mnt/c/Users/Admin/Downloads/oss-cad-suite-linux-x64-20260226/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/mnt/c/Users/Admin/Downloads/oss-cad-suite-linux-x64-20260226/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/mnt/c/Users/Admin/Downloads/oss-cad-suite-linux-x64-20260226/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x555557955180 .scope module, "tb_ALU" "tb_ALU" 2 7;
+ .timescale -9 -12;
+P_0x555557953a60 .param/l "ALU_ADD" 1 2 17, C4<0000>;
+P_0x555557953aa0 .param/l "ALU_AND" 1 2 19, C4<0010>;
+P_0x555557953ae0 .param/l "ALU_OR" 1 2 20, C4<0011>;
+P_0x555557953b20 .param/l "ALU_PASS" 1 2 27, C4<1010>;
+P_0x555557953b60 .param/l "ALU_SLL" 1 2 22, C4<0101>;
+P_0x555557953ba0 .param/l "ALU_SLT" 1 2 25, C4<1000>;
+P_0x555557953be0 .param/l "ALU_SLTU" 1 2 26, C4<1001>;
+P_0x555557953c20 .param/l "ALU_SRA" 1 2 24, C4<0111>;
+P_0x555557953c60 .param/l "ALU_SRL" 1 2 23, C4<0110>;
+P_0x555557953ca0 .param/l "ALU_SUB" 1 2 18, C4<0001>;
+P_0x555557953ce0 .param/l "ALU_XOR" 1 2 21, C4<0100>;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "/mnt/d/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_ALU.v";

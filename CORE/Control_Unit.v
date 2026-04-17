@@ -112,6 +112,7 @@ module Control_Unit (
 		.ALUOp			(ALUOp),
 		.funct3			(funct3),
 		.funct7			(funct7),
+		.is_rtype		(is_rtype),
 		
 		// Ouput			
 		.ALUControl		(ALUControl)

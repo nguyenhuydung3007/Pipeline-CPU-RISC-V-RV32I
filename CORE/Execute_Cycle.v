@@ -55,7 +55,7 @@ module Execute_Cycle (
 	input [31:0] ALU_ResultM,		// Kết quả ALU tính toán ở 1 cycle trước (lệnh instruction trước đó)
 	
 	// Flush
-	input FlushE,
+	//input FlushE,
 	
 	// -------------------------------
 	// Nhóm Output sang Memory stage
@@ -193,16 +193,20 @@ module Execute_Cycle (
 			PCPlus4E_r		<= 0;
 		end
 		
-		else if (FlushE) begin
-			RegWriteE_r		<= 0;
-			MemReadE_r		<= 0;
-			MemWriteE_r		<= 0;
-			ResultSrcE_r	<= 0;
-			RD_E_r			<= 0;
-			ALU_ResultE_r	<= 0;
-			WriteDataE_r	<= 0;
-			PCPlus4E_r		<= 0;
-		end
+		/*
+			FIx Flush trong EX
+			- Flush không cần thiết trong EX
+		*/
+		// else if (FlushE) begin
+		// 	RegWriteE_r		<= 0;
+		// 	MemReadE_r		<= 0;
+		// 	MemWriteE_r		<= 0;
+		// 	ResultSrcE_r	<= 0;
+		// 	RD_E_r			<= 0;
+		// 	ALU_ResultE_r	<= 0;
+		// 	WriteDataE_r	<= 0;
+		// 	PCPlus4E_r		<= 0;
+		// end
 		
 		else begin
 			RegWriteE_r		<= RegWriteE;

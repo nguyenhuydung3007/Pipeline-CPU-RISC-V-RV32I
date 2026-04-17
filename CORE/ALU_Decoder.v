@@ -8,6 +8,7 @@ module ALU_Decoder (
 	input [1:0] ALUOp,
 	input [2:0] funct3,
 	input [6:0] funct7,
+	input is_rtype,
 
 	output reg [3:0] ALUControl
 );
@@ -16,7 +17,7 @@ module ALU_Decoder (
 	localparam ALU_ADD	= 4'b0000;
 	localparam ALU_SUB	= 4'b0001;
 	localparam ALU_AND	= 4'b0010;
-	localparam ALU_OR		= 4'b0011;
+	localparam ALU_OR	= 4'b0011;
 	localparam ALU_XOR	= 4'b0100;
 	localparam ALU_SLL	= 4'b0101;
 	localparam ALU_SRL	= 4'b0110;
@@ -41,7 +42,7 @@ module ALU_Decoder (
 			
 				case (funct3) 
 				
-					3'b000:	ALUControl = (funct7[5]) ? ALU_SUB : ALU_ADD;
+					3'b000:	ALUControl = (funct7[5] && is_rtype) ? ALU_SUB : ALU_ADD;
 					
 					3'b111: ALUControl = ALU_AND;
 					

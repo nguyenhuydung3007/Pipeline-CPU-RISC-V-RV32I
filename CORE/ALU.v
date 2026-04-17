@@ -18,7 +18,7 @@ module ALU (
 	localparam ALU_ADD	= 4'b0000;
 	localparam ALU_SUB	= 4'b0001;
 	localparam ALU_AND	= 4'b0010;
-	localparam ALU_OR		= 4'b0011;
+	localparam ALU_OR	= 4'b0011;
 	localparam ALU_XOR	= 4'b0100;
 	localparam ALU_SLL	= 4'b0101;
 	localparam ALU_SRL	= 4'b0110;

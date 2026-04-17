@@ -53,6 +53,12 @@ module Fetch_Cycle (
 	reg [31:0] PCF_reg;			// PC của InstrF_reg
 	reg [31:0] PCPlus4F_reg;	//	PC + 4 của InstrF_reg
 
+	// ===================================
+	// FIX Bug delay 1 cycle PC, PCPus4
+	// ===================================
+	reg [31:0] PCF_prev;
+	reg [31:0] PCPlus4F_prev;
+
 	
 	// ====================================
 	// Declare PC MUX
@@ -62,10 +68,10 @@ module Fetch_Cycle (
 		// Input
 		.din_0			(PCPlus4F),
 		.din_1			(PCTargetE),
-		.sel				(PCSrcE),
+		.sel			(PCSrcE),
 		
 		// Output
-		.mux_out			(PC_F)
+		.mux_out		(PC_F)
 	);
 	
 	
@@ -75,13 +81,13 @@ module Fetch_Cycle (
 	Program_Counter pc_counter (
 	
 		// Input
-		.clk				(clk),
+		.clk			(clk),
 		.reset			(reset),
 		.stall			(StallF),
-		.PCNextF			(PC_F),
+		.PCNextF		(PC_F),
 		
 		// Ouput
-		.PCF				(PCF)
+		.PCF			(PCF)
 	);
 	
 	
@@ -91,15 +97,15 @@ module Fetch_Cycle (
 	Instr_Memory instruction_memory (
 	
 		// Input
-		.clk				(clk),
+		.clk			(clk),
 		
 		// CPU Interface
-		.addr				(PCF),
+		.addr			(PCF),
 		.instruction	(InstrF),
 		
 		// Bootloader
 		.boot_mode		(1'b0),
-		.we_boot			(1'b0),
+		.we_boot		(1'b0),
 		.addr_boot		(1'b0),
 		.data_boot		(1'b0)
 	);
@@ -128,6 +134,10 @@ module Fetch_Cycle (
 			InstrF_reg		<= 32'h0000_0000;
 			PCF_reg			<= 32'h0000_0000;
 			PCPlus4F_reg	<= 32'h0000_0000;
+
+			// Fix Bug delay 1 cycle
+			//PCF_prev		<= 32'h0000_0000;
+			//PCPlus4F_prev	<= 32'h0000_0000;
 		end
 		
 		
@@ -136,13 +146,19 @@ module Fetch_Cycle (
 			InstrF_reg		<= 32'h0000_0000;
 			PCF_reg			<= 32'h0000_0000;
 			PCPlus4F_reg	<= 32'h0000_0000;
+
+			// Fix Bug delay 1 cycle
+			//PCF_prev		<= 32'h0000_0000;
+			//PCPlus4F_prev	<= 32'h0000_0000;
 		end
 		
 		
 		// =============== STALL - HAZARD ===============
 		else if (!StallD) begin
 			InstrF_reg		<= InstrF;
+			//PCF_prev		<= PCF;
 			PCF_reg			<= PCF;
+			//PCPlus4F_prev	<= PCPlus4F;
 			PCPlus4F_reg	<= PCPlus4F;
 		end
 		
@@ -161,6 +177,6 @@ module Fetch_Cycle (
 	// ===================================
 	assign InstrD		= InstrF_reg;
 	assign PCD			= PCF_reg;
-	assign PCPlus4D	= PCPlus4F_reg;
+	assign PCPlus4D		= PCPlus4F_reg;
 
 endmodule

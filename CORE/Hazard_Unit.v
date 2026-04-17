@@ -59,7 +59,7 @@ module Hazard_Unit (
 		
 		// Input
 		.MemReadE			(MemReadE),
-		.RD_E					(RD_E),
+		.RD_E				(RD_E),
 		.RS1_D				(RS1_D),
 		.RS2_D				(RS2_D),
 		
@@ -71,6 +71,10 @@ module Hazard_Unit (
 	
 	// =============== Flush Logic ===============
 	assign FlushD	= PCSrcE;
-	assign FlushE	= FlushE_stall | PCSrcE;
+
+	/* Debug FlushE
+		Bug tại tín hiệu FlushE:
+	*/
+	assign FlushE	= FlushE_stall;
 
 endmodule

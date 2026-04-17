@@ -57,7 +57,8 @@ module CPU (
     wire [1:0] ForwardA_E;
     wire [1:0] ForwardB_E;
 
-    wire [31:0] ALU_ResultM;
+    // Tạm thời bỏ ALU_ResultM: Tránh floating
+    //wire [31:0] ALU_ResultM;
 
     wire RegWriteM;
     wire MemWriteM;
@@ -171,6 +172,7 @@ module CPU (
         .ResultSrcE     (ResultSrcE),
         .BranchE        (BranchE),
         .JumpE          (JumpE),
+        .BrUnE          (BrUnE),
         .ALUControlE    (ALUControlE),
 
         .funct3E        (funct3E),
@@ -179,9 +181,14 @@ module CPU (
         .ForwardA_E     (ForwardA_E),
         .ForwardB_E     (ForwardB_E),
 
-        .ALU_ResultM    (ALU_ResultM),
+        /* Fix ALU_Result
+            - ALU_ResultM_out là output của EX -- > MEM
+            - ALU_ResultM_out từ 
+        */ 
 
-        .FlushE         (FlushE),
+        .ALU_ResultM    (ALU_ResultM_out),
+
+        //.FlushE         (FlushE),
 
         // Output
         .RegWriteM      (RegWriteM),
