@@ -11,7 +11,7 @@ module Data_RAM (
 	input read_en,
 	input write_en,
 	
-	output reg [31:0] read_data
+	output [31:0] read_data
 );
 
 	// =============== RAM ===============
@@ -31,10 +31,11 @@ module Data_RAM (
 			mem[addr[11:2]]	<= write_data;
 		end
 		
-		if (read_en) begin
-			read_data	<= mem[addr[11:2]];
-		end
+		// if (read_en) begin
+		// 	read_data	<= mem[addr[11:2]];
+		// end
 
 	end
+	assign read_data = mem[addr[11:2]];
 	
 endmodule

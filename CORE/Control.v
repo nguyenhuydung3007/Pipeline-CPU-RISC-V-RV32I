@@ -51,8 +51,8 @@ module Control (
 		if (is_rtype) begin
 			AluSrcA		= 0;
 			AluSrcB		= 0;
-			ALUOp			= 2'b10;
-			RegWrite		= 1;
+			ALUOp		= 2'b10;
+			RegWrite	= 1;
 			ResultSrc	= 2'b00;
 		end
 		
@@ -61,8 +61,8 @@ module Control (
 		else if (is_itype) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
-			ALUOp			= 2'b10;
-			RegWrite		= 1;
+			ALUOp		= 2'b10;
+			RegWrite	= 1;
 			ResultSrc	= 2'b00;
 			ImmSel		= 3'b000;
 		end
@@ -72,7 +72,7 @@ module Control (
 		else if (is_load) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
-			RegWrite		= 1;
+			RegWrite	= 1;
 			MemRead		= 1;
 			ResultSrc	= 2'b01;
 			ImmSel		= 3'b000;
@@ -83,7 +83,7 @@ module Control (
 		else if (is_store) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
-			MemWrite		= 1;
+			MemWrite	= 1;
 			ImmSel		= 3'b001;
 		end
 		
@@ -92,7 +92,7 @@ module Control (
 		else if (is_branch) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
-			ALUOp			= 2'b01;
+			ALUOp		= 2'b01;
 			Branch		= 1;
 			ImmSel		= 3'b010;
 			
@@ -113,8 +113,8 @@ module Control (
 		else if (is_jal) begin
 			AluSrcA		= 1;
 			AluSrcB		= 1;
-			RegWrite		= 1;
-			Jump			= 1;
+			RegWrite	= 1;
+			Jump		= 1;
 			ResultSrc	= 2'b10;
 			ImmSel		= 3'b011;
 		end
@@ -124,8 +124,8 @@ module Control (
 		else if (is_jalr) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
-			RegWrite		= 1;
-			Jump			= 1;
+			RegWrite	= 1;
+			Jump		= 1;
 			ResultSrc	= 2'b10;
 			ImmSel		= 3'b000;
 		end
@@ -135,8 +135,8 @@ module Control (
 		else if (is_lui) begin
 			AluSrcA		= 0;
 			AluSrcB		= 1;
-			ALUOp			= 2'b11;
-			RegWrite		= 1;
+			ALUOp		= 2'b11;
+			RegWrite	= 1;
 			ResultSrc	= 2'b00;
 			ImmSel		= 3'b100;
 		end
@@ -146,7 +146,7 @@ module Control (
 		else if (is_auipc) begin
 			AluSrcA		= 1;
 			AluSrcB		= 1;
-			RegWrite		= 1;
+			RegWrite	= 1;
 			ResultSrc	= 2'b00;
 			ImmSel		= 3'b100;
 		end

@@ -223,6 +223,7 @@ module Decode_Cycle (
 
 		// Thêm tín hiệu StallD
 		else if (StallD) begin
+			// Bubble: Chỉ zero control 
 			RegWriteD_r		<= 0;
 			MemReadD_r		<= 0;
 			MemWriteD_r		<= 0;
@@ -236,16 +237,17 @@ module Decode_Cycle (
 			
 			funct3D_r		<= 3'b000;
 			
-			RD1_D_r			<= 32'h0000_0000;
-			RD2_D_r			<= 32'h0000_0000;
-			Imm_Ext_D_r		<= 32'h0000_0000;
+			// Giữ data + address từ input
+			RD1_D_r			<= RD1_D;
+			RD2_D_r			<= RD2_D;
+			Imm_Ext_D_r		<= Imm_Ext_D;
 			
-			RS1_D_r			<= 5'b00000;
-			RS2_D_r			<= 5'b00000;
-			RD_D_r			<= 5'b00000;
+			RS1_D_r			<= InstrD[19:15];
+			RS2_D_r			<= InstrD[24:20];
+			RD_D_r			<= InstrD[11:7];
 			
-			PCD_r			<= 32'h0000_0000;
-			PCPlus4D_r		<= 32'h0000_0000;
+			PCD_r			<= PCD;
+			PCPlus4D_r		<= PCPlus4D;
 		end
 		
 		else if (!StallD) begin
