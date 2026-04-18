@@ -1,0 +1,106 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <start>:
+   0:	00001117          	auipc	sp,0x1
+   4:	00010113          	mv	sp,sp
+   8:	00c000ef          	jal	14 <main>
+
+0000000c <fn_add>:
+   c:	00b50533          	add	a0,a0,a1
+  10:	00008067          	ret
+
+00000014 <main>:
+  14:	fe010113          	addi	sp,sp,-32 # fe0 <main+0xfcc>
+  18:	00112e23          	sw	ra,28(sp)
+  1c:	00500793          	li	a5,5
+  20:	00f12623          	sw	a5,12(sp)
+  24:	00c00793          	li	a5,12
+  28:	00f12423          	sw	a5,8(sp)
+  2c:	00c12783          	lw	a5,12(sp)
+  30:	00812703          	lw	a4,8(sp)
+  34:	00e787b3          	add	a5,a5,a4
+  38:	10f02023          	sw	a5,256(zero) # 100 <main+0xec>
+  3c:	00812783          	lw	a5,8(sp)
+  40:	00c12703          	lw	a4,12(sp)
+  44:	40e787b3          	sub	a5,a5,a4
+  48:	10f02223          	sw	a5,260(zero) # 104 <main+0xf0>
+  4c:	00c12783          	lw	a5,12(sp)
+  50:	00812703          	lw	a4,8(sp)
+  54:	00e7f7b3          	and	a5,a5,a4
+  58:	10f02423          	sw	a5,264(zero) # 108 <main+0xf4>
+  5c:	00c12783          	lw	a5,12(sp)
+  60:	00812703          	lw	a4,8(sp)
+  64:	00e7e7b3          	or	a5,a5,a4
+  68:	10f02623          	sw	a5,268(zero) # 10c <main+0xf8>
+  6c:	00c12783          	lw	a5,12(sp)
+  70:	00812703          	lw	a4,8(sp)
+  74:	00e7c7b3          	xor	a5,a5,a4
+  78:	10f02823          	sw	a5,272(zero) # 110 <main+0xfc>
+  7c:	00c12783          	lw	a5,12(sp)
+  80:	00279793          	slli	a5,a5,0x2
+  84:	10f02a23          	sw	a5,276(zero) # 114 <main+0x100>
+  88:	00812783          	lw	a5,8(sp)
+  8c:	0017d793          	srli	a5,a5,0x1
+  90:	10f02c23          	sw	a5,280(zero) # 118 <main+0x104>
+  94:	ffc00793          	li	a5,-4
+  98:	10f02e23          	sw	a5,284(zero) # 11c <main+0x108>
+  9c:	00c12783          	lw	a5,12(sp)
+  a0:	00812703          	lw	a4,8(sp)
+  a4:	00e7a7b3          	slt	a5,a5,a4
+  a8:	12f02023          	sw	a5,288(zero) # 120 <main+0x10c>
+  ac:	00c12783          	lw	a5,12(sp)
+  b0:	00812703          	lw	a4,8(sp)
+  b4:	00e7b7b3          	sltu	a5,a5,a4
+  b8:	12f02223          	sw	a5,292(zero) # 124 <main+0x110>
+  bc:	120007b7          	lui	a5,0x12000
+  c0:	12f02423          	sw	a5,296(zero) # 128 <main+0x114>
+  c4:	06300793          	li	a5,99
+  c8:	00f12223          	sw	a5,4(sp)
+  cc:	00412783          	lw	a5,4(sp)
+  d0:	12f02623          	sw	a5,300(zero) # 12c <main+0x118>
+  d4:	00c12783          	lw	a5,12(sp)
+  d8:	ffb78793          	addi	a5,a5,-5 # 11fffffb <_stack_top+0x11ffeffb>
+  dc:	0017b793          	seqz	a5,a5
+  e0:	12f02823          	sw	a5,304(zero) # 130 <main+0x11c>
+  e4:	00c12783          	lw	a5,12(sp)
+  e8:	00812703          	lw	a4,8(sp)
+  ec:	40e787b3          	sub	a5,a5,a4
+  f0:	00f037b3          	snez	a5,a5
+  f4:	12f02a23          	sw	a5,308(zero) # 134 <main+0x120>
+  f8:	00c12783          	lw	a5,12(sp)
+  fc:	00812703          	lw	a4,8(sp)
+ 100:	00e7a7b3          	slt	a5,a5,a4
+ 104:	12f02c23          	sw	a5,312(zero) # 138 <main+0x124>
+ 108:	00812783          	lw	a5,8(sp)
+ 10c:	00c12703          	lw	a4,12(sp)
+ 110:	00e7a7b3          	slt	a5,a5,a4
+ 114:	0017b793          	seqz	a5,a5
+ 118:	12f02e23          	sw	a5,316(zero) # 13c <main+0x128>
+ 11c:	00c12783          	lw	a5,12(sp)
+ 120:	00812703          	lw	a4,8(sp)
+ 124:	00e7b7b3          	sltu	a5,a5,a4
+ 128:	14f02023          	sw	a5,320(zero) # 140 <main+0x12c>
+ 12c:	00700593          	li	a1,7
+ 130:	00300513          	li	a0,3
+ 134:	ed9ff0ef          	jal	c <fn_add>
+ 138:	14a02223          	sw	a0,324(zero) # 144 <main+0x130>
+ 13c:	00c12503          	lw	a0,12(sp)
+ 140:	00812583          	lw	a1,8(sp)
+ 144:	ec9ff0ef          	jal	c <fn_add>
+ 148:	00c12783          	lw	a5,12(sp)
+ 14c:	00a787b3          	add	a5,a5,a0
+ 150:	00f50533          	add	a0,a0,a5
+ 154:	14a02423          	sw	a0,328(zero) # 148 <main+0x134>
+ 158:	00000793          	li	a5,0
+ 15c:	00000693          	li	a3,0
+ 160:	00c0006f          	j	16c <main+0x158>
+ 164:	00168693          	addi	a3,a3,1
+ 168:	00178793          	addi	a5,a5,1
+ 16c:	00400713          	li	a4,4
+ 170:	fef75ae3          	bge	a4,a5,164 <main+0x150>
+ 174:	14d02623          	sw	a3,332(zero) # 14c <main+0x138>
+ 178:	0000006f          	j	178 <main+0x164>

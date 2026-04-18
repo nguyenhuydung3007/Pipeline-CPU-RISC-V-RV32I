@@ -75,6 +75,6 @@ module Hazard_Unit (
 	/* Debug FlushE
 		Bug tại tín hiệu FlushE:
 	*/
-	assign FlushE	= FlushE_stall;
+	assign FlushE	= FlushE_stall | PCSrcE;
 
 endmodule

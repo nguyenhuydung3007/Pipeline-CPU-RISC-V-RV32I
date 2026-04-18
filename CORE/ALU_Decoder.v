@@ -52,7 +52,7 @@ module ALU_Decoder (
 					
 					3'b001: ALUControl = ALU_SLL;
 					
-					3'b101: ALUControl = (funct7[5]) ? ALU_SRA : ALU_SRL;
+					3'b101: ALUControl = (funct7[5] && is_rtype) ? ALU_SRA : ALU_SRL;
 					
 					3'b010:	ALUControl = ALU_SLT;
 					

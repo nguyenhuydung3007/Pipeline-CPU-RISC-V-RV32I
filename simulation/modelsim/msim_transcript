@@ -12,249 +12,249 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v 
 # -- Compiling module Fetch_Cycle
 # 
 # Top level modules:
 # 	Fetch_Cycle
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v 
 # -- Compiling module PC_MUX
 # 
 # Top level modules:
 # 	PC_MUX
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v 
 # -- Compiling module Program_Counter
 # 
 # Top level modules:
 # 	Program_Counter
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v 
 # -- Compiling module PC_Adder
 # 
 # Top level modules:
 # 	PC_Adder
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v 
 # -- Compiling module Decode_Cycle
 # 
 # Top level modules:
 # 	Decode_Cycle
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:46 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v 
 # -- Compiling module Main_Decoder
 # 
 # Top level modules:
 # 	Main_Decoder
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:46 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v 
 # -- Compiling module Control
 # 
 # Top level modules:
 # 	Control
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:47 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:57 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v 
 # -- Compiling module ALU_Decoder
 # 
 # Top level modules:
 # 	ALU_Decoder
-# End time: 16:45:57 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:47 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Register_File.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Register_File.v 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:47 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ImmGen.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ImmGen.v 
 # -- Compiling module ImmGen
 # 
 # Top level modules:
 # 	ImmGen
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:47 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v 
 # -- Compiling module Execute_Cycle
 # 
 # Top level modules:
 # 	Execute_Cycle
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:47 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Mux_3_by_1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Mux_3_by_1.v 
 # -- Compiling module Mux_3_by_1
 # 
 # Top level modules:
 # 	Mux_3_by_1
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:47 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:47 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:47 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v 
 # -- Compiling module Branch_Unit
 # 
 # Top level modules:
 # 	Branch_Unit
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v 
 # -- Compiling module Data_RAM
 # 
 # Top level modules:
 # 	Data_RAM
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v 
 # -- Compiling module Memory_Cycle
 # 
 # Top level modules:
 # 	Memory_Cycle
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v 
 # -- Compiling module Writeback_Cycle
 # 
 # Top level modules:
 # 	Writeback_Cycle
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v 
 # -- Compiling module Forwarding_Unit
 # 
 # Top level modules:
 # 	Forwarding_Unit
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v 
 # -- Compiling module Stall_Unit
 # 
 # Top level modules:
 # 	Stall_Unit
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v 
 # -- Compiling module Hazard_Unit
 # 
 # Top level modules:
 # 	Hazard_Unit
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v 
 # -- Compiling module Instr_Memory
 # 
 # Top level modules:
 # 	Instr_Memory
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:48 on Apr 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/Testbench {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:58 on Apr 17,2026
+# Start time: 18:55:48 on Apr 18,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v 
 # -- Compiling module tb_CPU
 # 
 # Top level modules:
 # 	tb_CPU
-# End time: 16:45:58 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:55:49 on Apr 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_CPU
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_CPU 
-# Start time: 16:45:59 on Apr 17,2026
+# Start time: 18:55:49 on Apr 18,2026
 # Loading work.tb_CPU
 # Loading work.CPU
 # Loading work.Fetch_Cycle
@@ -299,142 +299,1036 @@
 # FIRMWARE CHECK
 #   mem[0] = 00001117  (expected: 00001117 = AUIPC x2, 1)
 #   mem[1] = 00010113  (expected: 00010113 = ADDI x2, x2, 0)
-#   mem[2] = 004000ef  (expected: 004000ef = JAL x1, 4)
+#   mem[2] = 00c000ef  (expected: 00c000ef = JAL x1, 12)
 # ============================================================
 #   50000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
 #   70000  | 00000000 | 00001117 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
 #   90000  | 00000004 | 00010113 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-#  110000  | 00000008 | 004000ef |  0   | x0  | 00000000 |   0    0  |   0    0  |  10   00  | 00001000
-#  130000  | 0000000c | ff010113 |  1   | x2  | 00001000 |   0    0  |   1    0  |  00   00  | 00001000
+#  110000  | 00000008 | 00c000ef |  0   | x0  | 00000000 |   0    0  |   0    0  |  10   00  | 00001000
+#  130000  | 0000000c | 00b50533 |  1   | x2  | 00001000 |   0    0  |   1    1  |  00   00  | 00001000
 #   >>> WB: x2  <= 0x00001000
-#   >>> BRANCH/JUMP taken at t=130000 | PCTarget = 0x0000000c
-#  150000  | 00000000 | 00000000 |  1   | x2  | 00001000 |   0    0  |   0    0  |  00   00  | 0000000c
+#   >>> BRANCH/JUMP at t=130000 | PCTarget=0x00000014
+#  150000  | 00000000 | 00000000 |  1   | x2  | 00001000 |   0    0  |   0    0  |  00   00  | 00000000
 #   >>> WB: x2  <= 0x00001000
-#  170000  | 0000000c | ff010113 |  1   | x1  | 0000000c |   0    0  |   0    0  |  00   00  | 00000000
-#   >>> WB: x1  <= 0x0000000c
-#  190000  | 00000010 | 06400793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-#  210000  | 00000014 | 00f12023 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000ff0
-#  230000  | 00000018 | 0c800793 |  1   | x2  | 00000ff0 |   0    0  |   0    0  |  01   10  | 00000064
-#   >>> WB: x2  <= 0x00000ff0
-#  250000  | 0000001c | 00f12223 |  1   | x15 | 00000064 |   0    0  |   0    0  |  00   00  | 00000ff0
-#   >>> WB: x15 <= 0x00000064
-#  270000  | 00000020 | 00000793 |  0   | x0  | 00000ff0 |   0    0  |   0    0  |  00   10  | 000000c8
-#  290000  | 00000024 | 0080006f |  1   | x15 | 000000c8 |   0    0  |   0    0  |  00   00  | 00000ff4
-#   >>> WB: x15 <= 0x000000c8
-#  310000  | 00000028 | 00178793 |  0   | x4  | 00000ff4 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=310000 | PCTarget = 0x0000002c
-#  330000  | 00000000 | 00000000 |  1   | x15 | 00000000 |   0    0  |   0    0  |  00   00  | 0000002c
-#   >>> WB: x15 <= 0x00000000
-#  350000  | 0000002c | 00200713 |  1   | x0  | 00000028 |   0    0  |   0    0  |  00   00  | 00000000
-#  370000  | 00000030 | fef75ce3 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-#  390000  | 00000034 | 0000006f |  0   | x0  | 00000000 |   0    0  |   1    0  |  10   00  | 00000002
-#   >>> BRANCH/JUMP taken at t=390000 | PCTarget = 0x00000028
-#  410000  | 00000000 | 00000000 |  1   | x14 | 00000002 |   0    0  |   0    0  |  00   00  | 0000000a
-#   >>> WB: x14 <= 0x00000002
-#  430000  | 00000028 | 00178793 |  0   | x25 | 0000000a |   0    0  |   0    0  |  00   00  | 00000000
-#  450000  | 0000002c | 00200713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-#  470000  | 00000030 | fef75ce3 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000001
-#  490000  | 00000034 | 0000006f |  1   | x15 | 00000001 |   0    0  |   1    0  |  10   01  | 00000002
-#   >>> WB: x15 <= 0x00000001
-#   >>> BRANCH/JUMP taken at t=490000 | PCTarget = 0x00000028
-#  510000  | 00000000 | 00000000 |  1   | x14 | 00000002 |   0    0  |   0    0  |  00   00  | 0000000a
-#   >>> WB: x14 <= 0x00000002
-#  530000  | 00000028 | 00178793 |  0   | x25 | 0000000a |   0    0  |   0    0  |  00   00  | 00000000
-#  550000  | 0000002c | 00200713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-#  570000  | 00000030 | fef75ce3 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000002
-#  590000  | 00000034 | 0000006f |  1   | x15 | 00000002 |   0    0  |   1    0  |  10   01  | 00000002
-#   >>> WB: x15 <= 0x00000002
-#   >>> BRANCH/JUMP taken at t=590000 | PCTarget = 0x00000028
-#  610000  | 00000000 | 00000000 |  1   | x14 | 00000002 |   0    0  |   0    0  |  00   00  | 0000000a
-#   >>> WB: x14 <= 0x00000002
-#  630000  | 00000028 | 00178793 |  0   | x25 | 0000000a |   0    0  |   0    0  |  00   00  | 00000000
-#  650000  | 0000002c | 00200713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-#  670000  | 00000030 | fef75ce3 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000003
-#  690000  | 00000034 | 0000006f |  1   | x15 | 00000003 |   0    0  |   0    0  |  10   01  | 00000002
-#   >>> WB: x15 <= 0x00000003
-#  710000  | 00000038 | 00000000 |  1   | x14 | 00000002 |   0    0  |   1    0  |  00   00  | 0000000a
-#   >>> WB: x14 <= 0x00000002
-#   >>> BRANCH/JUMP taken at t=710000 | PCTarget = 0x00000034
-#  730000  | 00000000 | 00000000 |  0   | x25 | 0000000a |   0    0  |   0    0  |  00   00  | 00000034
-#  750000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-#  770000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=770000 | PCTarget = 0x00000034
-#  790000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-#  810000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-#  830000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=830000 | PCTarget = 0x00000034
-#  850000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-#  870000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-#  890000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=890000 | PCTarget = 0x00000034
-#  910000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-#  930000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-#  950000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=950000 | PCTarget = 0x00000034
-#  970000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-#  990000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1010000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1010000 | PCTarget = 0x00000034
-# 1030000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1050000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1070000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1070000 | PCTarget = 0x00000034
-# 1090000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1110000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1130000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1130000 | PCTarget = 0x00000034
-# 1150000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1170000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1190000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1190000 | PCTarget = 0x00000034
-# 1210000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1230000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1250000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1250000 | PCTarget = 0x00000034
-# 1270000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1290000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1310000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1310000 | PCTarget = 0x00000034
-# 1330000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1350000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1370000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1370000 | PCTarget = 0x00000034
-# 1390000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1410000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1430000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1430000 | PCTarget = 0x00000034
-# 1450000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1470000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1490000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1490000 | PCTarget = 0x00000034
-# 1510000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1530000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
-# 1550000  | 00000038 | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP taken at t=1550000 | PCTarget = 0x00000034
-# 1570000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000034
-# 1590000  | 00000034 | 0000006f |  1   | x0  | 00000038 |   0    0  |   0    0  |  00   00  | 00000000
+#  170000  | 00000014 | fe010113 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+#  190000  | 00000018 | 00112e23 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+#  210000  | 0000001c | 00500793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  10   00  | 00000fe0
+#  230000  | 00000020 | 00f12623 |  1   | x2  | 00000fe0 |   0    0  |   0    0  |  00   00  | 00000ffc
+#   >>> WB: x2  <= 0x00000fe0
+#  250000  | 00000024 | 00c00793 |  0   | x28 | 00000ffc |   0    0  |   0    0  |  00   10  | 00000005
+#  270000  | 00000028 | 00f12423 |  1   | x15 | 00000005 |   0    0  |   0    0  |  00   00  | 00000fec
+#   >>> WB: x15 <= 0x00000005
+#  290000  | 0000002c | 00c12783 |  0   | x12 | 00000fec |   0    0  |   0    0  |  00   10  | 0000000c
+#  310000  | 00000030 | 00812703 |  1   | x15 | 0000000c |   0    0  |   0    0  |  00   00  | 00000fe8
+#   >>> WB: x15 <= 0x0000000c
+#  330000  | 00000034 | 00e787b3 |  0   | x8  | 00000fe8 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> STALL at t=330000 (load-use hazard)
+#  350000  | 00000034 | 00e787b3 |  1   | x15 | 00000005 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> WB: x15 <= 0x00000005
+#   >>> STALL at t=350000 (load-use hazard)
+#  370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=370000 (load-use hazard)
+#  390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=390000 (load-use hazard)
+#  410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=410000 (load-use hazard)
+#  430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=430000 (load-use hazard)
+#  450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=450000 (load-use hazard)
+#  470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=470000 (load-use hazard)
+#  490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=490000 (load-use hazard)
+#  510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=510000 (load-use hazard)
+#  530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=530000 (load-use hazard)
+#  550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=550000 (load-use hazard)
+#  570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=570000 (load-use hazard)
+#  590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=590000 (load-use hazard)
+#  610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=610000 (load-use hazard)
+#  630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=630000 (load-use hazard)
+#  650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=650000 (load-use hazard)
+#  670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=670000 (load-use hazard)
+#  690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=690000 (load-use hazard)
+#  710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=710000 (load-use hazard)
+#  730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=730000 (load-use hazard)
+#  750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=750000 (load-use hazard)
+#  770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=770000 (load-use hazard)
+#  790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=790000 (load-use hazard)
+#  810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=810000 (load-use hazard)
+#  830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=830000 (load-use hazard)
+#  850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=850000 (load-use hazard)
+#  870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=870000 (load-use hazard)
+#  890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=890000 (load-use hazard)
+#  910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=910000 (load-use hazard)
+#  930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=930000 (load-use hazard)
+#  950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=950000 (load-use hazard)
+#  970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=970000 (load-use hazard)
+#  990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=990000 (load-use hazard)
+# 1010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1010000 (load-use hazard)
+# 1030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1030000 (load-use hazard)
+# 1050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1050000 (load-use hazard)
+# 1070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1070000 (load-use hazard)
+# 1090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1090000 (load-use hazard)
+# 1110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1110000 (load-use hazard)
+# 1130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1130000 (load-use hazard)
+# 1150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1150000 (load-use hazard)
+# 1170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1170000 (load-use hazard)
+# 1190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1190000 (load-use hazard)
+# 1210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1210000 (load-use hazard)
+# 1230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1230000 (load-use hazard)
+# 1250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1250000 (load-use hazard)
+# 1270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1270000 (load-use hazard)
+# 1290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1290000 (load-use hazard)
+# 1310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1310000 (load-use hazard)
+# 1330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1330000 (load-use hazard)
+# 1350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1350000 (load-use hazard)
+# 1370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1370000 (load-use hazard)
+# 1390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1390000 (load-use hazard)
+# 1410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1410000 (load-use hazard)
+# 1430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1430000 (load-use hazard)
+# 1450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1450000 (load-use hazard)
+# 1470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1470000 (load-use hazard)
+# 1490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1490000 (load-use hazard)
+# 1510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1510000 (load-use hazard)
+# 1530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1530000 (load-use hazard)
+# 1550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1550000 (load-use hazard)
+# 1570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1570000 (load-use hazard)
+# 1590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1590000 (load-use hazard)
+# 1610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1610000 (load-use hazard)
+# 1630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1630000 (load-use hazard)
+# 1650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1650000 (load-use hazard)
+# 1670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1670000 (load-use hazard)
+# 1690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1690000 (load-use hazard)
+# 1710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1710000 (load-use hazard)
+# 1730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1730000 (load-use hazard)
+# 1750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1750000 (load-use hazard)
+# 1770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1770000 (load-use hazard)
+# 1790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1790000 (load-use hazard)
+# 1810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1810000 (load-use hazard)
+# 1830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1830000 (load-use hazard)
+# 1850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1850000 (load-use hazard)
+# 1870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1870000 (load-use hazard)
+# 1890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1890000 (load-use hazard)
+# 1910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1910000 (load-use hazard)
+# 1930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1930000 (load-use hazard)
+# 1950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1950000 (load-use hazard)
+# 1970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1970000 (load-use hazard)
+# 1990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=1990000 (load-use hazard)
+# 2010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2010000 (load-use hazard)
+# 2030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2030000 (load-use hazard)
+# 2050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2050000 (load-use hazard)
+# 2070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2070000 (load-use hazard)
+# 2090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2090000 (load-use hazard)
+# 2110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2110000 (load-use hazard)
+# 2130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2130000 (load-use hazard)
+# 2150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2150000 (load-use hazard)
+# 2170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2170000 (load-use hazard)
+# 2190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2190000 (load-use hazard)
+# 2210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2210000 (load-use hazard)
+# 2230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2230000 (load-use hazard)
+# 2250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2250000 (load-use hazard)
+# 2270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2270000 (load-use hazard)
+# 2290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2290000 (load-use hazard)
+# 2310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2310000 (load-use hazard)
+# 2330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2330000 (load-use hazard)
+# 2350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2350000 (load-use hazard)
+# 2370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2370000 (load-use hazard)
+# 2390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2390000 (load-use hazard)
+# 2410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2410000 (load-use hazard)
+# 2430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2430000 (load-use hazard)
+# 2450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2450000 (load-use hazard)
+# 2470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2470000 (load-use hazard)
+# 2490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2490000 (load-use hazard)
+# 2510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2510000 (load-use hazard)
+# 2530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2530000 (load-use hazard)
+# 2550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2550000 (load-use hazard)
+# 2570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2570000 (load-use hazard)
+# 2590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2590000 (load-use hazard)
+# 2610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2610000 (load-use hazard)
+# 2630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2630000 (load-use hazard)
+# 2650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2650000 (load-use hazard)
+# 2670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2670000 (load-use hazard)
+# 2690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2690000 (load-use hazard)
+# 2710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2710000 (load-use hazard)
+# 2730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2730000 (load-use hazard)
+# 2750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2750000 (load-use hazard)
+# 2770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2770000 (load-use hazard)
+# 2790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2790000 (load-use hazard)
+# 2810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2810000 (load-use hazard)
+# 2830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2830000 (load-use hazard)
+# 2850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2850000 (load-use hazard)
+# 2870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2870000 (load-use hazard)
+# 2890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2890000 (load-use hazard)
+# 2910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2910000 (load-use hazard)
+# 2930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2930000 (load-use hazard)
+# 2950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2950000 (load-use hazard)
+# 2970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2970000 (load-use hazard)
+# 2990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=2990000 (load-use hazard)
+# 3010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3010000 (load-use hazard)
+# 3030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3030000 (load-use hazard)
+# 3050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3050000 (load-use hazard)
+# 3070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3070000 (load-use hazard)
+# 3090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3090000 (load-use hazard)
+# 3110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3110000 (load-use hazard)
+# 3130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3130000 (load-use hazard)
+# 3150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3150000 (load-use hazard)
+# 3170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3170000 (load-use hazard)
+# 3190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3190000 (load-use hazard)
+# 3210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3210000 (load-use hazard)
+# 3230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3230000 (load-use hazard)
+# 3250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3250000 (load-use hazard)
+# 3270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3270000 (load-use hazard)
+# 3290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3290000 (load-use hazard)
+# 3310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3310000 (load-use hazard)
+# 3330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3330000 (load-use hazard)
+# 3350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3350000 (load-use hazard)
+# 3370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3370000 (load-use hazard)
+# 3390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3390000 (load-use hazard)
+# 3410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3410000 (load-use hazard)
+# 3430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3430000 (load-use hazard)
+# 3450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3450000 (load-use hazard)
+# 3470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3470000 (load-use hazard)
+# 3490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3490000 (load-use hazard)
+# 3510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3510000 (load-use hazard)
+# 3530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3530000 (load-use hazard)
+# 3550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3550000 (load-use hazard)
+# 3570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3570000 (load-use hazard)
+# 3590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3590000 (load-use hazard)
+# 3610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3610000 (load-use hazard)
+# 3630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3630000 (load-use hazard)
+# 3650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3650000 (load-use hazard)
+# 3670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3670000 (load-use hazard)
+# 3690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3690000 (load-use hazard)
+# 3710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3710000 (load-use hazard)
+# 3730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3730000 (load-use hazard)
+# 3750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3750000 (load-use hazard)
+# 3770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3770000 (load-use hazard)
+# 3790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3790000 (load-use hazard)
+# 3810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3810000 (load-use hazard)
+# 3830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3830000 (load-use hazard)
+# 3850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3850000 (load-use hazard)
+# 3870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3870000 (load-use hazard)
+# 3890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3890000 (load-use hazard)
+# 3910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3910000 (load-use hazard)
+# 3930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3930000 (load-use hazard)
+# 3950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3950000 (load-use hazard)
+# 3970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3970000 (load-use hazard)
+# 3990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=3990000 (load-use hazard)
+# 4010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4010000 (load-use hazard)
+# 4030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4030000 (load-use hazard)
+# 4050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4050000 (load-use hazard)
+# 4070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4070000 (load-use hazard)
+# 4090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4090000 (load-use hazard)
+# 4110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4110000 (load-use hazard)
+# 4130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4130000 (load-use hazard)
+# 4150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4150000 (load-use hazard)
+# 4170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4170000 (load-use hazard)
+# 4190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4190000 (load-use hazard)
+# 4210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4210000 (load-use hazard)
+# 4230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4230000 (load-use hazard)
+# 4250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4250000 (load-use hazard)
+# 4270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4270000 (load-use hazard)
+# 4290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4290000 (load-use hazard)
+# 4310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4310000 (load-use hazard)
+# 4330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4330000 (load-use hazard)
+# 4350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4350000 (load-use hazard)
+# 4370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4370000 (load-use hazard)
+# 4390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4390000 (load-use hazard)
+# 4410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4410000 (load-use hazard)
+# 4430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4430000 (load-use hazard)
+# 4450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4450000 (load-use hazard)
+# 4470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4470000 (load-use hazard)
+# 4490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4490000 (load-use hazard)
+# 4510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4510000 (load-use hazard)
+# 4530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4530000 (load-use hazard)
+# 4550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4550000 (load-use hazard)
+# 4570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4570000 (load-use hazard)
+# 4590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4590000 (load-use hazard)
+# 4610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4610000 (load-use hazard)
+# 4630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4630000 (load-use hazard)
+# 4650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4650000 (load-use hazard)
+# 4670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4670000 (load-use hazard)
+# 4690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4690000 (load-use hazard)
+# 4710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4710000 (load-use hazard)
+# 4730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4730000 (load-use hazard)
+# 4750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4750000 (load-use hazard)
+# 4770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4770000 (load-use hazard)
+# 4790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4790000 (load-use hazard)
+# 4810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4810000 (load-use hazard)
+# 4830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4830000 (load-use hazard)
+# 4850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4850000 (load-use hazard)
+# 4870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4870000 (load-use hazard)
+# 4890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4890000 (load-use hazard)
+# 4910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4910000 (load-use hazard)
+# 4930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4930000 (load-use hazard)
+# 4950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4950000 (load-use hazard)
+# 4970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4970000 (load-use hazard)
+# 4990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=4990000 (load-use hazard)
+# 5010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5010000 (load-use hazard)
+# 5030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5030000 (load-use hazard)
+# 5050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5050000 (load-use hazard)
+# 5070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5070000 (load-use hazard)
+# 5090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5090000 (load-use hazard)
+# 5110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5110000 (load-use hazard)
+# 5130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5130000 (load-use hazard)
+# 5150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5150000 (load-use hazard)
+# 5170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5170000 (load-use hazard)
+# 5190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5190000 (load-use hazard)
+# 5210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5210000 (load-use hazard)
+# 5230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5230000 (load-use hazard)
+# 5250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5250000 (load-use hazard)
+# 5270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5270000 (load-use hazard)
+# 5290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5290000 (load-use hazard)
+# 5310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5310000 (load-use hazard)
+# 5330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5330000 (load-use hazard)
+# 5350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5350000 (load-use hazard)
+# 5370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5370000 (load-use hazard)
+# 5390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5390000 (load-use hazard)
+# 5410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5410000 (load-use hazard)
+# 5430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5430000 (load-use hazard)
+# 5450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5450000 (load-use hazard)
+# 5470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5470000 (load-use hazard)
+# 5490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5490000 (load-use hazard)
+# 5510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5510000 (load-use hazard)
+# 5530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5530000 (load-use hazard)
+# 5550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5550000 (load-use hazard)
+# 5570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5570000 (load-use hazard)
+# 5590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5590000 (load-use hazard)
+# 5610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5610000 (load-use hazard)
+# 5630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5630000 (load-use hazard)
+# 5650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5650000 (load-use hazard)
+# 5670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5670000 (load-use hazard)
+# 5690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5690000 (load-use hazard)
+# 5710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5710000 (load-use hazard)
+# 5730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5730000 (load-use hazard)
+# 5750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5750000 (load-use hazard)
+# 5770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5770000 (load-use hazard)
+# 5790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5790000 (load-use hazard)
+# 5810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5810000 (load-use hazard)
+# 5830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5830000 (load-use hazard)
+# 5850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5850000 (load-use hazard)
+# 5870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5870000 (load-use hazard)
+# 5890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5890000 (load-use hazard)
+# 5910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5910000 (load-use hazard)
+# 5930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5930000 (load-use hazard)
+# 5950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5950000 (load-use hazard)
+# 5970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5970000 (load-use hazard)
+# 5990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=5990000 (load-use hazard)
+# 6010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6010000 (load-use hazard)
+# 6030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6030000 (load-use hazard)
+# 6050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6050000 (load-use hazard)
+# 6070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6070000 (load-use hazard)
+# 6090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6090000 (load-use hazard)
+# 6110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6110000 (load-use hazard)
+# 6130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6130000 (load-use hazard)
+# 6150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6150000 (load-use hazard)
+# 6170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6170000 (load-use hazard)
+# 6190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6190000 (load-use hazard)
+# 6210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6210000 (load-use hazard)
+# 6230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6230000 (load-use hazard)
+# 6250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6250000 (load-use hazard)
+# 6270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6270000 (load-use hazard)
+# 6290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6290000 (load-use hazard)
+# 6310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6310000 (load-use hazard)
+# 6330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6330000 (load-use hazard)
+# 6350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6350000 (load-use hazard)
+# 6370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6370000 (load-use hazard)
+# 6390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6390000 (load-use hazard)
+# 6410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6410000 (load-use hazard)
+# 6430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6430000 (load-use hazard)
+# 6450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6450000 (load-use hazard)
+# 6470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6470000 (load-use hazard)
+# 6490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6490000 (load-use hazard)
+# 6510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6510000 (load-use hazard)
+# 6530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6530000 (load-use hazard)
+# 6550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6550000 (load-use hazard)
+# 6570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6570000 (load-use hazard)
+# 6590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6590000 (load-use hazard)
+# 6610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6610000 (load-use hazard)
+# 6630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6630000 (load-use hazard)
+# 6650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6650000 (load-use hazard)
+# 6670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6670000 (load-use hazard)
+# 6690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6690000 (load-use hazard)
+# 6710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6710000 (load-use hazard)
+# 6730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6730000 (load-use hazard)
+# 6750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6750000 (load-use hazard)
+# 6770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6770000 (load-use hazard)
+# 6790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6790000 (load-use hazard)
+# 6810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6810000 (load-use hazard)
+# 6830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6830000 (load-use hazard)
+# 6850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6850000 (load-use hazard)
+# 6870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6870000 (load-use hazard)
+# 6890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6890000 (load-use hazard)
+# 6910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6910000 (load-use hazard)
+# 6930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6930000 (load-use hazard)
+# 6950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6950000 (load-use hazard)
+# 6970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6970000 (load-use hazard)
+# 6990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=6990000 (load-use hazard)
+# 7010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7010000 (load-use hazard)
+# 7030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7030000 (load-use hazard)
+# 7050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7050000 (load-use hazard)
+# 7070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7070000 (load-use hazard)
+# 7090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7090000 (load-use hazard)
+# 7110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7110000 (load-use hazard)
+# 7130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7130000 (load-use hazard)
+# 7150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7150000 (load-use hazard)
+# 7170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7170000 (load-use hazard)
+# 7190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7190000 (load-use hazard)
+# 7210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7210000 (load-use hazard)
+# 7230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7230000 (load-use hazard)
+# 7250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7250000 (load-use hazard)
+# 7270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7270000 (load-use hazard)
+# 7290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7290000 (load-use hazard)
+# 7310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7310000 (load-use hazard)
+# 7330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7330000 (load-use hazard)
+# 7350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7350000 (load-use hazard)
+# 7370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7370000 (load-use hazard)
+# 7390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7390000 (load-use hazard)
+# 7410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7410000 (load-use hazard)
+# 7430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7430000 (load-use hazard)
+# 7450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7450000 (load-use hazard)
+# 7470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7470000 (load-use hazard)
+# 7490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7490000 (load-use hazard)
+# 7510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7510000 (load-use hazard)
+# 7530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7530000 (load-use hazard)
+# 7550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7550000 (load-use hazard)
+# 7570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7570000 (load-use hazard)
+# 7590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7590000 (load-use hazard)
+# 7610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7610000 (load-use hazard)
+# 7630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7630000 (load-use hazard)
+# 7650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7650000 (load-use hazard)
+# 7670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7670000 (load-use hazard)
+# 7690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7690000 (load-use hazard)
+# 7710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7710000 (load-use hazard)
+# 7730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7730000 (load-use hazard)
+# 7750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7750000 (load-use hazard)
+# 7770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7770000 (load-use hazard)
+# 7790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7790000 (load-use hazard)
+# 7810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7810000 (load-use hazard)
+# 7830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7830000 (load-use hazard)
+# 7850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7850000 (load-use hazard)
+# 7870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7870000 (load-use hazard)
+# 7890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7890000 (load-use hazard)
+# 7910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7910000 (load-use hazard)
+# 7930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7930000 (load-use hazard)
+# 7950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7950000 (load-use hazard)
+# 7970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7970000 (load-use hazard)
+# 7990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=7990000 (load-use hazard)
+# 8010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8010000 (load-use hazard)
+# 8030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8030000 (load-use hazard)
+# 8050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8050000 (load-use hazard)
+# 8070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8070000 (load-use hazard)
+# 8090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8090000 (load-use hazard)
+# 8110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8110000 (load-use hazard)
+# 8130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8130000 (load-use hazard)
+# 8150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8150000 (load-use hazard)
+# 8170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8170000 (load-use hazard)
+# 8190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8190000 (load-use hazard)
+# 8210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8210000 (load-use hazard)
+# 8230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8230000 (load-use hazard)
+# 8250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8250000 (load-use hazard)
+# 8270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8270000 (load-use hazard)
+# 8290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8290000 (load-use hazard)
+# 8310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8310000 (load-use hazard)
+# 8330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8330000 (load-use hazard)
+# 8350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8350000 (load-use hazard)
+# 8370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8370000 (load-use hazard)
+# 8390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8390000 (load-use hazard)
+# 8410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8410000 (load-use hazard)
+# 8430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8430000 (load-use hazard)
+# 8450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8450000 (load-use hazard)
+# 8470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8470000 (load-use hazard)
+# 8490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8490000 (load-use hazard)
+# 8510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8510000 (load-use hazard)
+# 8530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8530000 (load-use hazard)
+# 8550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8550000 (load-use hazard)
+# 8570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8570000 (load-use hazard)
+# 8590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8590000 (load-use hazard)
+# 8610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8610000 (load-use hazard)
+# 8630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8630000 (load-use hazard)
+# 8650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8650000 (load-use hazard)
+# 8670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8670000 (load-use hazard)
+# 8690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8690000 (load-use hazard)
+# 8710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8710000 (load-use hazard)
+# 8730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8730000 (load-use hazard)
+# 8750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8750000 (load-use hazard)
+# 8770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8770000 (load-use hazard)
+# 8790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8790000 (load-use hazard)
+# 8810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8810000 (load-use hazard)
+# 8830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8830000 (load-use hazard)
+# 8850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8850000 (load-use hazard)
+# 8870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8870000 (load-use hazard)
+# 8890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8890000 (load-use hazard)
+# 8910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8910000 (load-use hazard)
+# 8930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8930000 (load-use hazard)
+# 8950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8950000 (load-use hazard)
+# 8970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8970000 (load-use hazard)
+# 8990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=8990000 (load-use hazard)
+# 9010000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9010000 (load-use hazard)
+# 9030000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9030000 (load-use hazard)
+# 9050000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9050000 (load-use hazard)
+# 9070000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9070000 (load-use hazard)
+# 9090000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9090000 (load-use hazard)
+# 9110000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9110000 (load-use hazard)
+# 9130000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9130000 (load-use hazard)
+# 9150000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9150000 (load-use hazard)
+# 9170000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9170000 (load-use hazard)
+# 9190000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9190000 (load-use hazard)
+# 9210000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9210000 (load-use hazard)
+# 9230000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9230000 (load-use hazard)
+# 9250000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9250000 (load-use hazard)
+# 9270000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9270000 (load-use hazard)
+# 9290000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9290000 (load-use hazard)
+# 9310000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9310000 (load-use hazard)
+# 9330000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9330000 (load-use hazard)
+# 9350000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9350000 (load-use hazard)
+# 9370000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9370000 (load-use hazard)
+# 9390000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9390000 (load-use hazard)
+# 9410000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9410000 (load-use hazard)
+# 9430000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9430000 (load-use hazard)
+# 9450000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9450000 (load-use hazard)
+# 9470000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9470000 (load-use hazard)
+# 9490000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9490000 (load-use hazard)
+# 9510000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9510000 (load-use hazard)
+# 9530000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9530000 (load-use hazard)
+# 9550000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9550000 (load-use hazard)
+# 9570000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9570000 (load-use hazard)
+# 9590000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9590000 (load-use hazard)
+# 9610000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9610000 (load-use hazard)
+# 9630000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9630000 (load-use hazard)
+# 9650000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9650000 (load-use hazard)
+# 9670000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9670000 (load-use hazard)
+# 9690000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9690000 (load-use hazard)
+# 9710000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9710000 (load-use hazard)
+# 9730000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9730000 (load-use hazard)
+# 9750000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9750000 (load-use hazard)
+# 9770000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9770000 (load-use hazard)
+# 9790000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9790000 (load-use hazard)
+# 9810000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9810000 (load-use hazard)
+# 9830000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9830000 (load-use hazard)
+# 9850000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9850000 (load-use hazard)
+# 9870000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9870000 (load-use hazard)
+# 9890000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9890000 (load-use hazard)
+# 9910000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9910000 (load-use hazard)
+# 9930000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9930000 (load-use hazard)
+# 9950000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9950000 (load-use hazard)
+# 9970000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9970000 (load-use hazard)
+# 9990000  | 00000034 | 00e787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
+#   >>> STALL at t=9990000 (load-use hazard)
 # 
 # ============================================================
-# REGISTER FILE VERIFICATION
+# REGISTER VERIFICATION
 # ------------------------------------------------------------
-#   PASS | x1 (return addr)     | got = 0x0000000c
-#   PASS | x2 (stack ptr)       | got = 0x00000ff0
-#   PASS | x14 (cmp const)      | got = 0x00000002
-#   PASS | x15 (loop i)         | got = 0x00000003
+#   PASS | x2 (stack ptr)           | got = 0x00000fe0
 # 
 # ------------------------------------------------------------
-# DATA MEMORY VERIFICATION
-#   (addr 0xFF0 -> index [11:2] = 0x3FC = 1020)
-#   (addr 0xFF4 -> index [11:2] = 0x3FD = 1021)
+# DATA MEMORY VERIFICATION  (base addr 0x100, index = addr>>2)
 # ------------------------------------------------------------
-#   PASS | mem[0xFF0] = 100     | got = 0x00000064
-#   PASS | mem[0xFF4] = 200     | got = 0x000000c8
+#   FAIL | mem[64]  ADD   5+12      | got = 0x00000000 | expected = 0x00000011
+#   FAIL | mem[65]  SUB  12-5       | got = 0x00000000 | expected = 0x00000007
+#   FAIL | mem[66]  AND   5&12      | got = 0x00000000 | expected = 0x00000004
+#   FAIL | mem[67]  OR    5|12      | got = 0x00000000 | expected = 0x0000000d
+#   FAIL | mem[68]  XOR   5^12      | got = 0x00000000 | expected = 0x00000009
+#   FAIL | mem[69]  SLL   5<<2      | got = 0x00000000 | expected = 0x00000014
+#   FAIL | mem[70]  SRL  12>>1      | got = 0x00000000 | expected = 0x00000006
+#   FAIL | mem[71]  SRA  -8>>1      | got = 0x00000000 | expected = 0xfffffffc
+#   FAIL | mem[72]  SLT   5<12      | got = 0x00000000 | expected = 0x00000001
+#   FAIL | mem[73]  SLTU  5<12      | got = 0x00000000 | expected = 0x00000001
+#   FAIL | mem[74]  LUI             | got = 0x00000000 | expected = 0x12000000
+#   FAIL | mem[75]  LW/SW luse      | got = 0x00000000 | expected = 0x00000063
+#   FAIL | mem[76]  BEQ  taken      | got = 0x00000000 | expected = 0x00000001
+#   FAIL | mem[77]  BNE  taken      | got = 0x00000000 | expected = 0x00000001
+#   FAIL | mem[78]  BLT  taken      | got = 0x00000000 | expected = 0x00000001
+#   FAIL | mem[79]  BGE  taken      | got = 0x00000000 | expected = 0x00000001
+#   FAIL | mem[80]  BLTU taken      | got = 0x00000000 | expected = 0x00000001
+#   FAIL | mem[81]  JAL+JALR        | got = 0x00000000 | expected = 0x0000000a
+#   FAIL | mem[82]  Forwarding      | got = 0x00000000 | expected = 0x00000027
+#   FAIL | mem[83]  Loop x5         | got = 0x00000000 | expected = 0x00000005
 # 
 # ============================================================
-# RESULT: 6 PASS, 0 FAIL
+# RESULT: 1 PASS, 20 FAIL
 # ============================================================
 # 
-# ALL TESTS PASSED
-# ** Note: $stop    : D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v(196)
-#    Time: 1600 ns  Iteration: 0  Instance: /tb_CPU
-# Break in Module tb_CPU at D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v line 196
+# RD1_E=00000fe0 RD2_E=00000000 | ForwardA_out=00000fe0 ForwardB_out=00000000 | SrcA=00000fe0 SrcB=00000008
+# RS2_E= 8 ForwardB=00 WriteDataM=00000000
+# SOME TESTS FAILED - Kiem tra pipeline monitor phia tren
+# ** Note: $stop    : D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v(236)
+#    Time: 10 us  Iteration: 0  Instance: /tb_CPU
+# Break in Module tb_CPU at D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v line 236
+# End time: 18:56:00 on Apr 18,2026, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 2

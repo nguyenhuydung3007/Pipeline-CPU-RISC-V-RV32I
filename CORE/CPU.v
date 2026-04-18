@@ -188,7 +188,7 @@ module CPU (
 
         .ALU_ResultM    (ALU_ResultM_out),
 
-        //.FlushE         (FlushE),
+        .FlushE         (FlushE),
 
         // Output
         .RegWriteM      (RegWriteM),

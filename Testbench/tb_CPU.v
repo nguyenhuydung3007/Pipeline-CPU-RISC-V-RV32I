@@ -1,28 +1,41 @@
 `timescale 1ns/1ps
 
 // ============================================================
-// Testbench: tb_CPU_firmware
-// Firmware: firmware.hex
+// Testbench: tb_CPU
+// Firmware: firmware.hex (comprehensive CPU test)
 //
-// Chương trình được test:
-//   SP = 0x1000
-//   JAL ra, main          ; gọi hàm tại 0xC
-//   main:
-//     SP = SP - 16        ; cấp phát stack frame
-//     mem[SP+0]  = 100    ; lưu a = 100
-//     mem[SP+4]  = 200    ; lưu b = 200
-//     i = 0
-//     while (2 >= i):
-//         i++             ; vòng lặp 3 lần
-//     halt                ; JAL x0, 0
+// Cấu trúc firmware:
+//   PC=0x00: AUIPC x2, 1        ; SP = 0x1000
+//   PC=0x04: ADDI x2, x2, 0
+//   PC=0x08: JAL x1, 12         ; call main tại PC=0x14, x1=0x0C
+//   PC=0x0C: fn_add (ADD+ret)
+//   PC=0x14: main() — ADDI x2, x2, -32  ; SP = 0xFE0
+//   ...
+//   PC=0x178: JAL x0, 0          ; halt
 //
 // Expected final state:
-//   x1  = 0x0000000C  (return address từ JAL tại PC=0x8)
-//   x2  = 0x00000FF0  (stack pointer = 0x1000 - 16)
-//   x14 = 2           (hằng số so sánh trong vòng lặp)
-//   x15 = 3           (biến đếm i sau 3 lần lặp)
-//   Data_RAM[1020]    = 100  (SW tại địa chỉ 0xFF0)
-//   Data_RAM[1021]    = 200  (SW tại địa chỉ 0xFF4)
+//   x2 = 0x00000FE0  (SP = 0x1000 - 32)
+//
+//   mem[64]  = 17          ADD   : 5 + 12
+//   mem[65]  = 7           SUB   : 12 - 5
+//   mem[66]  = 4           AND   : 5 & 12
+//   mem[67]  = 13          OR    : 5 | 12
+//   mem[68]  = 9           XOR   : 5 ^ 12
+//   mem[69]  = 20          SLL   : 5 << 2
+//   mem[70]  = 6           SRL   : 12 >> 1
+//   mem[71]  = 0xFFFFFFFC  SRA   : -8 >> 1
+//   mem[72]  = 1           SLT   : 5 < 12
+//   mem[73]  = 1           SLTU  : 5 < 12 unsigned
+//   mem[74]  = 0x12000000  LUI
+//   mem[75]  = 99          LW/SW + load-use hazard
+//   mem[76]  = 1           BEQ   taken
+//   mem[77]  = 1           BNE   taken
+//   mem[78]  = 1           BLT   taken
+//   mem[79]  = 1           BGE   taken
+//   mem[80]  = 1           BLTU  taken
+//   mem[81]  = 10          JAL + JALR : fn_add(3,7)
+//   mem[82]  = 39          Forwarding chain EX->EX
+//   mem[83]  = 5           Loop (backward branch x5)
 // ============================================================
 
 module tb_CPU;
@@ -68,10 +81,10 @@ module tb_CPU;
         input [31:0]  expected;
         begin
             if (actual === expected) begin
-                $display("  PASS | %-20s | got = 0x%08h", name, actual);
+                $display("  PASS | %-24s | got = 0x%08h", name, actual);
                 pass_count = pass_count + 1;
             end else begin
-                $display("  FAIL | %-20s | got = 0x%08h | expected = 0x%08h", name, actual, expected);
+                $display("  FAIL | %-24s | got = 0x%08h | expected = 0x%08h", name, actual, expected);
                 fail_count = fail_count + 1;
             end
         end
@@ -86,7 +99,7 @@ module tb_CPU;
         $display("FIRMWARE CHECK");
         $display("  mem[0] = %h  (expected: 00001117 = AUIPC x2, 1)", dut.Fetch.instruction_memory.mem[0]);
         $display("  mem[1] = %h  (expected: 00010113 = ADDI x2, x2, 0)", dut.Fetch.instruction_memory.mem[1]);
-        $display("  mem[2] = %h  (expected: 004000ef = JAL x1, 4)", dut.Fetch.instruction_memory.mem[2]);
+        $display("  mem[2] = %h  (expected: 00c000ef = JAL x1, 12)", dut.Fetch.instruction_memory.mem[2]);
         $display("============================================================");
     end
 
@@ -135,7 +148,7 @@ module tb_CPU;
     always @(posedge clk) begin
         if (reset) begin
             if (dut.PCSrcE)
-                $display("  >>> BRANCH/JUMP taken at t=%0t | PCTarget = 0x%08h", $time, dut.PCTargetE);
+                $display("  >>> BRANCH/JUMP at t=%0t | PCTarget=0x%08h", $time, dut.PCTargetE);
             if (dut.StallF)
                 $display("  >>> STALL at t=%0t (load-use hazard)", $time);
         end
@@ -157,36 +170,63 @@ module tb_CPU;
     end
 
     // ========================
-    // VERIFICATION (sau khi chương trình hoàn thành)
-    // Ước tính: ~40 cycle x 20ns = 800ns sau reset
-    // Chờ t=1600ns để chắc chắn
+    // VERIFICATION
+    // ~95 instr x 2.5 cycle + loop overhead ≈ 260 cycle x 20ns = 5200ns
+    // Dùng #10000 để chắc chắn
     // ========================
     initial begin
         pass_count = 0;
         fail_count = 0;
 
-        // Chờ chương trình chạy xong (vào halt loop tại 0x34)
-        #1600;
+        #10000;
 
         $display("\n============================================================");
-        $display("REGISTER FILE VERIFICATION");
+        $display("REGISTER VERIFICATION");
         $display("------------------------------------------------------------");
-        check("x1 (return addr)",  dut.Decode.regfile.Register[1],  32'h0000_000C);
-        check("x2 (stack ptr)",    dut.Decode.regfile.Register[2],  32'h0000_0FF0);
-        check("x14 (cmp const)",   dut.Decode.regfile.Register[14], 32'h0000_0002);
-        check("x15 (loop i)",      dut.Decode.regfile.Register[15], 32'h0000_0003);
+        check("x2 (stack ptr)",      dut.Decode.regfile.Register[2],  32'h0000_0FE0);
 
         $display("\n------------------------------------------------------------");
-        $display("DATA MEMORY VERIFICATION");
-        $display("  (addr 0xFF0 -> index [11:2] = 0x3FC = 1020)");
-        $display("  (addr 0xFF4 -> index [11:2] = 0x3FD = 1021)");
+        $display("DATA MEMORY VERIFICATION  (base addr 0x100, index = addr>>2)");
         $display("------------------------------------------------------------");
-        check("mem[0xFF0] = 100",  dut.Memory.dmem.mem[1020], 32'd100);
-        check("mem[0xFF4] = 200",  dut.Memory.dmem.mem[1021], 32'd200);
+        check("mem[64]  ADD   5+12",  dut.Memory.dmem.mem[64],  32'd17);
+        check("mem[65]  SUB  12-5",   dut.Memory.dmem.mem[65],  32'd7);
+        check("mem[66]  AND   5&12",  dut.Memory.dmem.mem[66],  32'd4);
+        check("mem[67]  OR    5|12",  dut.Memory.dmem.mem[67],  32'd13);
+        check("mem[68]  XOR   5^12",  dut.Memory.dmem.mem[68],  32'd9);
+        check("mem[69]  SLL   5<<2",  dut.Memory.dmem.mem[69],  32'd20);
+        check("mem[70]  SRL  12>>1",  dut.Memory.dmem.mem[70],  32'd6);
+        check("mem[71]  SRA  -8>>1",  dut.Memory.dmem.mem[71],  32'hFFFF_FFFC);
+        check("mem[72]  SLT   5<12",  dut.Memory.dmem.mem[72],  32'd1);
+        check("mem[73]  SLTU  5<12",  dut.Memory.dmem.mem[73],  32'd1);
+        check("mem[74]  LUI",         dut.Memory.dmem.mem[74],  32'h1200_0000);
+        check("mem[75]  LW/SW luse",  dut.Memory.dmem.mem[75],  32'd99);
+        check("mem[76]  BEQ  taken",  dut.Memory.dmem.mem[76],  32'd1);
+        check("mem[77]  BNE  taken",  dut.Memory.dmem.mem[77],  32'd1);
+        check("mem[78]  BLT  taken",  dut.Memory.dmem.mem[78],  32'd1);
+        check("mem[79]  BGE  taken",  dut.Memory.dmem.mem[79],  32'd1);
+        check("mem[80]  BLTU taken",  dut.Memory.dmem.mem[80],  32'd1);
+        check("mem[81]  JAL+JALR",    dut.Memory.dmem.mem[81],  32'd10);
+        check("mem[82]  Forwarding",  dut.Memory.dmem.mem[82],  32'd39);
+        check("mem[83]  Loop x5",     dut.Memory.dmem.mem[83],  32'd5);
 
         $display("\n============================================================");
         $display("RESULT: %0d PASS, %0d FAIL", pass_count, fail_count);
         $display("============================================================\n");
+
+        $display("RD1_E=%h RD2_E=%h | ForwardA_out=%h ForwardB_out=%h | SrcA=%h SrcB=%h",
+    dut.Execute.RD1_E,
+    dut.Execute.RD2_E,
+    dut.Execute.ForwardA_out,
+    dut.Execute.ForwardB_out,
+    dut.Execute.SrcA,
+    dut.Execute.SrcB
+);
+
+$display("RS2_E=%d ForwardB=%b WriteDataM=%h",
+    dut.RS2_E,
+    dut.ForwardB_E,
+    dut.Memory.WriteDataM
+);
 
         if (fail_count == 0)
             $display("ALL TESTS PASSED");
@@ -202,14 +242,8 @@ module tb_CPU;
     initial begin
         #4000000;
         $display("TIMEOUT - Simulation exceeded limit");
+        
         $stop;
     end
 
 endmodule
-
-
-/*
-    Bug
-    - Bug 1:
-        + Instr_Memory hoạt động theo sync
-*/

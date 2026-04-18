@@ -154,7 +154,7 @@ module Fetch_Cycle (
 		
 		
 		// =============== STALL - HAZARD ===============
-		else if (!StallD) begin
+		else if (!StallF) begin
 			InstrF_reg		<= InstrF;
 			//PCF_prev		<= PCF;
 			PCF_reg			<= PCF;

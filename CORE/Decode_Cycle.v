@@ -222,31 +222,31 @@ module Decode_Cycle (
 		end
 
 		// Thêm tín hiệu StallD
-		else if (StallD) begin
-			RegWriteD_r		<= 0;
-			MemReadD_r		<= 0;
-			MemWriteD_r		<= 0;
-			ResultSrcD_r	<= 2'b00;
-			AluSrcAD_r		<= 0;
-			AluSrcBD_r		<= 0;
-			BranchD_r		<= 0;
-			JumpD_r			<= 0;
-			BrUnD_r			<= 0;
-			ALUControlD_r	<= 4'b0000;
+		// else if (StallD) begin
+		// 	RegWriteD_r		<= 0;
+		// 	MemReadD_r		<= 0;
+		// 	MemWriteD_r		<= 0;
+		// 	ResultSrcD_r	<= 2'b00;
+		// 	AluSrcAD_r		<= 0;
+		// 	AluSrcBD_r		<= 0;
+		// 	BranchD_r		<= 0;
+		// 	JumpD_r			<= 0;
+		// 	BrUnD_r			<= 0;
+		// 	ALUControlD_r	<= 4'b0000;
 			
-			funct3D_r		<= 3'b000;
+		// 	funct3D_r		<= 3'b000;
 			
-			RD1_D_r			<= 32'h0000_0000;
-			RD2_D_r			<= 32'h0000_0000;
-			Imm_Ext_D_r		<= 32'h0000_0000;
+		// 	RD1_D_r			<= 32'h0000_0000;
+		// 	RD2_D_r			<= 32'h0000_0000;
+		// 	Imm_Ext_D_r		<= 32'h0000_0000;
 			
-			RS1_D_r			<= 5'b00000;
-			RS2_D_r			<= 5'b00000;
-			RD_D_r			<= 5'b00000;
+		// 	RS1_D_r			<= 5'b00000;
+		// 	RS2_D_r			<= 5'b00000;
+		// 	RD_D_r			<= 5'b00000;
 			
-			PCD_r			<= 32'h0000_0000;
-			PCPlus4D_r		<= 32'h0000_0000;
-		end
+		// 	PCD_r			<= 32'h0000_0000;
+		// 	PCPlus4D_r		<= 32'h0000_0000;
+		// end
 		
 		else if (!StallD) begin
 			RegWriteD_r		<= RegWriteD;

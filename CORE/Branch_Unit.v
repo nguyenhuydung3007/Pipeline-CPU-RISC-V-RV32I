@@ -33,7 +33,7 @@ module Branch_Unit(
 	
 		case (funct3) 
 		
-			3'b000:	PCSrc	= Branch & eq;			// BEQ
+			3'b000:	PCSrc = Branch & eq;			// BEQ
 			
 			3'b001:	PCSrc = Branch & ~eq;			// BNE
 			
