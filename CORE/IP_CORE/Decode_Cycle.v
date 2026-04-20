@@ -26,6 +26,7 @@ module Decode_Cycle (
 	// Hazard
 	input FlushD,
 	input StallD,
+	input HoldE,
 	
 	// -----------------------------
 	// Output đi sang Exceucte
@@ -219,6 +220,10 @@ module Decode_Cycle (
 			
 			PCD_r			<= 32'h0000_0000;
 			PCPlus4D_r		<= 32'h0000_0000;
+		end
+
+		// BRAM stall: giữ nguyên toàn bộ ID/EX để I1 re-execute cycle sau
+		else if (HoldE) begin
 		end
 
 		// Thêm tín hiệu StallD

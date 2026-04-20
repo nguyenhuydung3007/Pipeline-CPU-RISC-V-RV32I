@@ -54,8 +54,8 @@ module Execute_Cycle (
 	// Từ MEM
 	input [31:0] ALU_ResultM,		// Kết quả ALU tính toán ở 1 cycle trước (lệnh instruction trước đó)
 	
-	// Flush
-	//input FlushE,
+	// BRAM Stall
+	input StallE,
 	
 	// -------------------------------
 	// Nhóm Output sang Memory stage
@@ -193,21 +193,10 @@ module Execute_Cycle (
 			PCPlus4E_r		<= 0;
 		end
 		
-		/*
-			FIx Flush trong EX
-			- Flush không cần thiết trong EX
-		*/
-		// else if (FlushE) begin
-		// 	RegWriteE_r		<= 0;
-		// 	MemReadE_r		<= 0;
-		// 	MemWriteE_r		<= 0;
-		// 	ResultSrcE_r	<= 0;
-		// 	RD_E_r			<= 0;
-		// 	ALU_ResultE_r	<= 0;
-		// 	WriteDataE_r	<= 0;
-		// 	PCPlus4E_r		<= 0;
-		// end
-		
+		else if (StallE) begin
+			// Hold EX/MEM registers - giữ nguyên để LW ở MEM thêm 1 cycle
+		end
+
 		else begin
 			RegWriteE_r		<= RegWriteE;
 			MemReadE_r		<= MemReadE;

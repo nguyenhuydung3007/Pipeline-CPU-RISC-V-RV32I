@@ -21,7 +21,6 @@ vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_R
 vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Mux_3_by_1.v}
 vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v}
 vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v}
-vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v}
 vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v}
 vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v}
 vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v}

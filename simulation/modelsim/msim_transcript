@@ -12,249 +12,239 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:57 on Apr 20,2026
+# Start time: 04:36:42 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 10:48:57 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:42 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:57 on Apr 20,2026
+# Start time: 04:36:42 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v 
 # -- Compiling module Fetch_Cycle
 # 
 # Top level modules:
 # 	Fetch_Cycle
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:01
+# End time: 04:36:43 on Apr 21,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:43 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v 
 # -- Compiling module PC_MUX
 # 
 # Top level modules:
 # 	PC_MUX
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:43 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:43 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v 
 # -- Compiling module Program_Counter
 # 
 # Top level modules:
 # 	Program_Counter
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:43 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:43 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v 
 # -- Compiling module PC_Adder
 # 
 # Top level modules:
 # 	PC_Adder
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:43 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:43 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v 
 # -- Compiling module Decode_Cycle
 # 
 # Top level modules:
 # 	Decode_Cycle
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:43 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:43 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:43 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:43 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v 
 # -- Compiling module Main_Decoder
 # 
 # Top level modules:
 # 	Main_Decoder
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:43 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:43 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v 
 # -- Compiling module Control
 # 
 # Top level modules:
 # 	Control
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:44 on Apr 21,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:58 on Apr 20,2026
+# Start time: 04:36:44 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v 
 # -- Compiling module ALU_Decoder
 # 
 # Top level modules:
 # 	ALU_Decoder
-# End time: 10:48:58 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:44 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Register_File.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:59 on Apr 20,2026
+# Start time: 04:36:44 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Register_File.v 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 10:48:59 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:44 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ImmGen.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:59 on Apr 20,2026
+# Start time: 04:36:44 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ImmGen.v 
 # -- Compiling module ImmGen
 # 
 # Top level modules:
 # 	ImmGen
-# End time: 10:48:59 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:44 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:59 on Apr 20,2026
+# Start time: 04:36:44 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v 
 # -- Compiling module Execute_Cycle
 # 
 # Top level modules:
 # 	Execute_Cycle
-# End time: 10:48:59 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:44 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Mux_3_by_1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:59 on Apr 20,2026
+# Start time: 04:36:44 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Mux_3_by_1.v 
 # -- Compiling module Mux_3_by_1
 # 
 # Top level modules:
 # 	Mux_3_by_1
-# End time: 10:48:59 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:44 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:59 on Apr 20,2026
+# Start time: 04:36:44 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 10:48:59 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:59 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v 
 # -- Compiling module Branch_Unit
 # 
 # Top level modules:
 # 	Branch_Unit
-# End time: 10:48:59 on Apr 20,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:48:59 on Apr 20,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v 
-# -- Compiling module Data_RAM
-# 
-# Top level modules:
-# 	Data_RAM
-# End time: 10:48:59 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:00 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v 
 # -- Compiling module Memory_Cycle
 # 
 # Top level modules:
 # 	Memory_Cycle
-# End time: 10:49:00 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:00 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v 
 # -- Compiling module Writeback_Cycle
 # 
 # Top level modules:
 # 	Writeback_Cycle
-# End time: 10:49:00 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:00 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v 
 # -- Compiling module Forwarding_Unit
 # 
 # Top level modules:
 # 	Forwarding_Unit
-# End time: 10:49:00 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:00 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v 
 # -- Compiling module Stall_Unit
 # 
 # Top level modules:
 # 	Stall_Unit
-# End time: 10:49:00 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:00 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v 
 # -- Compiling module Hazard_Unit
 # 
 # Top level modules:
 # 	Hazard_Unit
-# End time: 10:49:00 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/CORE {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:00 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v 
 # -- Compiling module Instr_Memory
 # 
 # Top level modules:
 # 	Instr_Memory
-# End time: 10:49:00 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/4\ -\ Pipeline_RISCV/Testbench {D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:00 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench" D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v 
 # -- Compiling module tb_CPU
 # 
 # Top level modules:
 # 	tb_CPU
-# End time: 10:49:00 on Apr 20,2026, Elapsed time: 0:00:00
+# End time: 04:36:45 on Apr 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_CPU
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_CPU 
-# Start time: 10:49:01 on Apr 20,2026
+# Start time: 04:36:45 on Apr 21,2026
 # Loading work.tb_CPU
 # Loading work.CPU
 # Loading work.Fetch_Cycle
@@ -274,7 +264,6 @@
 # Loading work.ALU
 # Loading work.Branch_Unit
 # Loading work.Memory_Cycle
-# Loading work.Data_RAM
 # Loading work.Writeback_Cycle
 # Loading work.Hazard_Unit
 # Loading work.Forwarding_Unit
@@ -316,284 +305,380 @@
 #  210000  | 0000001c | 00500793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  10   00  | 00000fe0
 #  230000  | 00000020 | 00f12623 |  1   | x2  | 00000fe0 |   0    0  |   0    0  |  00   00  | 00000ffc
 #   >>> WB: x2  <= 0x00000fe0
+#   >>> SW: tb_mem[1023] <= 0x0000000c  (addr=0x00000ffc)
 #  250000  | 00000024 | 00c00793 |  0   | x28 | 00000ffc |   0    0  |   0    0  |  00   10  | 00000005
 #  270000  | 00000028 | 00f12423 |  1   | x15 | 00000005 |   0    0  |   0    0  |  00   00  | 00000fec
 #   >>> WB: x15 <= 0x00000005
+#   >>> SW: tb_mem[1019] <= 0x00000005  (addr=0x00000fec)
 #  290000  | 0000002c | 00c12783 |  0   | x12 | 00000fec |   0    0  |   0    0  |  00   10  | 0000000c
 #  310000  | 00000030 | 00812703 |  1   | x15 | 0000000c |   0    0  |   0    0  |  00   00  | 00000fe8
 #   >>> WB: x15 <= 0x0000000c
+#   >>> SW: tb_mem[1018] <= 0x0000000c  (addr=0x00000fe8)
 #  330000  | 00000034 | 00e787b3 |  0   | x8  | 00000fe8 |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=330000 (load-use hazard)
-#  350000  | 00000034 | 00e787b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=330000 (LW in MEM, waiting data)
+#  350000  | 00000034 | 00e787b3 |  0   | x8  | 00000fe8 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=350000
+#  370000  | 00000034 | 00e787b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=370000 (LW in MEM, waiting data)
+#  390000  | 00000034 | 00e787b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-#  370000  | 00000038 | 10f02023 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#  410000  | 00000038 | 10f02023 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-#  390000  | 0000003c | 00812783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000011
-#  410000  | 00000040 | 00c12703 |  1   | x15 | 00000011 |   0    0  |   0    0  |  00   00  | 00000100
+#  430000  | 0000003c | 00812783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000011
+#  450000  | 00000040 | 00c12703 |  1   | x15 | 00000011 |   0    0  |   0    0  |  00   00  | 00000100
 #   >>> WB: x15 <= 0x00000011
-#  430000  | 00000044 | 40e787b3 |  0   | x0  | 00000100 |   1    1  |   0    1  |  00   00  | 00000fe8
-#   >>> STALL at t=430000 (load-use hazard)
-#  450000  | 00000044 | 40e787b3 |  1   | x15 | 0000000c |   0    0  |   0    0  |  01   10  | 00000fec
+#   >>> SW: tb_mem[64] <= 0x00000011  (addr=0x00000100)
+#  470000  | 00000044 | 40e787b3 |  0   | x0  | 00000100 |   1    1  |   0    1  |  00   00  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=470000 (LW in MEM, waiting data)
+#  490000  | 00000044 | 40e787b3 |  0   | x0  | 00000100 |   1    1  |   0    1  |  00   00  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> LW-USE STALL at t=490000
+#  510000  | 00000044 | 40e787b3 |  0   | x15 | 0000000c |   1    1  |   0    0  |  00   10  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=510000 (LW in MEM, waiting data)
+#  530000  | 00000044 | 40e787b3 |  1   | x15 | 0000000c |   0    0  |   0    0  |  01   10  | 00000fec
 #   >>> WB: x15 <= 0x0000000c
-#  470000  | 00000048 | 10f02223 |  1   | x14 | 00000005 |   0    0  |   0    0  |  00   01  | 00000ff8
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#  550000  | 00000048 | 10f02223 |  1   | x14 | 00000005 |   0    0  |   0    0  |  00   01  | 00000ff8
 #   >>> WB: x14 <= 0x00000005
-#  490000  | 0000004c | 00c12783 |  0   | x15 | 00000ff8 |   0    0  |   0    0  |  00   10  | 00000007
-#  510000  | 00000050 | 00812703 |  1   | x15 | 00000007 |   0    0  |   0    0  |  00   00  | 00000104
+#  570000  | 0000004c | 00c12783 |  0   | x15 | 00000ff8 |   0    0  |   0    0  |  00   10  | 00000007
+#  590000  | 00000050 | 00812703 |  1   | x15 | 00000007 |   0    0  |   0    0  |  00   00  | 00000104
 #   >>> WB: x15 <= 0x00000007
-#  530000  | 00000054 | 00e7f7b3 |  0   | x4  | 00000104 |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=530000 (load-use hazard)
-#  550000  | 00000054 | 00e7f7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[65] <= 0x00000007  (addr=0x00000104)
+#  610000  | 00000054 | 00e7f7b3 |  0   | x4  | 00000104 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=610000 (LW in MEM, waiting data)
+#  630000  | 00000054 | 00e7f7b3 |  0   | x4  | 00000104 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=630000
+#  650000  | 00000054 | 00e7f7b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=650000 (LW in MEM, waiting data)
+#  670000  | 00000054 | 00e7f7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-#  570000  | 00000058 | 10f02423 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#  690000  | 00000058 | 10f02423 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-#  590000  | 0000005c | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000004
-#  610000  | 00000060 | 00812703 |  1   | x15 | 00000004 |   0    0  |   0    0  |  00   00  | 00000108
+#  710000  | 0000005c | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000004
+#  730000  | 00000060 | 00812703 |  1   | x15 | 00000004 |   0    0  |   0    0  |  00   00  | 00000108
 #   >>> WB: x15 <= 0x00000004
-#  630000  | 00000064 | 00e7e7b3 |  0   | x8  | 00000108 |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=630000 (load-use hazard)
-#  650000  | 00000064 | 00e7e7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[66] <= 0x00000004  (addr=0x00000108)
+#  750000  | 00000064 | 00e7e7b3 |  0   | x8  | 00000108 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=750000 (LW in MEM, waiting data)
+#  770000  | 00000064 | 00e7e7b3 |  0   | x8  | 00000108 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=770000
+#  790000  | 00000064 | 00e7e7b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=790000 (LW in MEM, waiting data)
+#  810000  | 00000064 | 00e7e7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-#  670000  | 00000068 | 10f02623 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#  830000  | 00000068 | 10f02623 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-#  690000  | 0000006c | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 0000000d
-#  710000  | 00000070 | 00812703 |  1   | x15 | 0000000d |   0    0  |   0    0  |  00   00  | 0000010c
+#  850000  | 0000006c | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 0000000d
+#  870000  | 00000070 | 00812703 |  1   | x15 | 0000000d |   0    0  |   0    0  |  00   00  | 0000010c
 #   >>> WB: x15 <= 0x0000000d
-#  730000  | 00000074 | 00e7c7b3 |  0   | x12 | 0000010c |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=730000 (load-use hazard)
-#  750000  | 00000074 | 00e7c7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[67] <= 0x0000000d  (addr=0x0000010c)
+#  890000  | 00000074 | 00e7c7b3 |  0   | x12 | 0000010c |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=890000 (LW in MEM, waiting data)
+#  910000  | 00000074 | 00e7c7b3 |  0   | x12 | 0000010c |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=910000
+#  930000  | 00000074 | 00e7c7b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=930000 (LW in MEM, waiting data)
+#  950000  | 00000074 | 00e7c7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-#  770000  | 00000078 | 10f02823 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#  970000  | 00000078 | 10f02823 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-#  790000  | 0000007c | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000009
-#  810000  | 00000080 | 00279793 |  1   | x15 | 00000009 |   1    1  |   0    1  |  00   00  | 00000110
+#  990000  | 0000007c | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000009
+# 1010000  | 00000080 | 00279793 |  1   | x15 | 00000009 |   1    1  |   0    1  |  00   00  | 00000110
 #   >>> WB: x15 <= 0x00000009
-#   >>> STALL at t=810000 (load-use hazard)
-#  830000  | 00000080 | 00279793 |  0   | x16 | 00000110 |   0    0  |   0    0  |  10   00  | 00000fec
-#  850000  | 00000084 | 10f02a23 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   00  | 00001fcc
+#   >>> SW: tb_mem[68] <= 0x00000009  (addr=0x00000110)
+#   >>> LW-USE STALL at t=1010000
+# 1030000  | 00000080 | 00279793 |  0   | x16 | 00000110 |   1    1  |   0    0  |  10   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=1030000 (LW in MEM, waiting data)
+# 1050000  | 00000080 | 00279793 |  0   | x16 | 00000110 |   0    0  |   0    0  |  10   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+# 1070000  | 00000084 | 10f02a23 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   00  | 00001fcc
 #   >>> WB: x15 <= 0x00000005
-#  870000  | 00000088 | 00812783 |  0   | x15 | 00001fcc |   0    0  |   0    0  |  00   10  | 00000014
-#  890000  | 0000008c | 0017d793 |  1   | x15 | 00000014 |   1    1  |   0    1  |  00   00  | 00000114
+# 1090000  | 00000088 | 00812783 |  0   | x15 | 00001fcc |   0    0  |   0    0  |  00   10  | 00000014
+# 1110000  | 0000008c | 0017d793 |  1   | x15 | 00000014 |   1    1  |   0    1  |  00   00  | 00000114
 #   >>> WB: x15 <= 0x00000014
-#   >>> STALL at t=890000 (load-use hazard)
-#  910000  | 0000008c | 0017d793 |  0   | x20 | 00000114 |   0    0  |   0    0  |  10   00  | 00000fe8
-#  930000  | 00000090 | 10f02c23 |  1   | x15 | 0000000c |   0    0  |   0    0  |  01   00  | 00000ff4
+#   >>> SW: tb_mem[69] <= 0x00000014  (addr=0x00000114)
+#   >>> LW-USE STALL at t=1110000
+# 1130000  | 0000008c | 0017d793 |  0   | x20 | 00000114 |   1    1  |   0    0  |  10   00  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=1130000 (LW in MEM, waiting data)
+# 1150000  | 0000008c | 0017d793 |  0   | x20 | 00000114 |   0    0  |   0    0  |  10   00  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+# 1170000  | 00000090 | 10f02c23 |  1   | x15 | 0000000c |   0    0  |   0    0  |  01   00  | 00000ff4
 #   >>> WB: x15 <= 0x0000000c
-#  950000  | 00000094 | ffc00793 |  0   | x15 | 00000ff4 |   0    0  |   0    0  |  00   10  | 00000006
-#  970000  | 00000098 | 10f02e23 |  1   | x15 | 00000006 |   0    0  |   0    0  |  00   00  | 00000118
+# 1190000  | 00000094 | ffc00793 |  0   | x15 | 00000ff4 |   0    0  |   0    0  |  00   10  | 00000006
+# 1210000  | 00000098 | 10f02e23 |  1   | x15 | 00000006 |   0    0  |   0    0  |  00   00  | 00000118
 #   >>> WB: x15 <= 0x00000006
-#  990000  | 0000009c | 00c12783 |  0   | x24 | 00000118 |   0    0  |   0    0  |  00   10  | fffffffc
-# 1010000  | 000000a0 | 00812703 |  1   | x15 | fffffffc |   0    0  |   0    0  |  00   00  | 0000011c
+#   >>> SW: tb_mem[70] <= 0x00000006  (addr=0x00000118)
+# 1230000  | 0000009c | 00c12783 |  0   | x24 | 00000118 |   0    0  |   0    0  |  00   10  | fffffffc
+# 1250000  | 000000a0 | 00812703 |  1   | x15 | fffffffc |   0    0  |   0    0  |  00   00  | 0000011c
 #   >>> WB: x15 <= 0xfffffffc
-# 1030000  | 000000a4 | 00e7a7b3 |  0   | x28 | 0000011c |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=1030000 (load-use hazard)
-# 1050000  | 000000a4 | 00e7a7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[71] <= 0xfffffffc  (addr=0x0000011c)
+# 1270000  | 000000a4 | 00e7a7b3 |  0   | x28 | 0000011c |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=1270000 (LW in MEM, waiting data)
+# 1290000  | 000000a4 | 00e7a7b3 |  0   | x28 | 0000011c |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=1290000
+# 1310000  | 000000a4 | 00e7a7b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=1310000 (LW in MEM, waiting data)
+# 1330000  | 000000a4 | 00e7a7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-# 1070000  | 000000a8 | 12f02023 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+# 1350000  | 000000a8 | 12f02023 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-# 1090000  | 000000ac | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
-# 1110000  | 000000b0 | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000120
+# 1370000  | 000000ac | 00c12783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
+# 1390000  | 000000b0 | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000120
 #   >>> WB: x15 <= 0x00000001
-# 1130000  | 000000b4 | 00e7b7b3 |  0   | x0  | 00000120 |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=1130000 (load-use hazard)
-# 1150000  | 000000b4 | 00e7b7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[72] <= 0x00000001  (addr=0x00000120)
+# 1410000  | 000000b4 | 00e7b7b3 |  0   | x0  | 00000120 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=1410000 (LW in MEM, waiting data)
+# 1430000  | 000000b4 | 00e7b7b3 |  0   | x0  | 00000120 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=1430000
+# 1450000  | 000000b4 | 00e7b7b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=1450000 (LW in MEM, waiting data)
+# 1470000  | 000000b4 | 00e7b7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-# 1170000  | 000000b8 | 12f02223 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+# 1490000  | 000000b8 | 12f02223 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-# 1190000  | 000000bc | 120007b7 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
-# 1210000  | 000000c0 | 12f02423 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000124
+# 1510000  | 000000bc | 120007b7 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
+# 1530000  | 000000c0 | 12f02423 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000124
 #   >>> WB: x15 <= 0x00000001
-# 1230000  | 000000c4 | 06300793 |  0   | x4  | 00000124 |   0    0  |   0    0  |  00   10  | 12000000
-# 1250000  | 000000c8 | 00f12223 |  1   | x15 | 12000000 |   0    0  |   0    0  |  00   00  | 00000128
+#   >>> SW: tb_mem[73] <= 0x00000001  (addr=0x00000124)
+# 1550000  | 000000c4 | 06300793 |  0   | x4  | 00000124 |   0    0  |   0    0  |  00   10  | 12000000
+# 1570000  | 000000c8 | 00f12223 |  1   | x15 | 12000000 |   0    0  |   0    0  |  00   00  | 00000128
 #   >>> WB: x15 <= 0x12000000
-# 1270000  | 000000cc | 00412783 |  0   | x8  | 00000128 |   0    0  |   0    0  |  00   10  | 00000063
-# 1290000  | 000000d0 | 12f02623 |  1   | x15 | 00000063 |   1    1  |   0    1  |  00   00  | 00000fe4
+#   >>> SW: tb_mem[74] <= 0x12000000  (addr=0x00000128)
+# 1590000  | 000000cc | 00412783 |  0   | x8  | 00000128 |   0    0  |   0    0  |  00   10  | 00000063
+# 1610000  | 000000d0 | 12f02623 |  1   | x15 | 00000063 |   1    1  |   0    1  |  00   00  | 00000fe4
 #   >>> WB: x15 <= 0x00000063
-#   >>> STALL at t=1290000 (load-use hazard)
-# 1310000  | 000000d0 | 12f02623 |  0   | x4  | 00000fe4 |   0    0  |   0    0  |  00   10  | 00000fe4
-# 1330000  | 000000d4 | 00c12783 |  1   | x15 | 00000063 |   0    0  |   0    0  |  00   01  | 00000fe4
+#   >>> SW: tb_mem[1017] <= 0x00000063  (addr=0x00000fe4)
+#   >>> LW-USE STALL at t=1610000
+# 1630000  | 000000d0 | 12f02623 |  0   | x4  | 00000fe4 |   1    1  |   0    0  |  00   10  | 00000fe4
+#   >>> LW: tb_mem[1017] read req  (addr=0x00000fe4)
+#   >>> BRAM STALL   at t=1630000 (LW in MEM, waiting data)
+# 1650000  | 000000d0 | 12f02623 |  0   | x4  | 00000fe4 |   0    0  |   0    0  |  00   10  | 00000fe4
+#   >>> LW: tb_mem[1017] read req  (addr=0x00000fe4)
+# 1670000  | 000000d4 | 00c12783 |  1   | x15 | 00000063 |   0    0  |   0    0  |  00   01  | 00000fe4
 #   >>> WB: x15 <= 0x00000063
-# 1350000  | 000000d8 | ffb78793 |  0   | x12 | 00000fe4 |   1    1  |   0    1  |  00   00  | 0000012c
-#   >>> STALL at t=1350000 (load-use hazard)
-# 1370000  | 000000d8 | ffb78793 |  0   | x12 | 0000012c |   0    0  |   0    0  |  10   00  | 00000fec
-# 1390000  | 000000dc | 0017b793 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   00  | 00000fec
+# 1690000  | 000000d8 | ffb78793 |  0   | x12 | 00000fe4 |   1    1  |   0    1  |  00   00  | 0000012c
+#   >>> SW: tb_mem[75] <= 0x00000063  (addr=0x0000012c)
+#   >>> LW-USE STALL at t=1690000
+# 1710000  | 000000d8 | ffb78793 |  0   | x12 | 0000012c |   1    1  |   0    0  |  10   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=1710000 (LW in MEM, waiting data)
+# 1730000  | 000000d8 | ffb78793 |  0   | x12 | 0000012c |   0    0  |   0    0  |  10   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+# 1750000  | 000000dc | 0017b793 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   00  | 00000fec
 #   >>> WB: x15 <= 0x00000005
-# 1410000  | 000000e0 | 12f02823 |  0   | x15 | 00000fec |   0    0  |   0    0  |  10   00  | 00000000
-# 1430000  | 000000e4 | 00c12783 |  1   | x15 | 00000000 |   0    0  |   0    0  |  00   10  | 00000001
+# 1770000  | 000000e0 | 12f02823 |  0   | x15 | 00000fec |   0    0  |   0    0  |  10   00  | 00000000
+# 1790000  | 000000e4 | 00c12783 |  1   | x15 | 00000000 |   0    0  |   0    0  |  00   10  | 00000001
 #   >>> WB: x15 <= 0x00000000
-# 1450000  | 000000e8 | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000130
+# 1810000  | 000000e8 | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000130
 #   >>> WB: x15 <= 0x00000001
-# 1470000  | 000000ec | 40e787b3 |  0   | x16 | 00000130 |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=1470000 (load-use hazard)
-# 1490000  | 000000ec | 40e787b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[76] <= 0x00000001  (addr=0x00000130)
+# 1830000  | 000000ec | 40e787b3 |  0   | x16 | 00000130 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=1830000 (LW in MEM, waiting data)
+# 1850000  | 000000ec | 40e787b3 |  0   | x16 | 00000130 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=1850000
+# 1870000  | 000000ec | 40e787b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=1870000 (LW in MEM, waiting data)
+# 1890000  | 000000ec | 40e787b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-# 1510000  | 000000f0 | 00f037b3 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+# 1910000  | 000000f0 | 00f037b3 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-# 1530000  | 000000f4 | 12f02a23 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | fffffff9
-# 1550000  | 000000f8 | 00c12783 |  1   | x15 | fffffff9 |   0    0  |   0    0  |  00   10  | 00000001
+# 1930000  | 000000f4 | 12f02a23 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | fffffff9
+# 1950000  | 000000f8 | 00c12783 |  1   | x15 | fffffff9 |   0    0  |   0    0  |  00   10  | 00000001
 #   >>> WB: x15 <= 0xfffffff9
-# 1570000  | 000000fc | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000134
+# 1970000  | 000000fc | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000134
 #   >>> WB: x15 <= 0x00000001
-# 1590000  | 00000100 | 00e7a7b3 |  0   | x20 | 00000134 |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=1590000 (load-use hazard)
-# 1610000  | 00000100 | 00e7a7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[77] <= 0x00000001  (addr=0x00000134)
+# 1990000  | 00000100 | 00e7a7b3 |  0   | x20 | 00000134 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=1990000 (LW in MEM, waiting data)
+# 2010000  | 00000100 | 00e7a7b3 |  0   | x20 | 00000134 |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=2010000
+# 2030000  | 00000100 | 00e7a7b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=2030000 (LW in MEM, waiting data)
+# 2050000  | 00000100 | 00e7a7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-# 1630000  | 00000104 | 12f02c23 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+# 2070000  | 00000104 | 12f02c23 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-# 1650000  | 00000108 | 00812783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
-# 1670000  | 0000010c | 00c12703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000138
+# 2090000  | 00000108 | 00812783 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
+# 2110000  | 0000010c | 00c12703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000138
 #   >>> WB: x15 <= 0x00000001
-# 1690000  | 00000110 | 00e7a7b3 |  0   | x24 | 00000138 |   1    1  |   0    1  |  00   00  | 00000fe8
-#   >>> STALL at t=1690000 (load-use hazard)
-# 1710000  | 00000110 | 00e7a7b3 |  1   | x15 | 0000000c |   0    0  |   0    0  |  01   10  | 00000fec
+#   >>> SW: tb_mem[78] <= 0x00000001  (addr=0x00000138)
+# 2130000  | 00000110 | 00e7a7b3 |  0   | x24 | 00000138 |   1    1  |   0    1  |  00   00  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=2130000 (LW in MEM, waiting data)
+# 2150000  | 00000110 | 00e7a7b3 |  0   | x24 | 00000138 |   1    1  |   0    1  |  00   00  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> LW-USE STALL at t=2150000
+# 2170000  | 00000110 | 00e7a7b3 |  0   | x15 | 0000000c |   1    1  |   0    0  |  00   10  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=2170000 (LW in MEM, waiting data)
+# 2190000  | 00000110 | 00e7a7b3 |  1   | x15 | 0000000c |   0    0  |   0    0  |  01   10  | 00000fec
 #   >>> WB: x15 <= 0x0000000c
-# 1730000  | 00000114 | 0017b793 |  1   | x14 | 00000005 |   0    0  |   0    0  |  00   01  | 00000ff8
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+# 2210000  | 00000114 | 0017b793 |  1   | x14 | 00000005 |   0    0  |   0    0  |  00   01  | 00000ff8
 #   >>> WB: x14 <= 0x00000005
-# 1750000  | 00000118 | 12f02e23 |  0   | x15 | 00000ff8 |   0    0  |   0    0  |  10   00  | 00000000
-# 1770000  | 0000011c | 00c12783 |  1   | x15 | 00000000 |   0    0  |   0    0  |  00   10  | 00000001
+# 2230000  | 00000118 | 12f02e23 |  0   | x15 | 00000ff8 |   0    0  |   0    0  |  10   00  | 00000000
+# 2250000  | 0000011c | 00c12783 |  1   | x15 | 00000000 |   0    0  |   0    0  |  00   10  | 00000001
 #   >>> WB: x15 <= 0x00000000
-# 1790000  | 00000120 | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 0000013c
+# 2270000  | 00000120 | 00812703 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 0000013c
 #   >>> WB: x15 <= 0x00000001
-# 1810000  | 00000124 | 00e7b7b3 |  0   | x28 | 0000013c |   1    1  |   0    1  |  00   00  | 00000fec
-#   >>> STALL at t=1810000 (load-use hazard)
-# 1830000  | 00000124 | 00e7b7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
+#   >>> SW: tb_mem[79] <= 0x00000001  (addr=0x0000013c)
+# 2290000  | 00000124 | 00e7b7b3 |  0   | x28 | 0000013c |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=2290000 (LW in MEM, waiting data)
+# 2310000  | 00000124 | 00e7b7b3 |  0   | x28 | 0000013c |   1    1  |   0    1  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> LW-USE STALL at t=2310000
+# 2330000  | 00000124 | 00e7b7b3 |  0   | x15 | 00000005 |   1    1  |   0    0  |  00   10  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRAM STALL   at t=2330000 (LW in MEM, waiting data)
+# 2350000  | 00000124 | 00e7b7b3 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   10  | 00000fe8
 #   >>> WB: x15 <= 0x00000005
-# 1850000  | 00000128 | 14f02023 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+# 2370000  | 00000128 | 14f02023 |  1   | x14 | 0000000c |   0    0  |   0    0  |  00   01  | 00000fed
 #   >>> WB: x14 <= 0x0000000c
-# 1870000  | 0000012c | 00700593 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
-# 1890000  | 00000130 | 00300513 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000140
+# 2390000  | 0000012c | 00700593 |  0   | x15 | 00000fed |   0    0  |   0    0  |  00   10  | 00000001
+# 2410000  | 00000130 | 00300513 |  1   | x15 | 00000001 |   0    0  |   0    0  |  00   00  | 00000140
 #   >>> WB: x15 <= 0x00000001
-# 1910000  | 00000134 | ed9ff0ef |  0   | x0  | 00000140 |   0    0  |   0    0  |  00   00  | 00000007
-# 1930000  | 00000138 | 14a02223 |  1   | x11 | 00000007 |   0    0  |   1    0  |  00   00  | 00000003
+#   >>> SW: tb_mem[80] <= 0x00000001  (addr=0x00000140)
+# 2430000  | 00000134 | ed9ff0ef |  0   | x0  | 00000140 |   0    0  |   0    0  |  00   00  | 00000007
+# 2450000  | 00000138 | 14a02223 |  1   | x11 | 00000007 |   0    0  |   1    0  |  00   00  | 00000003
 #   >>> WB: x11 <= 0x00000007
-#   >>> BRANCH/JUMP at t=1930000 | PCTarget=0x0000000c
-# 1950000  | 00000000 | 00000000 |  1   | x10 | 00000003 |   0    0  |   0    0  |  00   00  | 0000000c
+#   >>> BRANCH/JUMP at t=2450000 | PCTarget=0x0000000c
+# 2470000  | 00000000 | 00000000 |  1   | x10 | 00000003 |   0    0  |   0    0  |  00   00  | 0000000c
 #   >>> WB: x10 <= 0x00000003
-# 1970000  | 0000000c | 00b50533 |  1   | x1  | 00000138 |   0    0  |   0    0  |  00   00  | 00000000
+# 2490000  | 0000000c | 00b50533 |  1   | x1  | 00000138 |   0    0  |   0    0  |  00   00  | 00000000
 #   >>> WB: x1  <= 0x00000138
-# 1990000  | 00000010 | 00008067 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2010000  | 00000014 | fe010113 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 0000000a
-#   >>> BRANCH/JUMP at t=2010000 | PCTarget=0x00000138
-# 2030000  | 00000000 | 00000000 |  1   | x10 | 0000000a |   0    0  |   0    0  |  00   00  | 00000138
+# 2510000  | 00000010 | 00008067 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 2530000  | 00000014 | fe010113 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 0000000a
+#   >>> BRANCH/JUMP at t=2530000 | PCTarget=0x00000138
+# 2550000  | 00000000 | 00000000 |  1   | x10 | 0000000a |   0    0  |   0    0  |  00   00  | 00000138
 #   >>> WB: x10 <= 0x0000000a
-# 2050000  | 00000138 | 14a02223 |  1   | x0  | 00000014 |   0    0  |   0    0  |  00   00  | 00000000
-# 2070000  | 0000013c | 00c12503 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2090000  | 00000140 | 00812583 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000144
-# 2110000  | 00000144 | ec9ff0ef |  0   | x4  | 00000144 |   0    0  |   0    0  |  00   00  | 00000fec
-# 2130000  | 00000148 | 00c12783 |  1   | x10 | 00000005 |   0    0  |   1    0  |  00   00  | 00000fe8
+# 2570000  | 00000138 | 14a02223 |  1   | x0  | 00000014 |   0    0  |   0    0  |  00   00  | 00000000
+# 2590000  | 0000013c | 00c12503 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 2610000  | 00000140 | 00812583 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000144
+#   >>> SW: tb_mem[81] <= 0x0000000a  (addr=0x00000144)
+# 2630000  | 00000144 | ec9ff0ef |  0   | x4  | 00000144 |   1    1  |   0    0  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+#   >>> BRAM STALL   at t=2630000 (LW in MEM, waiting data)
+# 2650000  | 00000144 | ec9ff0ef |  0   | x4  | 00000144 |   0    0  |   0    0  |  00   00  | 00000fec
+#   >>> LW: tb_mem[1019] read req  (addr=0x00000fec)
+# 2670000  | 00000148 | 00c12783 |  0   | x10 | 00000005 |   1    1  |   1    0  |  00   00  | 00000fe8
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+#   >>> BRANCH/JUMP at t=2670000 | PCTarget=0x0000000c
+#   >>> BRAM STALL   at t=2670000 (LW in MEM, waiting data)
+# 2690000  | 00000000 | 00000000 |  1   | x10 | 00000005 |   0    0  |   0    0  |  00   00  | 00000fe8
 #   >>> WB: x10 <= 0x00000005
-#   >>> BRANCH/JUMP at t=2130000 | PCTarget=0x0000000c
-# 2150000  | 00000000 | 00000000 |  1   | x11 | 0000000c |   0    0  |   0    0  |  00   00  | 0000000c
+#   >>> LW: tb_mem[1018] read req  (addr=0x00000fe8)
+# 2710000  | 0000014c | 00a787b3 |  1   | x11 | 0000000c |   0    0  |   0    0  |  00   00  | 00000000
 #   >>> WB: x11 <= 0x0000000c
-# 2170000  | 0000000c | 00b50533 |  1   | x1  | 00000148 |   0    0  |   0    0  |  00   00  | 00000000
-#   >>> WB: x1  <= 0x00000148
-# 2190000  | 00000010 | 00008067 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2210000  | 00000014 | fe010113 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000011
-#   >>> BRANCH/JUMP at t=2210000 | PCTarget=0x00000148
-# 2230000  | 00000000 | 00000000 |  1   | x10 | 00000011 |   0    0  |   0    0  |  00   00  | 00000148
-#   >>> WB: x10 <= 0x00000011
-# 2250000  | 00000148 | 00c12783 |  1   | x0  | 00000014 |   0    0  |   0    0  |  00   00  | 00000000
-# 2270000  | 0000014c | 00a787b3 |  0   | x0  | 00000000 |   1    1  |   0    1  |  00   00  | 00000000
-#   >>> STALL at t=2270000 (load-use hazard)
-# 2290000  | 0000014c | 00a787b3 |  0   | x0  | 00000000 |   0    0  |   0    0  |  10   00  | 00000fec
-# 2310000  | 00000150 | 00f50533 |  1   | x15 | 00000005 |   0    0  |   0    0  |  01   00  | 00000ffd
-#   >>> WB: x15 <= 0x00000005
-# 2330000  | 00000154 | 14a02423 |  0   | x15 | 00000ffd |   0    0  |   0    0  |  00   10  | 00000016
-# 2350000  | 00000158 | 00000793 |  1   | x15 | 00000016 |   0    0  |   0    0  |  00   10  | 00000027
-#   >>> WB: x15 <= 0x00000016
-# 2370000  | 0000015c | 00000693 |  1   | x10 | 00000027 |   0    0  |   0    0  |  00   00  | 00000148
-#   >>> WB: x10 <= 0x00000027
-# 2390000  | 00000160 | 00c0006f |  0   | x8  | 00000148 |   0    0  |   0    0  |  00   00  | 00000000
-# 2410000  | 00000164 | 00168693 |  1   | x15 | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+# 2730000  | 00000150 | 00f50533 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 2750000  | 00000154 | 14a02423 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   10  | 00000006
+# 2770000  | 00000158 | 00000793 |  1   | x15 | 00000006 |   0    0  |   0    0  |  00   10  | 0000000b
+#   >>> WB: x15 <= 0x00000006
+# 2790000  | 0000015c | 00000693 |  1   | x10 | 0000000b |   0    0  |   0    0  |  00   00  | 00000148
+#   >>> WB: x10 <= 0x0000000b
+#   >>> SW: tb_mem[82] <= 0x0000000b  (addr=0x00000148)
+# 2810000  | 00000160 | 00c0006f |  0   | x8  | 00000148 |   0    0  |   0    0  |  00   00  | 00000000
+# 2830000  | 00000164 | 00168693 |  1   | x15 | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
 #   >>> WB: x15 <= 0x00000000
-#   >>> BRANCH/JUMP at t=2410000 | PCTarget=0x0000016c
-# 2430000  | 00000000 | 00000000 |  1   | x13 | 00000000 |   0    0  |   0    0  |  00   00  | 0000016c
+#   >>> BRANCH/JUMP at t=2830000 | PCTarget=0x0000016c
+# 2850000  | 00000000 | 00000000 |  1   | x13 | 00000000 |   0    0  |   0    0  |  00   00  | 0000016c
 #   >>> WB: x13 <= 0x00000000
-# 2450000  | 0000016c | 00400713 |  1   | x0  | 00000164 |   0    0  |   0    0  |  00   00  | 00000000
-# 2470000  | 00000170 | fef75ae3 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2490000  | 00000174 | 14d02623 |  0   | x0  | 00000000 |   0    0  |   1    0  |  10   00  | 00000004
-#   >>> BRANCH/JUMP at t=2490000 | PCTarget=0x00000164
-# 2510000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
+# 2870000  | 0000016c | 00400713 |  1   | x0  | 00000164 |   0    0  |   0    0  |  00   00  | 00000000
+# 2890000  | 00000170 | fef75ae3 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 2910000  | 00000174 | 14d02623 |  0   | x0  | 00000000 |   0    0  |   1    0  |  10   00  | 00000004
+#   >>> BRANCH/JUMP at t=2910000 | PCTarget=0x00000164
+# 2930000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
 #   >>> WB: x14 <= 0x00000004
-# 2530000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
-# 2550000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2570000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000001
-# 2590000  | 00000170 | fef75ae3 |  1   | x13 | 00000001 |   0    0  |   0    0  |  00   00  | 00000001
+# 2950000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
+# 2970000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 2990000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000001
+# 3010000  | 00000170 | fef75ae3 |  1   | x13 | 00000001 |   0    0  |   0    0  |  00   00  | 00000001
 #   >>> WB: x13 <= 0x00000001
-# 2610000  | 00000174 | 14d02623 |  1   | x15 | 00000001 |   0    0  |   1    0  |  10   01  | 00000004
+# 3030000  | 00000174 | 14d02623 |  1   | x15 | 00000001 |   0    0  |   1    0  |  10   01  | 00000004
 #   >>> WB: x15 <= 0x00000001
-#   >>> BRANCH/JUMP at t=2610000 | PCTarget=0x00000164
-# 2630000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
+#   >>> BRANCH/JUMP at t=3030000 | PCTarget=0x00000164
+# 3050000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
 #   >>> WB: x14 <= 0x00000004
-# 2650000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
-# 2670000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2690000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000002
-# 2710000  | 00000170 | fef75ae3 |  1   | x13 | 00000002 |   0    0  |   0    0  |  00   00  | 00000002
+# 3070000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
+# 3090000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 3110000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000002
+# 3130000  | 00000170 | fef75ae3 |  1   | x13 | 00000002 |   0    0  |   0    0  |  00   00  | 00000002
 #   >>> WB: x13 <= 0x00000002
-# 2730000  | 00000174 | 14d02623 |  1   | x15 | 00000002 |   0    0  |   1    0  |  10   01  | 00000004
+# 3150000  | 00000174 | 14d02623 |  1   | x15 | 00000002 |   0    0  |   1    0  |  10   01  | 00000004
 #   >>> WB: x15 <= 0x00000002
-#   >>> BRANCH/JUMP at t=2730000 | PCTarget=0x00000164
-# 2750000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
+#   >>> BRANCH/JUMP at t=3150000 | PCTarget=0x00000164
+# 3170000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
 #   >>> WB: x14 <= 0x00000004
-# 2770000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
-# 2790000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2810000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000003
-# 2830000  | 00000170 | fef75ae3 |  1   | x13 | 00000003 |   0    0  |   0    0  |  00   00  | 00000003
+# 3190000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
+# 3210000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 3230000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000003
+# 3250000  | 00000170 | fef75ae3 |  1   | x13 | 00000003 |   0    0  |   0    0  |  00   00  | 00000003
 #   >>> WB: x13 <= 0x00000003
-# 2850000  | 00000174 | 14d02623 |  1   | x15 | 00000003 |   0    0  |   1    0  |  10   01  | 00000004
+# 3270000  | 00000174 | 14d02623 |  1   | x15 | 00000003 |   0    0  |   1    0  |  10   01  | 00000004
 #   >>> WB: x15 <= 0x00000003
-#   >>> BRANCH/JUMP at t=2850000 | PCTarget=0x00000164
-# 2870000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
+#   >>> BRANCH/JUMP at t=3270000 | PCTarget=0x00000164
+# 3290000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
 #   >>> WB: x14 <= 0x00000004
-# 2890000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
-# 2910000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 2930000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000004
-# 2950000  | 00000170 | fef75ae3 |  1   | x13 | 00000004 |   0    0  |   0    0  |  00   00  | 00000004
+# 3310000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
+# 3330000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 3350000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000004
+# 3370000  | 00000170 | fef75ae3 |  1   | x13 | 00000004 |   0    0  |   0    0  |  00   00  | 00000004
 #   >>> WB: x13 <= 0x00000004
-# 2970000  | 00000174 | 14d02623 |  1   | x15 | 00000004 |   0    0  |   1    0  |  10   01  | 00000004
+# 3390000  | 00000174 | 14d02623 |  1   | x15 | 00000004 |   0    0  |   1    0  |  10   01  | 00000004
 #   >>> WB: x15 <= 0x00000004
-#   >>> BRANCH/JUMP at t=2970000 | PCTarget=0x00000164
-# 2990000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
+#   >>> BRANCH/JUMP at t=3390000 | PCTarget=0x00000164
+# 3410000  | 00000000 | 00000000 |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
 #   >>> WB: x14 <= 0x00000004
-# 3010000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
-# 3030000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
-# 3050000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000005
-# 3070000  | 00000170 | fef75ae3 |  1   | x13 | 00000005 |   0    0  |   0    0  |  00   00  | 00000005
+# 3430000  | 00000164 | 00168693 |  0   | x21 | 00000010 |   0    0  |   0    0  |  00   00  | 00000000
+# 3450000  | 00000168 | 00178793 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000000
+# 3470000  | 0000016c | 00400713 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000005
+# 3490000  | 00000170 | fef75ae3 |  1   | x13 | 00000005 |   0    0  |   0    0  |  00   00  | 00000005
 #   >>> WB: x13 <= 0x00000005
-# 3090000  | 00000174 | 14d02623 |  1   | x15 | 00000005 |   0    0  |   0    0  |  10   01  | 00000004
+# 3510000  | 00000174 | 14d02623 |  1   | x15 | 00000005 |   0    0  |   0    0  |  10   01  | 00000004
 #   >>> WB: x15 <= 0x00000005
-# 3110000  | 00000178 | 0000006f |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
+# 3530000  | 00000178 | 0000006f |  1   | x14 | 00000004 |   0    0  |   0    0  |  00   00  | 00000010
 #   >>> WB: x14 <= 0x00000004
-# 3130000  | 0000017c | 00000000 |  0   | x21 | 00000010 |   0    0  |   1    0  |  00   00  | 0000014c
-#   >>> BRANCH/JUMP at t=3130000 | PCTarget=0x00000178
-# 3150000  | 00000000 | 00000000 |  0   | x12 | 0000014c |   0    0  |   0    0  |  00   00  | 00000178
-# 3170000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
-# 3190000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP at t=3190000 | PCTarget=0x00000178
-# 3210000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
-# 3230000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
-# 3250000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP at t=3250000 | PCTarget=0x00000178
-# 3270000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
-# 3290000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
-# 3310000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP at t=3310000 | PCTarget=0x00000178
-# 3330000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
-# 3350000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
-# 3370000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP at t=3370000 | PCTarget=0x00000178
-# 3390000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
-# 3410000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
-# 3430000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP at t=3430000 | PCTarget=0x00000178
-# 3450000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
-# 3470000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
-# 3490000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
-#   >>> BRANCH/JUMP at t=3490000 | PCTarget=0x00000178
-# 3510000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
-# 3530000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
-# 3550000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+# 3550000  | 0000017c | 00000000 |  0   | x21 | 00000010 |   0    0  |   1    0  |  00   00  | 0000014c
+#   >>> SW: tb_mem[83] <= 0x00000005  (addr=0x0000014c)
 #   >>> BRANCH/JUMP at t=3550000 | PCTarget=0x00000178
-# 3570000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 3570000  | 00000000 | 00000000 |  0   | x12 | 0000014c |   0    0  |   0    0  |  00   00  | 00000178
 # 3590000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
 # 3610000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
 #   >>> BRANCH/JUMP at t=3610000 | PCTarget=0x00000178
@@ -1022,6 +1107,139 @@
 # 9970000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
 #   >>> BRANCH/JUMP at t=9970000 | PCTarget=0x00000178
 # 9990000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10010000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10030000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10030000 | PCTarget=0x00000178
+# 10050000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10070000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10090000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10090000 | PCTarget=0x00000178
+# 10110000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10130000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10150000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10150000 | PCTarget=0x00000178
+# 10170000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10190000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10210000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10210000 | PCTarget=0x00000178
+# 10230000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10250000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10270000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10270000 | PCTarget=0x00000178
+# 10290000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10310000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10330000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10330000 | PCTarget=0x00000178
+# 10350000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10370000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10390000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10390000 | PCTarget=0x00000178
+# 10410000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10430000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10450000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10450000 | PCTarget=0x00000178
+# 10470000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10490000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10510000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10510000 | PCTarget=0x00000178
+# 10530000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10550000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10570000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10570000 | PCTarget=0x00000178
+# 10590000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10610000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10630000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10630000 | PCTarget=0x00000178
+# 10650000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10670000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10690000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10690000 | PCTarget=0x00000178
+# 10710000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10730000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10750000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10750000 | PCTarget=0x00000178
+# 10770000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10790000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10810000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10810000 | PCTarget=0x00000178
+# 10830000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10850000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10870000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10870000 | PCTarget=0x00000178
+# 10890000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10910000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10930000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10930000 | PCTarget=0x00000178
+# 10950000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 10970000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 10990000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=10990000 | PCTarget=0x00000178
+# 11010000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11030000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11050000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11050000 | PCTarget=0x00000178
+# 11070000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11090000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11110000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11110000 | PCTarget=0x00000178
+# 11130000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11150000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11170000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11170000 | PCTarget=0x00000178
+# 11190000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11210000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11230000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11230000 | PCTarget=0x00000178
+# 11250000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11270000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11290000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11290000 | PCTarget=0x00000178
+# 11310000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11330000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11350000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11350000 | PCTarget=0x00000178
+# 11370000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11390000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11410000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11410000 | PCTarget=0x00000178
+# 11430000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11450000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11470000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11470000 | PCTarget=0x00000178
+# 11490000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11510000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11530000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11530000 | PCTarget=0x00000178
+# 11550000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11570000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11590000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11590000 | PCTarget=0x00000178
+# 11610000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11630000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11650000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11650000 | PCTarget=0x00000178
+# 11670000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11690000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11710000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11710000 | PCTarget=0x00000178
+# 11730000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11750000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11770000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11770000 | PCTarget=0x00000178
+# 11790000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11810000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11830000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11830000 | PCTarget=0x00000178
+# 11850000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11870000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11890000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11890000 | PCTarget=0x00000178
+# 11910000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11930000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
+# 11950000  | 0000017c | 00000000 |  0   | x0  | 00000000 |   0    0  |   1    0  |  00   00  | 00000000
+#   >>> BRANCH/JUMP at t=11950000 | PCTarget=0x00000178
+# 11970000  | 00000000 | 00000000 |  0   | x0  | 00000000 |   0    0  |   0    0  |  00   00  | 00000178
+# 11990000  | 00000178 | 0000006f |  1   | x0  | 0000017c |   0    0  |   0    0  |  00   00  | 00000000
 # 
 # ============================================================
 # REGISTER VERIFICATION
@@ -1049,18 +1267,18 @@
 #   PASS | mem[79]  BGE  taken      | got = 0x00000001
 #   PASS | mem[80]  BLTU taken      | got = 0x00000001
 #   PASS | mem[81]  JAL+JALR        | got = 0x0000000a
-#   PASS | mem[82]  Forwarding      | got = 0x00000027
+#   FAIL | mem[82]  Forwarding      | got = 0x0000000b | expected = 0x00000027
 #   PASS | mem[83]  Loop x5         | got = 0x00000005
 # 
 # ============================================================
-# RESULT: 21 PASS, 0 FAIL
+# RESULT: 20 PASS, 1 FAIL
 # ============================================================
 # 
-# RD1_E=00000000 RD2_E=00000000 | ForwardA_out=00000000 ForwardB_out=00000000 | SrcA=00000000 SrcB=00000000
-# RS2_E= 0 ForwardB=00 WriteDataM=00000000
-# ALL TESTS PASSED
-# ** Note: $stop    : D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v(236)
-#    Time: 10 us  Iteration: 0  Instance: /tb_CPU
-# Break in Module tb_CPU at D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v line 236
-# End time: 10:57:27 on Apr 20,2026, Elapsed time: 0:08:26
+# DEBUG: RD1_E=00000000 RD2_E=00000000 | ForwA=00000000 ForwB=00000000 | SrcA=00000178 SrcB=00000000
+# DEBUG: RS2_E= 0 ForwardB=00 WriteDataM=00000000
+# SOME TESTS FAILED - Kiem tra pipeline monitor phia tren
+# ** Note: $stop    : D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v(278)
+#    Time: 12 us  Iteration: 0  Instance: /tb_CPU
+# Break in Module tb_CPU at D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v line 278
+# End time: 04:59:11 on Apr 21,2026, Elapsed time: 0:22:26
 # Errors: 0, Warnings: 2

@@ -28,10 +28,13 @@ module Memory_Cycle (
 	// ----------------------------------
 	input [31:0] read_dataM_in,
 
-	output [31:0] addr_M,
+	output [31:0] addrM,
 	output [31:0] write_dataM,
-	output mem_writeM_out,
-	output mem_readM_out,
+	output mem_writeM,
+	output mem_readM,
+
+	// BRAM Stall
+	input StallM,
 	
 	// ----------------------------------
 	// Output sang Write Back (WB stage)
@@ -60,10 +63,10 @@ module Memory_Cycle (
 	// );
 
 	// =============== BUS SIGNAL ===============
-	assign addr_M			= ALU_ResultM;
-	assign write_dataM		= WriteDataM;
-	assign mem_readM_out	= MemReadM;
-	assign mem_writeM_out	= MemWriteM;
+	assign addrM		= ALU_ResultM;
+	assign write_dataM	= WriteDataM;
+	assign mem_readM	= MemReadM;
+	assign mem_writeM	= MemWriteM;
 
 	wire [31:0] ReadDataM;
 	assign ReadDataM = read_dataM_in;
@@ -77,22 +80,27 @@ module Memory_Cycle (
 	reg [31:0] ReadDataM_r;
 	
 	always @(posedge clk or negedge reset) begin
-	
+
 		if (!reset) begin
-			RegWriteM_r			<= 0;
-			ResultSrcM_r		<= 2'b0;
-			RD_M_r				<= 5'b0;
-			PCPlus4M_r			<= 32'h0000_0000;
-			ALU_ResultM_r		<= 32'h0000_0000;
-			ReadDataM_r			<= 32'h0000_0000;
+			RegWriteM_r		<= 0;
+			ResultSrcM_r	<= 2'b0;
+			RD_M_r			<= 5'b0;
+			PCPlus4M_r		<= 32'h0000_0000;
+			ALU_ResultM_r	<= 32'h0000_0000;
+			ReadDataM_r		<= 32'h0000_0000;
 		end
-		
+
+		else if (StallM) begin
+			// Hold MEM/WB - giữ để BRAM có thêm 1 cycle output valid data
+		end
+
 		else begin
 			RegWriteM_r			<= RegWriteM;
 			ResultSrcM_r		<= ResultSrcM;
 			RD_M_r				<= RD_M;
 			PCPlus4M_r			<= PCPlus4M;
 			ALU_ResultM_r		<= ALU_ResultM;
+
 			ReadDataM_r			<= ReadDataM;
 			
 //			if (MemReadM) begin
@@ -109,7 +117,7 @@ module Memory_Cycle (
 	
 	
 	// =============== OUPUT sang WB ===============
-	assign RegWriteW		= RegWriteM_r;
+	assign RegWriteW		= StallM ? 1'b0 : RegWriteM_r;
 	assign ResultSrcW		= ResultSrcM_r;
 	assign RD_W				= RD_M_r;
 	assign PCPlus4W			= PCPlus4M_r;

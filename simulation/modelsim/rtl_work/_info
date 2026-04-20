@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/simulation/modelsim
 vALU
-Z1 !s110 1776656939
+Z1 !s110 1776721005
 !i10b 1
 !s100 ;:;I>J0;J]NJB3B[FJ7450
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1776656939.000000
+Z5 !s108 1776721004.000000
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU.v|
 !i113 1
@@ -35,7 +35,7 @@ Z7 !s92 -vlog01compat -work work {+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RIS
 Z8 tCvgOpt 0
 n@a@l@u
 vALU_Decoder
-Z9 !s110 1776656938
+Z9 !s110 1776721004
 !i10b 1
 !s100 A:G9FdN^g]5<31K3[lmde2
 R2
@@ -51,7 +51,7 @@ R4
 r1
 !s85 0
 31
-Z11 !s108 1776656938.000000
+R5
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/ALU_Decoder.v|
 !i113 1
@@ -76,7 +76,7 @@ R4
 r1
 !s85 0
 31
-R5
+Z11 !s108 1776721005.000000
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Branch_Unit.v|
 !i113 1
@@ -101,7 +101,7 @@ R4
 r1
 !s85 0
 31
-R11
+Z12 !s108 1776721003.000000
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control.v|
 !i113 1
@@ -110,7 +110,7 @@ R7
 R8
 n@control
 vControl_Unit
-R9
+Z13 !s110 1776721003
 !i10b 1
 !s100 HHZHAdJ4882VD=cOQ4GmB3
 R2
@@ -126,7 +126,7 @@ R4
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Control_Unit.v|
 !i113 1
@@ -135,23 +135,23 @@ R7
 R8
 n@control_@unit
 vCPU
-!s110 1776656937
+!s110 1776721002
 !i10b 1
-!s100 OQ:V?TVgVSjdeFGESH84A2
+!s100 >Zi>jKA:FWL>K8UORT_1f2
 R2
-I;Z1U4R;lYSTTAL_mE=5df2
+IPcHC2iQaTGF`=EAdOIjNI1
 R3
 R0
-R10
+w1776680522
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v
 !i122 0
-L0 13 274
+L0 13 302
 R4
 r1
 !s85 0
 31
-Z12 !s108 1776656937.000000
+Z14 !s108 1776721002.000000
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/CPU.v|
 !i113 1
@@ -159,49 +159,24 @@ R6
 R7
 R8
 n@c@p@u
-vData_RAM
-R1
-!i10b 1
-!s100 ONK3TiiETzZ6Um;gc3GPF3
-R2
-INGJ7:b^a<F^m^IS]EKJAi2
-R3
-R0
-w1776526029
-8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v
-FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v
-!i122 16
-L0 5 37
-R4
-r1
-!s85 0
-31
-R5
-!s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Data_RAM.v|
-!i113 1
-R6
-R7
-R8
-n@data_@r@a@m
 vDecode_Cycle
-R9
+R13
 !i10b 1
-!s100 QcOXAoZFCGNn65o6T`hCS3
+!s100 HJVzQG6bhcK3mIHPL5R_R1
 R2
-I11z`7bi6L6WoYnG>G@MN_2
+Ihz3dR6n7AdXm[IV_RCoB@3
 R3
 R0
-w1776521906
+w1776680389
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v
 !i122 5
-L0 6 306
+L0 6 311
 R4
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Decode_Cycle.v|
 !i113 1
@@ -210,18 +185,18 @@ R7
 R8
 n@decode_@cycle
 vExecute_Cycle
-R1
+R9
 !i10b 1
-!s100 [Njb46AON1QGKfT^zKe472
+!s100 WF2FC3dl?:mPTfEg4=99c1
 R2
-I5812XQ@SaIXIXlCj7<QG^3
+I>:oeD]XREj;lR1_O<D3_z0
 R3
 R0
-R10
+w1776680295
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Execute_Cycle.v
 !i122 12
-L0 6 230
+L0 6 219
 R4
 r1
 !s85 0
@@ -235,7 +210,7 @@ R7
 R8
 n@execute_@cycle
 vFetch_Cycle
-R9
+R13
 !i10b 1
 !s100 ;m3BRaBI1?=0@e5VEo`V?1
 R2
@@ -251,7 +226,7 @@ R4
 r1
 !s85 0
 31
-R12
+R14
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Fetch_Cycle.v|
 !i113 1
@@ -260,23 +235,23 @@ R7
 R8
 n@fetch_@cycle
 vForwarding_Unit
-Z13 !s110 1776656940
+R1
 !i10b 1
-!s100 dIdB`MJGMK5<zA^><;<RQ3
+!s100 ^ZKBU=<9m`QVlgg62aDWk1
 R2
-IagTklGl1:]XdhK@^Qb58^1
+I8N7iTQ5G<kM9l[57SBUOI3
 R3
 R0
-w1776513594
+w1776720336
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v
-!i122 19
-L0 5 47
+!i122 18
+L0 5 46
 R4
 r1
 !s85 0
 31
-Z14 !s108 1776656940.000000
+R11
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Forwarding_Unit.v|
 !i113 1
@@ -285,23 +260,23 @@ R7
 R8
 n@forwarding_@unit
 vHazard_Unit
-R13
+R1
 !i10b 1
-!s100 PY9NXVhzQCJ>nd7YJ`fYd1
+!s100 ;Gkc^hb=L2?RdO8>8lWBF2
 R2
-I@4LoKE2h;?3T=A2kfhU5d3
+IKfgHl9E9<P@?gX:m:O1>M2
 R3
 R0
-R10
+w1776680267
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v
-!i122 21
-L0 9 72
+!i122 20
+L0 9 93
 R4
 r1
 !s85 0
 31
-R14
+R11
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Hazard_Unit.v|
 !i113 1
@@ -310,7 +285,7 @@ R7
 R8
 n@hazard_@unit
 vImmGen
-R1
+R9
 !i10b 1
 !s100 ca@l>P4BHdJe`MNR2f5G;0
 R2
@@ -335,7 +310,7 @@ R7
 R8
 n@imm@gen
 vInstr_Memory
-R13
+R1
 !i10b 1
 !s100 CmoBIBb6K^<A[4MaYOf8J2
 R2
@@ -345,13 +320,13 @@ R0
 w1776417815
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v
-!i122 22
+!i122 21
 L0 6 42
 R4
 r1
 !s85 0
 31
-R14
+R11
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Instr_Memory.v|
 !i113 1
@@ -360,7 +335,7 @@ R7
 R8
 n@instr_@memory
 vMain_Decoder
-R9
+R13
 !i10b 1
 !s100 <43Y7TCoJ@^Tb@2RjZcm<1
 R2
@@ -376,7 +351,7 @@ R4
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Main_Decoder.v|
 !i113 1
@@ -385,23 +360,23 @@ R7
 R8
 n@main_@decoder
 vMemory_Cycle
-R13
+R1
 !i10b 1
-!s100 AV:40jK:Lid2cbD9dZdXQ2
+!s100 G>PMDb1G9QMdI1LcR6`lM1
 R2
-IozkFbJMI6bPOg]WJCNl3X0
+IlPbeA=6CSMY>gKlg_jYHm0
 R3
 R0
-w1776357981
+w1776720869
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v
-!i122 17
-L0 6 97
+!i122 16
+L0 6 122
 R4
 r1
 !s85 0
 31
-R14
+R11
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Memory_Cycle.v|
 !i113 1
@@ -410,7 +385,7 @@ R7
 R8
 n@memory_@cycle
 vMux_3_by_1
-R1
+R9
 !i10b 1
 !s100 l=S`feL:8:z;n31=l1lmC2
 R2
@@ -435,7 +410,7 @@ R7
 R8
 n@mux_3_by_1
 vPC_Adder
-R9
+R13
 !i10b 1
 !s100 [34JH@69Hzl1ONzEjO1C?2
 R2
@@ -451,7 +426,7 @@ R4
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_Adder.v|
 !i113 1
@@ -460,7 +435,7 @@ R7
 R8
 n@p@c_@adder
 vPC_MUX
-R9
+R13
 !i10b 1
 !s100 ZHOaZ]I<MM5``Eio8Y>DM2
 R2
@@ -476,7 +451,7 @@ R4
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/PC_MUX.v|
 !i113 1
@@ -485,7 +460,7 @@ R7
 R8
 n@p@c_@m@u@x
 vProgram_Counter
-R9
+R13
 !i10b 1
 !s100 93Gk03]de?VNNGSYbJ9Vo3
 R2
@@ -501,7 +476,7 @@ R4
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Program_Counter.v|
 !i113 1
@@ -510,7 +485,7 @@ R7
 R8
 n@program_@counter
 vRegister_File
-R1
+R9
 !i10b 1
 !s100 c]jK;Ame9`05`ZQTo9;kU0
 R2
@@ -535,7 +510,7 @@ R7
 R8
 n@register_@file
 vStall_Unit
-R13
+R1
 !i10b 1
 !s100 >E`ed<RP01[O^G0YbNjOM2
 R2
@@ -545,13 +520,13 @@ R0
 R15
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v
-!i122 20
+!i122 19
 L0 6 23
 R4
 r1
 !s85 0
 31
-R14
+R11
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Stall_Unit.v|
 !i113 1
@@ -560,23 +535,23 @@ R7
 R8
 n@stall_@unit
 vtb_CPU
-R13
+R1
 !i10b 1
-!s100 G2N=HbRV1VcjBbGhNm_lo3
+!s100 1o5eWSW?aVb7>CR_ZPo_R1
 R2
-IIGh@ndA_M<9[>d@N3n`^b3
+I@;??LKACB21Q`a5k7JkOh1
 R3
 R0
-w1776514877
+w1776682940
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v
-!i122 23
-L0 41 209
+!i122 22
+L0 36 255
 R4
 r1
 !s85 0
 31
-R14
+R11
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/Testbench/tb_CPU.v|
 !i113 1
@@ -585,7 +560,7 @@ R6
 R8
 ntb_@c@p@u
 vWriteback_Cycle
-R13
+R1
 !i10b 1
 !s100 f;56[C>aiQCohNf;h1cB?3
 R2
@@ -595,13 +570,13 @@ R0
 w1776358044
 8D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v
 FD:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v
-!i122 18
+!i122 17
 L0 6 45
 R4
 r1
 !s85 0
 31
-R14
+R11
 !s107 D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE|D:/1 - FPGA/5 - RISCV/4 - Pipeline_RISCV/CORE/Writeback_Cycle.v|
 !i113 1

@@ -36,7 +36,6 @@ module Forwarding_Unit (
 			ForwardA_E = 2'b01;
 		end
 		
-		
 		// =============== Forward B ===============
 		if (RegWriteM && (RD_M != 0) && (RD_M == RS2_E)) begin
 			ForwardB_E = 2'b10;

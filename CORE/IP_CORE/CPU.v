@@ -62,6 +62,9 @@
         wire [31:0] PCPlus4E;
 
         wire FlushE;
+        wire StallE;
+        wire StallM;
+        wire HoldE;
         wire [1:0] ForwardA_E;
         wire [1:0] ForwardB_E;
 
@@ -125,6 +128,7 @@
 
             .FlushD         (FlushD),
             .StallD         (StallD),
+            .HoldE          (HoldE),
 
             // Output
             .RegWriteE      (RegWriteE),
@@ -195,8 +199,7 @@
             */ 
 
             .ALU_ResultM    (ALU_ResultM_out),
-
-            //.FlushE         (FlushE),
+            .StallE         (StallE),
 
             // Output
             .RegWriteM      (RegWriteM),
@@ -235,11 +238,12 @@
 
             // Input BUS
             .read_dataM_in  (read_dataM),
+            .StallM         (StallM),
             // Output BUS
-            .addr_M         (addrM),
+            .addrM          (addrM),
             .write_dataM    (write_dataM),
-            .mem_writeM_out (mem_writeM),
-            .mem_readM_out  (mem_readM),
+            .mem_writeM     (mem_writeM),
+            .mem_readM      (mem_readM),
 
             // Output WB
             .RegWriteW      (RegWriteW),
@@ -275,6 +279,9 @@
         Hazard_Unit Hazard (
 
             // Input
+            .clk            (clk),
+            .reset          (reset),
+
             .RegWriteM      (RegWriteM),
             .RegWriteW      (RegWriteW),
 
@@ -289,6 +296,7 @@
             .RS1_D          (RS1_D),
             .RS2_D          (RS2_D),
 
+            .MemReadM       (MemReadM),
             .PCSrcE         (PCSrcE),
 
             // Output
@@ -296,6 +304,9 @@
             .ForwardB_E     (ForwardB_E),
             .StallF         (StallF),
             .StallD         (StallD),
+            .StallE         (StallE),
+            .StallM         (StallM),
+            .HoldE          (HoldE),
             .FlushD         (FlushD),
             .FlushE         (FlushE)
         );
