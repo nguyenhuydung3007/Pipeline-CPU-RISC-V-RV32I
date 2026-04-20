@@ -17,11 +17,21 @@ module Memory_Cycle (
 	
 	input [1:0] ResultSrcM,			// Tín hiệu điều khiển WB sẽ lấy giá trị từ đâu
 	
-	input [4:0] RD_M,					// Địa chỉ của thanh ghi đích
+	input [4:0] RD_M,				// Địa chỉ của thanh ghi đích
 	input [31:0] PCPlus4M,
 	input [31:0] WriteDataM,		// Dữ liệu cần ghi vào RAM
 	input [31:0] ALU_ResultM,		// Kết quả tính ở ALU (EX stage)
 	
+
+	// ----------------------------------
+	// BUS Interface
+	// ----------------------------------
+	input [31:0] read_dataM_in,
+
+	output [31:0] addr_M,
+	output [31:0] write_dataM,
+	output mem_writeM_out,
+	output mem_readM_out,
 	
 	// ----------------------------------
 	// Output sang Write Back (WB stage)
@@ -34,22 +44,29 @@ module Memory_Cycle (
 	output [31:0] ReadDataW
 );
 
-
 	// =============== DATA RAM ===============
-	wire [31:0] ReadDataM;
+	// wire [31:0] ReadDataM;
 	
-	Data_RAM dmem (
+	// Data_RAM dmem (
 	
-		// Input
-		.clk				(clk),
-		.addr				(ALU_ResultM),
-		.write_data		(WriteDataM),
-		.write_en		(MemWriteM),
-		.read_en			(MemReadM),
+	// 	// Input
+	// 	.clk			(clk),
+	// 	.addr			(ALU_ResultM),
+	// 	.write_data		(WriteDataM),
+	// 	.write_en		(MemWriteM),
+	// 	.read_en		(MemReadM),
 		
-		.read_data		(ReadDataM)
-	);
-	
+	// 	.read_data		(ReadDataM)
+	// );
+
+	// =============== BUS SIGNAL ===============
+	assign addr_M			= ALU_ResultM;
+	assign write_dataM		= WriteDataM;
+	assign mem_readM_out	= MemReadM;
+	assign mem_writeM_out	= MemWriteM;
+
+	wire [31:0] ReadDataM;
+	assign ReadDataM = read_dataM_in;
 	
 	// =============== PIPELINE REGISTER ===============
 	reg RegWriteM_r;
@@ -95,8 +112,8 @@ module Memory_Cycle (
 	assign RegWriteW		= RegWriteM_r;
 	assign ResultSrcW		= ResultSrcM_r;
 	assign RD_W				= RD_M_r;
-	assign PCPlus4W		= PCPlus4M_r;
-	assign ALU_ResultW	= ALU_ResultM_r;
+	assign PCPlus4W			= PCPlus4M_r;
+	assign ALU_ResultW		= ALU_ResultM_r;
 	assign ReadDataW		= ReadDataM_r;
 
 endmodule
