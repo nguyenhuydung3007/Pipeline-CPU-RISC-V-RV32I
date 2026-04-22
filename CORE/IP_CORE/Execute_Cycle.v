@@ -131,13 +131,13 @@ module Execute_Cycle (
 	ALU alu (
 	
 		// Input
-		.SrcA				(SrcA),
-		.SrcB				(SrcB),
+		.SrcA			(SrcA),
+		.SrcB			(SrcB),
 		.ALUControlE	(ALUControlE),
 		
 		// Output
-		.ResultE			(ALU_ResultE),
-		.Zero				(Zero)
+		.ResultE		(ALU_ResultE),
+		.Zero			(Zero)
 	);
 	
 	
@@ -147,11 +147,11 @@ module Execute_Cycle (
 	Branch_Unit branch_unit (
 	
 		// Input 
-		.A					(ForwardA_out),
-		.B					(ForwardB_out),
+		.A				(ForwardA_out),
+		.B				(ForwardB_out),
 		.funct3			(funct3E),
 		.Branch			(BranchE),
-		.BrUn				(BrUnE),
+		.BrUn			(BrUnE),
 		
 		// Output
 		.PCSrc			(PCSrc_Branch)
@@ -212,13 +212,13 @@ module Execute_Cycle (
 	
 	
 	// =============== OUTPUT MEM ===============
-	assign RegWriteM			= RegWriteE_r;
+	assign RegWriteM		= RegWriteE_r;
 	assign MemReadM			= MemReadE_r;
-	assign MemWriteM			= MemWriteE_r;
-	assign ResultSrcM			= ResultSrcE_r;
-	assign RD_M					= RD_E_r;
+	assign MemWriteM		= MemWriteE_r;
+	assign ResultSrcM		= ResultSrcE_r;
+	assign RD_M				= RD_E_r;
 	assign ALU_ResultM_out	= ALU_ResultE_r;
-	assign WriteDataM			= WriteDataE_r;
+	assign WriteDataM		= WriteDataE_r;
 	assign PCPlus4M			= PCPlus4E_r;
 
 endmodule

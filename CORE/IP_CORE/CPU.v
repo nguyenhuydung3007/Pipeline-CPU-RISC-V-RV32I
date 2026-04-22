@@ -35,7 +35,8 @@
         wire [31:0] PCD;
         wire [31:0] PCPlus4D;
 
-        wire RegWriteW;
+        wire RegWriteW_actual;
+        wire RegWriteW_fwd;
         wire [4:0] RDW;
         wire [31:0] ResultW;
 
@@ -246,7 +247,8 @@
             .mem_readM      (mem_readM),
 
             // Output WB
-            .RegWriteW      (RegWriteW),
+            .RegWriteW_actual (RegWriteW_actual),
+            .RegWriteW_fwd    (RegWriteW_fwd),         
 
             .ResultSrcW     (ResultSrcW),
             .RD_W           (RD_W),
@@ -261,7 +263,7 @@
         Writeback_Cycle Writeback (
 
             // Input
-            .RegWriteW      (RegWriteW),
+            .RegWriteW      (RegWriteW_actual),
             .ResultSrcW     (ResultSrcW),
             .RD_W           (RD_W),
             .PCPlus4W       (PCPlus4W),
@@ -283,7 +285,7 @@
             .reset          (reset),
 
             .RegWriteM      (RegWriteM),
-            .RegWriteW      (RegWriteW),
+            .RegWriteW_fwd  (RegWriteW_fwd),
 
             .RD_M           (RD_M),
             .RD_W           (RD_W),

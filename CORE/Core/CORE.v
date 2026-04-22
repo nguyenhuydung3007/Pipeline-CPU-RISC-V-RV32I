@@ -10,6 +10,7 @@ module CORE (
 
     // ========== DE10 - Lite I/O ==========
     input [9:0] SW,
+    input GPIO_0,          
 
     output [9:0] LEDR,
     output [6:0] HEX0,
@@ -17,7 +18,9 @@ module CORE (
     output [6:0] HEX2,
     output [6:0] HEX3,
     output [6:0] HEX4,
-    output [6:0] HEX5
+    output [6:0] HEX5,
+
+    output GPIO_1
 );
 
     // ========================================
@@ -52,6 +55,10 @@ module CORE (
     wire gpio_we;
     wire gpio_re;
 
+    wire [31:0] uart_rd;
+    wire uart_we;
+    wire uart_re;
+
     // =============== DATA BUS ===============
     Data_Bus bus (
 
@@ -70,6 +77,11 @@ module CORE (
         .gpio_rd_data       (gpio_rd),
         .gpio_we            (gpio_we),
         .gpio_re            (gpio_re),
+
+        // UART
+        .uart_rd_data       (uart_rd),
+        .uart_we            (uart_we),
+        .uart_re            (uart_re),
 
         // Trả về CPU
         .rd_data            (rdata)
@@ -127,6 +139,25 @@ module CORE (
         .HEX3               (HEX3),
         .HEX4               (HEX4),
         .HEX5               (HEX5)
+    );
+
+    // =============== UART ===============
+    UART_MMIO uart (
+
+        // Input
+        .clk                (clk),
+        .reset              (reset),
+
+        .addr               (addr),
+        .wr_data            (wdata),
+        .we                 (uart_we),
+        .re                 (uart_re),
+
+        .rx                 (GPIO_0),
+
+        // Ouput
+        .rd_data            (uart_rd),
+        .tx                 (GPIO_1)
     );
     
 endmodule

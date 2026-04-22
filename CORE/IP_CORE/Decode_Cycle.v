@@ -119,15 +119,15 @@ module Decode_Cycle (
 		
 		// Ouput
 		.RegWrite		(RegWriteD),
-		.MemRead			(MemReadD),
+		.MemRead		(MemReadD),
 		.MemWrite		(MemWriteD),
 		.ResultSrc		(ResultSrcD),
-		.AluSrcA			(AluSrcAD),
-		.AluSrcB			(AluSrcBD),
+		.AluSrcA		(AluSrcAD),
+		.AluSrcB		(AluSrcBD),
 		.ImmSel			(ImmSrcD),
 		.Branch			(BranchD),
-		.Jump				(JumpD),
-		.BrUn				(BrUnD),
+		.Jump			(JumpD),
+		.BrUn			(BrUnD),
 		.ALUControl		(ALUControlD)
 	);
 	
@@ -136,14 +136,14 @@ module Decode_Cycle (
 	Register_File regfile (
 		
 		// Input
-		.clk				(clk),
+		.clk			(clk),
 		.reset			(reset),
 		
 		.we				(RegWriteW),
 		
 		.rs1_addr		(InstrD[19:15]),
 		.rs2_addr		(InstrD[24:20]),
-		.rd_addr			(RDW),
+		.rd_addr		(RDW),
 		
 		.write_data		(ResultW),
 		
@@ -161,7 +161,7 @@ module Decode_Cycle (
 		.ImmSrc			(ImmSrcD),
 		
 		// Output
-		.Imm_Ext			(Imm_Ext_D)
+		.Imm_Ext		(Imm_Ext_D)
 	);
 	
 	
@@ -192,7 +192,7 @@ module Decode_Cycle (
 			RS2_D_r			<= 5'b00000;
 			RD_D_r			<= 5'b00000;
 			
-			PCD_r				<= 32'h0000_0000;
+			PCD_r			<= 32'h0000_0000;
 			PCPlus4D_r		<= 32'h0000_0000;
 		end
 		
@@ -249,8 +249,9 @@ module Decode_Cycle (
 			
 			RS1_D_r			<= InstrD[19:15];
 			RS2_D_r			<= InstrD[24:20];
-			RD_D_r			<= InstrD[11:7];
-			
+			//RD_D_r			<= InstrD[11:7];
+			RD_D_r			<= 5'b0;
+
 			PCD_r			<= PCD;
 			PCPlus4D_r		<= PCPlus4D;
 		end

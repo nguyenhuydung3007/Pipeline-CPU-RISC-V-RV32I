@@ -39,7 +39,8 @@ module Memory_Cycle (
 	// ----------------------------------
 	// Output sang Write Back (WB stage)
 	// ----------------------------------
-	output RegWriteW,
+	output RegWriteW_actual,
+	output RegWriteW_fwd,
 	output [1:0] ResultSrcW,
 	output [4:0] RD_W,
 	output [31:0] PCPlus4W,
@@ -117,7 +118,8 @@ module Memory_Cycle (
 	
 	
 	// =============== OUPUT sang WB ===============
-	assign RegWriteW		= StallM ? 1'b0 : RegWriteM_r;
+	assign RegWriteW_actual	= StallM ? 1'b0 : RegWriteM_r;	// Register file
+	assign RegWriteW_fwd 	= RegWriteM_r;					// Forwarding
 	assign ResultSrcW		= ResultSrcM_r;
 	assign RD_W				= RD_M_r;
 	assign PCPlus4W			= PCPlus4M_r;

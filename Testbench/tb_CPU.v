@@ -212,6 +212,72 @@ module tb_CPU;
     end
 
     // ========================
+    // FORWARDING DEBUG
+    // ========================
+    initial begin
+        $display("\n============================================================");
+        $display("FORWARDING DEBUG");
+        $display("Time(ns)  | RS1_E RS2_E | RD_E  RD_M  RD_W  | FwdA FwdB | InstrD   ");
+        $display("------------------------------------------------------------");
+    end
+
+    always @(posedge clk) begin
+        if (reset) begin
+            $display("%7t  | x%-2d   x%-2d  | x%-2d   x%-2d   x%-2d  |  %2b    %2b  | %h",
+                $time,
+                dut.RS1_E,
+                dut.RS2_E,
+                dut.RD_E,
+                dut.RD_M,
+                dut.RD_W,
+                dut.ForwardA_E,
+                dut.ForwardB_E,
+                dut.InstrD
+            );
+        end
+    end
+
+    // ========================
+    // FORWARDING FAIL TRIGGER
+    // ========================
+    reg [31:0] tb_instrE;   // instruction đang ở EX
+    reg [31:0] tb_instrM;   // instruction đang ở MEM
+
+    always @(posedge clk or negedge reset) begin
+        if (!reset) begin
+            tb_instrE <= 32'h0000_0013;
+            tb_instrM <= 32'h0000_0013;
+        end
+        else if (dut.Hazard.bram_stall) begin
+            // EX + MEM frozen: hold cả hai
+        end
+        else if (dut.FlushD || dut.StallD) begin
+            tb_instrE <= 32'h0000_0013;   // bubble vào EX
+            tb_instrM <= tb_instrE;
+        end
+        else begin
+            tb_instrE <= dut.InstrD;
+            tb_instrM <= tb_instrE;
+        end
+    end
+
+    always @(posedge clk) begin
+        if (reset && (dut.ForwardA_E == 2'b00)) begin
+            $display("  [FWD00] t=%0t | RS1_E=x%-2d  RD_M=x%-2d  RD_W=x%-2d | FwdA=%b FwdB=%b",
+                $time,
+                dut.RS1_E, dut.RD_M, dut.RD_W,
+                dut.ForwardA_E, dut.ForwardB_E
+            );
+            $display("          instrE=%h (rd=x%0d rs1=x%0d rs2=x%0d op=%07b)",
+                tb_instrE, tb_instrE[11:7], tb_instrE[19:15], tb_instrE[24:20], tb_instrE[6:0]
+            );
+            $display("          instrM=%h (rd=x%0d rs1=x%0d rs2=x%0d op=%07b)",
+                tb_instrM, tb_instrM[11:7], tb_instrM[19:15], tb_instrM[24:20], tb_instrM[6:0]
+            );
+        end
+    end
+
+    // ========================
     // VERIFICATION
     // ~95 instr x avg 2.5 cycle + bram_stall overhead ~= 320 cycle x 20ns = 6400ns
     // #12000 de dam bao chay xong

@@ -13,7 +13,7 @@ module Hazard_Unit (
 
 	// Forwarding
 	input RegWriteM,
-	input RegWriteW,
+	input RegWriteW_fwd,
 	input [4:0] RD_M,
 	input [4:0] RD_W,
 	input [4:0] RS1_E,
@@ -49,9 +49,9 @@ module Hazard_Unit (
 	
 		// Input 
 		.RegWriteM			(RegWriteM),
-		.RegWriteW			(RegWriteW),
-		.RD_M					(RD_M),
-		.RD_W					(RD_W),
+		.RegWriteW_fwd			(RegWriteW_fwd),
+		.RD_M				(RD_M),
+		.RD_W				(RD_W),
 		.RS1_E				(RS1_E),
 		.RS2_E				(RS2_E),
 		

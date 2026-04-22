@@ -5,7 +5,7 @@
 module Forwarding_Unit (
 
 	input RegWriteM,			// Insruction ở MEM có ghi vào Register không
-	input RegWriteW,			
+	input RegWriteW_fwd,			
 	
 	input [4:0] RD_M,			// Thanh ghi đích của Instruction ở MEM
 	input [4:0] RD_W,			// Thanh ghi đích ở WB stage
@@ -32,7 +32,7 @@ module Forwarding_Unit (
 			ForwardA_E = 2'b10;
 		end
 		
-		else if (RegWriteW && (RD_W != 0) && (RD_W == RS1_E)) begin
+		else if (RegWriteW_fwd && (RD_W != 0) && (RD_W == RS1_E)) begin
 			ForwardA_E = 2'b01;
 		end
 		
@@ -41,7 +41,7 @@ module Forwarding_Unit (
 			ForwardB_E = 2'b10;
 		end
 		
-		else if (RegWriteW && (RD_W != 0) && (RD_W == RS2_E)) begin
+		else if (RegWriteW_fwd && (RD_W != 0) && (RD_W == RS2_E)) begin
 			ForwardB_E = 2'b01;
 		end
 		
