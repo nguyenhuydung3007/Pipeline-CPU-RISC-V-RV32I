@@ -4,6 +4,7 @@ module Data_Bus (
     input [31:0] wr_data,
     input        write_en,
     input        read_en,
+    input [31:0] imem_rd_data,
 
     // RAM
     input [31:0] ram_rd_data,
@@ -39,7 +40,8 @@ module Data_Bus (
     // ===============================
     // Address Mapp
     // ===============================
-    wire sel_ram    = (addr < GPIO_ADDR);
+    wire sel_imem   = (addr < 32'h0000_1000);   // Vùng IMEM
+    wire sel_ram    = (addr >= 32'h0000_1000 && addr < GPIO_ADDR);
     wire sel_gpio   = (addr >= GPIO_ADDR && addr < (GPIO_ADDR + GPIO_SIRE_ADDR));
     wire sel_uart   = (addr >= UART_ADDR && addr < (UART_ADDR + UART_SIZE_ADDR));
 
@@ -61,8 +63,12 @@ module Data_Bus (
     // Read Data MUX
     // ============================
     always @(*) begin
+
+        if (sel_imem) begin
+            rd_data     = imem_rd_data;
+        end
         
-        if (sel_ram) begin
+        else if (sel_ram) begin
              rd_data    = ram_rd_data;
         end
 

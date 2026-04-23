@@ -1,43 +1,60 @@
-/*
-MEMORY {
-    mem : ORIGIN = 0x00000000, LENGTH = 4k
+/* =====================================================
+ * Linker script cho RISC-V Pipeline (Harvard)
+ * ===================================================== */
+
+ENTRY(start)
+
+/* ================= MEMORY ================= */
+MEMORY
+{
+    IMEM (rx)  : ORIGIN = 0x00000000, LENGTH = 4K
+    DMEM (rw)  : ORIGIN = 0x10000000, LENGTH = 4K
 }
 
-SECTIONS {
-    .text : {
-        . = 0x00000000;
-        *(.text.start)
-        *(.text)
-        *(.rodata)
-        *(.data)
+/* ================= SECTIONS ================= */
+SECTIONS
+{
+    /* ========== TEXT + RODATA (Instruction Memory) ========== */
+    .text :
+    {
         . = ALIGN(4);
-    } > mem
-}
-*/
 
-MEMORY {
-    RAM : ORIGIN = 0x00000000, LENGTH = 4K
-}
+        *(.text.start)     /* reset vector */
+        *(.text*)          /* code */
+        *(.rodata*)        /* const data / string */
 
-SECTIONS {
-    .text : {
-        *(.text.start)
-        *(.text*)
-        *(.rodata*)
         . = ALIGN(4);
-    } > RAM
+    } > IMEM
 
-    .data : {
+    /* Lưu địa chỉ load của .data trong IMEM */
+    _sidata = LOADADDR(.data);
+
+    /* ========== DATA (run ở DMEM, load từ IMEM) ========== */
+    .data :
+    {
+        . = ALIGN(4);
+
+        _sdata = .;
         *(.data*)
-        . = ALIGN(4);
-    } > RAM
+        _edata = .;
 
-    .bss : {
+        . = ALIGN(4);
+    } > DMEM AT > IMEM
+
+    /* ========== BSS (zero init) ========== */
+    .bss :
+    {
+        . = ALIGN(4);
+
+        _sbss = .;
         *(.bss*)
-        . = ALIGN(4);
-    } > RAM
+        *(COMMON)
+        _ebss = .;
 
-    . = ALIGN(4);
-    . = ORIGIN(RAM) + LENGTH(RAM);
+        . = ALIGN(4);
+    } > DMEM
+
+    /* ========== STACK ========== */
+    . = ORIGIN(DMEM) + LENGTH(DMEM);
     _stack_top = .;
 }

@@ -26,7 +26,7 @@ module UART #(
     // Tx (CPU --> UART)
     input tx_wr_en,                         // Tín hiệu cho phép ghi vào FIFO
     input [DATA_BITS - 1:0] tx_data,        // Dữ liệu cần gửi đi
-    output tx_full,                          // Cờ báo FIFO đầy
+    output tx_full,                         // Cờ báo FIFO đầy
 
     // Rx (UART --> CPU)
     input rx_rd_en,                         // Tín hiệu cho phép đọc dữ liệu trong FIFO của rx
