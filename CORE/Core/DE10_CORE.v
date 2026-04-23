@@ -5,11 +5,10 @@
 module DE10_CORE (
 
     input CLOCK_50,
-
     input [1:0] KEY,
     input [9:0] SW,
 
-    // UART (Nối chân Tx của CP2102 --> GPIO_0 của kit DE)
+    // Tx --> GPIO_0
     input GPIO_0,
 
     output [9:0] LEDR,
@@ -19,8 +18,8 @@ module DE10_CORE (
     output [6:0] HEX3,
     output [6:0] HEX4,
     output [6:0] HEX5,
-    
-    // UART (Nối chân Rx của CP2102 --> GPIO_1 của kit DE)
+
+    // Rx --> GPIO_1
     output GPIO_1
 );
 

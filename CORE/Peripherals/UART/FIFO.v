@@ -17,7 +17,8 @@ module FIFO #(
 
     output full,
     output empty,
-    output reg [W - 1:0] data_out
+    output reg [W - 1:0] data_out,
+    output [W - 1:0] data_peek
 );
 
     localparam ADDR_WIDTH = $clog2(L);
@@ -33,8 +34,9 @@ module FIFO #(
     wire read   = read_en  && !empty;
 
     // Output flag
-    assign empty = (count == 0);
-    assign full  = (count == L);
+    assign empty     = (count == 0);
+    assign full      = (count == L);
+    assign data_peek = mem[rd_ptr];
 
     // =============== WRITE ===============
     always @(posedge clk) begin

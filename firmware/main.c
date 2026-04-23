@@ -3,49 +3,61 @@
 // =====================
 // MMIO
 // =====================
-#define LEDR (*(volatile uint32_t *)0x10000000)
-#define HEX  (*(volatile uint32_t *)0x10000004)
+#define LEDR        (*(volatile uint32_t *)0x10000000)
+#define HEX         (*(volatile uint32_t *)0x10000004)
+
+#define UART_TX     (*(volatile uint32_t *)0x20000000)
+#define UART_RX     (*(volatile uint32_t *)0x20000004)
+#define UART_STATUS (*(volatile uint32_t *)0x20000008)
+
+#define TX_FULL     (1 << 0)
+#define RX_EMPTY    (1 << 1)
 
 // =====================
-// delay
+// Delay
 // =====================
-void delay(void)
+void delay(volatile int d)
 {
-    for (volatile int i = 0; i < 2000000; i++);
+    while (d--);
 }
 
 // =====================
-// hiển thị 2 digit HEX
+// UART TX
 // =====================
-void hex_display(uint8_t val)
+void uart_send_char(char c)
 {
-    uint8_t ones = val % 10;
-    uint8_t tens = val / 10;
+    while (UART_STATUS & TX_FULL);
+    UART_TX = (uint32_t)c;
+}
 
-    HEX = (ones << 0) | (tens << 4);
+void uart_send_string(const char *s)
+{
+    while (*s)
+        uart_send_char(*s++);
 }
 
 // =====================
-// MAIN
+// Main
 // =====================
 int main(void)
 {
-    uint8_t count = 0;
+    delay(500000);
+    uart_send_string("READY\n");
 
     while (1)
     {
-        // hiển thị HEX
-        hex_display(count);
+        LEDR ^= 1;
+        delay(100000);
 
-        // debug LED
-        LEDR = count;
+        if (!(UART_STATUS & RX_EMPTY))
+        {
+            char c = (char)(UART_RX & 0xFF);
 
-        delay();
-
-        count++;
-
-        if (count >= 100)
-            count = 0;
+            if (c == '1')
+                uart_send_string("Hello World!\n");
+            else
+                uart_send_char(c);
+        }
     }
 
     return 0;

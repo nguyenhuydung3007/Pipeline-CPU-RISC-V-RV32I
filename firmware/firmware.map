@@ -1,79 +1,53 @@
-Archive member included to satisfy reference by file (symbol)
-
-/opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
-                              ./main.o (__udivsi3)
 
 Merging object attributes
 
 
-Discarded input sections
-
- .debug_line    0x00000000      0x153 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
- .debug_line_str
-                0x00000000       0x88 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
- .debug_info    0x00000000       0x5f /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
- .debug_abbrev  0x00000000       0x28 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
- .debug_aranges
-                0x00000000       0x20 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
- .debug_str     0x00000000       0xcd /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+There are no discarded input sections
 
 Memory Configuration
 
 Name             Origin             Length             Attributes
-IMEM             0x00000000         0x00001000         xr
-DMEM             0x10000000         0x00001000         rw
+RAM              0x00000000         0x00001000
 *default*        0x00000000         0xffffffff
 
 Linker script and memory map
 
 
-.text           0x00000000      0x1d4
-                0x00000000                        . = ALIGN (0x4)
+.text           0x00000000      0x104
  *(.text.start)
- .text.start    0x00000000       0x5c ./start.o
+ .text.start    0x00000000        0xc ./start.o
                 0x00000000                start
  *(.text*)
- .text          0x0000005c        0x0 ./start.o
- .text          0x0000005c       0xc4 ./main.o
-                0x0000005c                delay
-                0x0000008c                hex_display
-                0x000000e0                main
- .text          0x00000120       0xb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
-                0x00000120                __divsi3
-                0x00000128                __hidden___udivsi3
-                0x00000128                __udivsi3
-                0x00000170                __umodsi3
-                0x000001a4                __modsi3
+ .text          0x0000000c        0x0 ./start.o
+ .text          0x0000000c       0xe0 ./main.o
+                0x0000000c                delay
+                0x0000002c                uart_send_char
+                0x00000048                uart_send_string
+                0x0000007c                main
  *(.rodata*)
-                0x000001d4                        . = ALIGN (0x4)
-                0x000001d4                        _sidata = LOADADDR (.data)
+ .rodata.str1.4
+                0x000000ec       0x16 ./main.o
+                0x00000104                        . = ALIGN (0x4)
+ *fill*         0x00000102        0x2 
 
-.rela.dyn       0x000001d4        0x0
+.rela.dyn       0x00000104        0x0
  .rela.text.start
-                0x000001d4        0x0 ./start.o
+                0x00000104        0x0 ./start.o
 
-.data           0x10000000        0x0 load address 0x000001d4
-                0x10000000                        . = ALIGN (0x4)
-                0x10000000                        _sdata = .
+.data           0x00000104        0x0
  *(.data*)
- .data          0x10000000        0x0 ./start.o
- .data          0x10000000        0x0 ./main.o
- .data          0x10000000        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
-                0x10000000                        _edata = .
-                0x10000000                        . = ALIGN (0x4)
+ .data          0x00000104        0x0 ./start.o
+ .data          0x00000104        0x0 ./main.o
+                0x00000104                        . = ALIGN (0x4)
 
-.bss            0x10000000        0x0 load address 0x000001d4
-                0x10000000                        . = ALIGN (0x4)
-                0x10000000                        _sbss = .
+.bss            0x00000104        0x0
  *(.bss*)
- .bss           0x10000000        0x0 ./start.o
- .bss           0x10000000        0x0 ./main.o
- .bss           0x10000000        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
- *(COMMON)
-                0x10000000                        _ebss = .
-                0x10000000                        . = ALIGN (0x4)
-                0x10001000                        . = (ORIGIN (DMEM) + LENGTH (DMEM))
-                0x10001000                        _stack_top = .
+ .bss           0x00000104        0x0 ./start.o
+ .bss           0x00000104        0x0 ./main.o
+                0x00000104                        . = ALIGN (0x4)
+                0x00000104                        . = ALIGN (0x4)
+                0x00001000                        . = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00001000                        _stack_top = .
 LOAD ./start.o
 LOAD ./main.o
 LOAD /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a
@@ -85,8 +59,6 @@ OUTPUT(firmware.elf elf32-littleriscv)
                 0x00000000       0x1a ./start.o
  .riscv.attributes
                 0x0000001a       0x1c ./main.o
- .riscv.attributes
-                0x00000036       0x1a /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
 
 .comment        0x00000000       0x1a
  .comment       0x00000000       0x1a ./main.o

@@ -10,12 +10,6 @@ module Instr_Memory (
 	// CPU interface
 	input [31:0] addr,					// Địa chỉ CPU muốn đọc instruction trong Memory
 	output [31:0] instruction,
-
-	// ------------------------
-	// PORT 2: DATA
-	// ------------------------
-	input [31:0] addr_data,
-	output [31:0] data_out,
 	
 	// Bootloader interface
 	input boot_mode,
@@ -49,6 +43,5 @@ module Instr_Memory (
 	end
 
 	assign instruction = mem[addr_sel[11:2]];
-	assign data_out	   = mem[addr_data[11:2]];
 	
 endmodule

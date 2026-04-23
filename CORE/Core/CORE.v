@@ -59,27 +59,6 @@ module CORE (
     wire uart_we;
     wire uart_re;
 
-    wire [31:0] imem_rd;
-
-    Instr_Memory instruction_memory (
-
-        .clk                (clk),
-
-        // FETCH
-        .addr               (32'b0),
-        .instruction        (),
-        
-        // DATA
-        .addr_data          (addr),
-        .data_out           (imem_rd),
-
-        // BOOT
-        .boot_mode          (1'b0),
-        .we_boot            (1'b0),
-        .addr_boot          (32'b0),
-        .data_boot          (32'b0)
-    );
-
     // =============== DATA BUS ===============
     Data_Bus bus (
 
@@ -93,8 +72,6 @@ module CORE (
         .ram_rd_data        (ram_rd),
         .ram_we             (ram_we),
         .ram_re             (ram_re),
-
-        .imem_rd_data       (imem_rd),
 
         // GPIO
         .gpio_rd_data       (gpio_rd),
