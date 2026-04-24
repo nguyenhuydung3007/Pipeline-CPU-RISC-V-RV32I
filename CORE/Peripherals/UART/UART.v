@@ -30,8 +30,7 @@ module UART #(
 
     // Rx (UART --> CPU)
     input rx_rd_en,                         // Tín hiệu cho phép đọc dữ liệu trong FIFO của rx
-    output [DATA_BITS - 1:0] rx_data,       // Dữ liệu CPU nhận được (registered, cho TX FSM dùng)
-    output [DATA_BITS - 1:0] rx_peek,       // Head hiện tại của RX FIFO (combinatorial, cho CPU đọc)
+    output [DATA_BITS - 1:0] rx_data,       // Dữ liệu CPU nhận được
     output rx_empty,                        // Cờ báo FIFO rỗng
 
     // Interfacse
@@ -162,7 +161,6 @@ module UART #(
     wire [DATA_BITS - 1:0] rx_data_wire;
     wire rx_valid;
     wire rx_full;
-    wire [DATA_BITS - 1:0] rx_fifo_peek;
 
     // =============== UART RX ===============
     UART_Rx #(
@@ -197,11 +195,8 @@ module UART #(
         // Output
         .full           (rx_full),
         .empty          (rx_empty),
-        .data_out       (rx_data),
-        .data_peek      (rx_fifo_peek)
+        .data_out       (rx_data)
     );
-
-    assign rx_peek = rx_fifo_peek;
 
 
     // =============== FIFO RX ===============

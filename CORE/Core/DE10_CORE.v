@@ -7,8 +7,7 @@ module DE10_CORE (
     input CLOCK_50,
     input [1:0] KEY,
     input [9:0] SW,
-
-    // Tx --> GPIO_0
+    
     input GPIO_0,
 
     output [9:0] LEDR,
@@ -19,7 +18,6 @@ module DE10_CORE (
     output [6:0] HEX4,
     output [6:0] HEX5,
 
-    // Rx --> GPIO_1
     output GPIO_1
 );
 
