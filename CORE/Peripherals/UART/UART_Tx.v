@@ -34,7 +34,7 @@ module UART_Tx #(
     reg [$clog2(OVERSAMPLE) - 1:0] tick_cnt;    // Thanh ghi đếm số lần lấy mẫu bit
 
     // =============== READY TX ===============
-    assign tx_ready = (state == IDLE);
+    assign tx_ready = (state == IDLE) & ~i_send;
 
     always @(posedge clk) begin
         
@@ -56,7 +56,7 @@ module UART_Tx #(
                 tx          <= 1'b1;
                 tick_cnt    <= 0;
 
-                if (i_send) begin
+                if (i_send && state == IDLE) begin
                     shift   <= data_in;
                     bit_cnt <= 0;
                     state   <= START;

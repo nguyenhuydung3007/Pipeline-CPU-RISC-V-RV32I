@@ -28,6 +28,7 @@ module UART_MMIO (
     wire rx_empty;
     wire [7:0] rx_data;
     wire rx_irq;
+    wire tx_ready;
 
     reg tx_wr_en;
     reg rx_rd_en;
@@ -45,6 +46,7 @@ module UART_MMIO (
         .tx_wr_en       (tx_wr_en),
         .tx_data        (wr_data[7:0]),
         .tx_full        (tx_full),
+        .tx_ready       (tx_ready),
 
         // RX
         .rx_rd_en       (rx_rd_en),
@@ -99,7 +101,7 @@ module UART_MMIO (
             2'b01:  rd_data = {24'b0, rx_data};
 
             // STATUS
-            2'b10:  rd_data = {30'b0, rx_empty, tx_full};
+            2'b10:  rd_data = {29'b0, tx_ready, rx_empty, tx_full};
 
             // DEFAULT
             default: rd_data = 32'b0;

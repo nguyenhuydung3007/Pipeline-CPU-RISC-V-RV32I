@@ -1,105 +1,139 @@
 #include <stdint.h>
 
-#define HEX         (*(volatile uint32_t *)0x10000004)
-#define LEDR        (*(volatile uint32_t *)0x10000000)
-
+// =====================
+// MMIO
+// =====================
 #define UART_TX     (*(volatile uint32_t *)0x20000000)
 #define UART_RX     (*(volatile uint32_t *)0x20000004)
 #define UART_STATUS (*(volatile uint32_t *)0x20000008)
 
-#define TX_FULL     (1 << 0)
+// =====================
+// STATUS BIT
+// =====================
+#define TX_READY    (1 << 2)
 #define RX_EMPTY    (1 << 1)
 
 // =====================
-// delay nhỏ
+// UART DRIVER
 // =====================
-void delay(void)
+void uart_putc(char c)
 {
-    for (volatile int i = 0; i < 100000; i++);
-}
-
-// =====================
-// gửi 1 byte + debug
-// =====================
-void uart_send_char_debug(char c)
-{
-    // hiển thị trạng thái trước khi gửi
-    LEDR = UART_STATUS;
-
-    // chờ TX rảnh
-    while (UART_STATUS & TX_FULL);
-
+    while (!(UART_STATUS & TX_READY));
     UART_TX = (uint32_t)c;
-
-    // hiển thị lại status sau khi gửi
-    LEDR = UART_STATUS;
-
-    delay();
 }
 
-// =====================
-// gửi chuỗi (debug từng ký tự)
-// =====================
-void uart_send_string_debug(const char *s)
+char uart_getc(void)
+{
+    while (UART_STATUS & RX_EMPTY);
+    return (char)(UART_RX & 0xFF);
+}
+
+void uart_puts(const char *s)
 {
     while (*s)
     {
-        uart_send_char_debug(*s);
+        uart_putc(*s);
         s++;
     }
 }
 
 // =====================
-// MAIN
+// SEND HEX BYTE (DEBUG)
+// =====================
+void uart_put_hex(uint8_t val)
+{
+    const char hex[] = "0123456789ABCDEF";
+    uart_putc(hex[(val >> 4) & 0xF]);
+    uart_putc(hex[val & 0xF]);
+}
+
+// =====================
+// TEST FUNCTIONS
+// =====================
+
+// Echo test
+void test_echo(void)
+{
+    uart_puts("ECHO MODE\n");
+
+    while (1)
+    {
+        char c = uart_getc();
+        uart_putc(c);
+    }
+}
+
+// Send string test
+void test_string(void)
+{
+    uart_puts("STRING TEST\n");
+
+    while (1)
+    {
+        uart_puts("Hello UART\n");
+        for (volatile int i = 0; i < 200000; i++);
+    }
+}
+
+// Binary test
+void test_binary(void)
+{
+    uart_puts("BINARY TEST\n");
+
+    while (1)
+    {
+        for (int i = 0; i < 256; i++)
+        {
+            uart_putc((char)i);
+        }
+    }
+}
+
+// RX -> HEX debug
+void test_rx_hex(void)
+{
+    uart_puts("RX HEX MODE\n");
+
+    while (1)
+    {
+        char c = uart_getc();
+
+        uart_puts("0x");
+        uart_put_hex((uint8_t)c);
+        uart_putc('\n');
+    }
+}
+
+// =====================
+// MAIN MENU
 // =====================
 int main(void)
 {
+    uart_puts("\nUART TEST READY\n");
+    uart_puts("1: Echo\n");
+    uart_puts("2: String\n");
+    uart_puts("3: Binary\n");
+    uart_puts("4: RX HEX\n");
+
     while (1)
     {
-        // chờ nhận từ PC
-        while (UART_STATUS & RX_EMPTY);
+        char cmd = uart_getc();
 
-        char c = (char)(UART_RX & 0xFF);
-
-        // hiển thị ASCII lên HEX
-        uint8_t lo = c & 0x0F;
-        uint8_t hi = (c >> 4) & 0x0F;
-        HEX = (lo << 0) | (hi << 4);
-
-        // =====================
-        // TEST 1: gửi 1 byte
-        // =====================
-        if (c == '1')
+        if (cmd == '1')
         {
-            uart_send_char_debug('A');
+            test_echo();
         }
-
-        // =====================
-        // TEST 2: gửi 2 byte
-        // =====================
-        if (c == '2')
+        else if (cmd == '2')
         {
-            uart_send_char_debug('H');
-            uart_send_char_debug('E');
-            uart_send_char_debug('L');
-            uart_send_char_debug('L');
-            uart_send_char_debug('O');
+            test_string();
         }
-
-        // =====================
-        // TEST 3: gửi chuỗi
-        // =====================
-        if (c == '3')
+        else if (cmd == '3')
         {
-            uart_send_string_debug("Hello\n");
+            test_binary();
         }
-
-        // =====================
-        // TEST 4: đọc STATUS
-        // =====================
-        if (c == '4')
+        else if (cmd == '4')
         {
-            LEDR = UART_STATUS;
+            test_rx_hex();
         }
     }
 
