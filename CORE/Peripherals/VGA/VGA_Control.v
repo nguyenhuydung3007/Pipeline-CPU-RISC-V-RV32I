@@ -23,13 +23,13 @@ module VGA_Control (
     // =====================================
 
     parameter H_VISIBLE = 640;
-    parameter H_FONT    = 16;
+    parameter H_FRONT    = 16;
     parameter H_SYNC    = 96;
     parameter H_BACK    = 48;
     parameter H_TOTAL   = 800;
 
     parameter V_VISIBLE = 480;
-    parameter V_FONT    = 10;
+    parameter V_FRONT    = 10;
     parameter V_SYNC    = 2;
     parameter V_BACK    = 33;
     parameter V_TOTAL   = 525;
@@ -66,16 +66,16 @@ module VGA_Control (
     // =============== HSYNC ACTIVE LOW ===============
     always @(posedge clk_vga) begin
         
-        hsync <= ~(x >= (H_VISIBLE + H_FONT) &&
-                   x <  (H_VISIBLE + H_TOTAL + H_SYNC));
+        hsync <= ~(x >= (H_VISIBLE + H_FRONT) &&
+                   x <  (H_VISIBLE + H_FRONT + H_SYNC));
 
     end
 
     // =============== VSYNC ACTIVE LOW ===============
     always @(posedge clk_vga) begin
         
-        vsync <= ~(y >= (V_VISIBLE + V_FONT) &&
-                   y <  (V_VISIBLE + V_TOTAL + V_SYNC));
+        vsync <= ~(y >= (V_VISIBLE + V_FRONT) &&
+                   y <  (V_VISIBLE + V_FRONT + V_SYNC));
 
     end
 

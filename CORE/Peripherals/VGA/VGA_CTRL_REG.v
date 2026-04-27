@@ -28,7 +28,7 @@ module VGA_CTRL_REG (
             row_offset  <= 0;
             buffer_sel  <= 0;
         end
-        else begin
+        else if (we) begin
             cursor_x    <= data_in[6:0];
             cursor_y    <= data_in[11:7];
             row_offset  <= data_in[16:12];
