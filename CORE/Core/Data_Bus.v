@@ -7,7 +7,7 @@
 // 0x0000_0000 ~ 0x0FFF_FFFF -- RAM
 // 0x1000_0000 ~ 0x1000_00FF -- GPIO
 // 0x2000_0000 ~ 0x2000_00FF -- UART
-// 0x3000_0000 ~ 0x3000_2FFF -- VGA
+// 0x3000_0000 ~ 0x3000_4FFF -- VGA
 // ==========================================================
 
 module Data_Bus (
@@ -47,7 +47,7 @@ module Data_Bus (
 
     // =============== GPIO MEMORY ===============
     localparam GPIO_ADDR    = 32'h1000_0000;
-    localparam GPIO_SIRE    = 32'h0000_0100;
+    localparam GPIO_SIZE    = 32'h0000_0100;
 
     // =============== UART MEMORY ===============
     localparam UART_ADDR    = 32'h2000_0000;
@@ -55,7 +55,7 @@ module Data_Bus (
 
     // =============== VGA MEMORY ===============
     localparam VGA_ADDR     = 32'h3000_0000;
-    localparam VGA_SIZE     = 32'h3000_3000;    // 12KB
+    localparam VGA_SIZE     = 32'h0000_5000;    // 20KB (Text RAM 0x0~0x257F, CTRL 0x4000, STAT 0x4004)
 
     // ===============================
     // Address Mapp
@@ -66,7 +66,7 @@ module Data_Bus (
     wire sel_vga;
 
     assign sel_ram    = (addr < GPIO_ADDR);
-    assign sel_gpio   = (addr >= GPIO_ADDR && addr < (GPIO_ADDR + GPIO_SIRE));
+    assign sel_gpio   = (addr >= GPIO_ADDR && addr < (GPIO_ADDR + GPIO_SIZE));
     assign sel_uart   = (addr >= UART_ADDR && addr < (UART_ADDR + UART_SIZE));
     assign sel_vga    = (addr >= VGA_ADDR  && addr < (VGA_ADDR  + VGA_SIZE));
 

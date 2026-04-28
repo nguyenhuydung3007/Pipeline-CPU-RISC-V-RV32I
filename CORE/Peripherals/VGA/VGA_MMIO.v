@@ -5,9 +5,9 @@
 // ----------------------------------------------------------
 // Memory Map
 // BASE = 0x3000_0000
-// + 0x3000_0000 ~ 0x3000_12BF -- Text RAM (2400 words x 16bit)
-// + 0x3000_2000               -- VGA_CTRL
-// + 0x3000_2004               -- VGA_STATUS
+// + 0x3000_0000 ~ 0x3000_257F -- Text RAM (2400 words x 16bit, 4-byte stride = 9600 bytes)
+// + 0x3000_4000               -- VGA_CTRL
+// + 0x3000_4004               -- VGA_STATUS
 //
 // ----------------------------------------------------------
 // Full VGA Text Display Subsystem
@@ -50,8 +50,8 @@ module VGA_MMIO (
 
     // =============== ADDRESS MAP ===============
     localparam BASE_ADDR    = 32'h3000_0000;
-    localparam CTRL_ADDR    = 32'h3000_2000;
-    localparam STAT_ADDR    = 32'h3000_2004;
+    localparam CTRL_ADDR    = 32'h3000_4000;
+    localparam STAT_ADDR    = 32'h3000_4004;
 
     wire sel_text = (addr >= BASE_ADDR) && (addr < BASE_ADDR + 32'd9600);   // 2400 x 4 bytes
 
@@ -79,6 +79,7 @@ module VGA_MMIO (
     wire [9:0] x;
     wire [9:0] y;
     wire video_on;
+    wire vsync_int;
 
     VGA_Control vga_control (
 
@@ -88,16 +89,18 @@ module VGA_MMIO (
 
         // Output
         .hsync          (VGA_HS),
-        .vsync          (VGA_VS),
+        .vsync          (vsync_int),
 
         .video_on       (video_on),
         .x              (x),
         .y              (y)
     );
 
+    assign VGA_VS = vsync_int;
+
     // =============== CONTROL REGISTER ===============
     wire [6:0] cursor_x;
-    wire [6:0] cursor_y;
+    wire [4:0] cursor_y;
     wire [4:0] row_offset;
     wire buffer_sel;
 
@@ -108,6 +111,7 @@ module VGA_MMIO (
         .reset          (reset_sys),
         .we             (we && sel_ctrl),
         .data_in        (wr_data),
+        .vsync          (vsync_int),
 
         // Output
         .cursor_x       (cursor_x),
@@ -120,7 +124,7 @@ module VGA_MMIO (
     wire [11:0] text_addr;
     wire [15:0] text_data;
 
-    wire [11:0] cpu_text_addr = (add - BASE_ADDR) >> 2;
+    wire [11:0] cpu_text_addr = (addr - BASE_ADDR) >> 2;
 
     VGA_RAM vga_ram (
 

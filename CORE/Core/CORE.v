@@ -1,6 +1,6 @@
 // ==============================================
 // Module CORE
-// CPU + BUS + RAM + GPIO + HEX display
+// CPU + BUS + RAM + GPIO + HEX display + VGA
 // ==============================================
 
 module CORE (
@@ -20,7 +20,13 @@ module CORE (
     output [6:0] HEX4,
     output [6:0] HEX5,
 
-    output GPIO_1
+    output GPIO_1,
+
+    output VGA_HS,
+    output VGA_VS,
+    output [3:0] VGA_R,
+    output [3:0] VGA_G,
+    output [3:0] VGA_B
 );
 
     // ========================================
@@ -47,17 +53,25 @@ module CORE (
     );
 
     // =============== BUS WIRES ===============
+    // RAM
     wire [31:0] ram_rd;
     wire ram_we;
     wire ram_re;
 
+    // GPIO
     wire [31:0] gpio_rd;
     wire gpio_we;
     wire gpio_re;
 
+    // UART
     wire [31:0] uart_rd;
     wire uart_we;
     wire uart_re;
+
+    // VGA
+    wire [31:0] vga_rd;
+    wire vga_we;
+    wire vga_re;
 
     // =============== DATA BUS ===============
     Data_Bus bus (
@@ -82,6 +96,11 @@ module CORE (
         .uart_rd_data       (uart_rd),
         .uart_we            (uart_we),
         .uart_re            (uart_re),
+
+        // VGA
+        .vga_rd_data        (vga_rd),
+        .vga_we             (vga_we),
+        .vga_re             (vga_re),
 
         // Trả về CPU
         .rd_data            (rdata)
@@ -158,6 +177,28 @@ module CORE (
         // Ouput
         .rd_data            (uart_rd),
         .tx                 (GPIO_1)
+    );
+
+    // =============== VGA ===============
+    VGA_MMIO vga (
+
+        // Input
+        .clk_cpu            (clk),
+        .reset              (reset),
+
+        .addr               (addr),
+        .wr_data            (wdata),
+        .we                 (vga_we),
+        .re                 (vga_re),
+
+        // Output
+        .rd_data            (vga_rd),
+
+        .VGA_HS             (VGA_HS),
+        .VGA_VS             (VGA_VS),
+        .VGA_R              (VGA_R),
+        .VGA_G              (VGA_G),
+        .VGA_B              (VGA_B)
     );
     
 endmodule

@@ -44,28 +44,29 @@ module VGA_RAM (
     (* ramstyle = "M9K" *) 
     reg [15:0] mem [0:4799];       
 
-    // =============== REAL ADDRESS MAPPING ===============
+    // =============== CDC SYNCHRONIZER: buffer_sel (CPU domain → VGA domain) ===============
+    reg buf_sel_vga_s1, buf_sel_vga;
+    always @(posedge clk_vga) begin
+        buf_sel_vga_s1 <= buffer_sel;
+        buf_sel_vga    <= buf_sel_vga_s1;
+    end
+
+    // =============== CPU ADDRESS (CPU domain — dùng buffer_sel trực tiếp) ===============
     reg [12:0] cpu_addr_real;
-    reg [12:0] vga_addr_real;
-
     always @(*) begin
-        
-        // CPU WRITE BACK BUFFER
-        if (buffer_sel == 1'b0) begin
-            cpu_addr_real = {1'b0, addr_cpu} + 13'd2400;    
-        end
-        else begin
-            cpu_addr_real = addr_cpu;
-        end
+        if (buffer_sel == 1'b0)
+            cpu_addr_real = (addr_cpu < 12'd2400) ? ({1'b0, addr_cpu} + 13'd2400) : 13'd0;
+        else
+            cpu_addr_real = {1'b0, addr_cpu};
+    end
 
-        // VGA READ FRONT BUFFER
-        if (buffer_sel == 1'b0) begin
-            vga_addr_real = addr_vga;
-        end
-        else begin
-            vga_addr_real = {1'b0, addr_vga} + 13'd2400;
-        end
-
+    // =============== VGA ADDRESS (VGA domain — dùng buf_sel_vga đã sync) ===============
+    reg [12:0] vga_addr_real;
+    always @(*) begin
+        if (buf_sel_vga == 1'b0)
+            vga_addr_real = {1'b0, addr_vga};
+        else
+            vga_addr_real = (addr_vga < 12'd2400) ? ({1'b0, addr_vga} + 13'd2400) : 13'd0;
     end
 
 

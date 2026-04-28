@@ -10,7 +10,7 @@ module VGA_Control (
 
     output reg hsync,          // Tín hiệu báo hết một dòng của màn hình (Quay về vị trí đầu tiên của dòng tiếp theo)
     output reg vsync,          // Tín hiệu báo truyền hết một farme, quay về vị trí (0, 0)
-    output video_on,           // Tín hiệu báo đang trong vùng hiển thị hình ảnh
+    output reg video_on,       // Tín hiệu báo đang trong vùng hiển thị hình ảnh
 
     output reg [9:0] x,        // Vị trí pixel theo hàng ngang
     output reg [9:0] y         // Vị trí pixel theo hàng dọc
@@ -23,20 +23,20 @@ module VGA_Control (
     // =====================================
 
     parameter H_VISIBLE = 640;
-    parameter H_FRONT    = 16;
+    parameter H_FRONT   = 16;
     parameter H_SYNC    = 96;
     parameter H_BACK    = 48;
     parameter H_TOTAL   = 800;
 
     parameter V_VISIBLE = 480;
-    parameter V_FRONT    = 10;
+    parameter V_FRONT   = 10;
     parameter V_SYNC    = 2;
     parameter V_BACK    = 33;
     parameter V_TOTAL   = 525;
 
     // =============== COUNTER PIXEL ===============
 
-    always @(posedge clk_vga or negedge reset) begin
+    always @(posedge clk_vga) begin
         
         if (!reset) begin
             x <= 0;
@@ -65,20 +65,28 @@ module VGA_Control (
 
     // =============== HSYNC ACTIVE LOW ===============
     always @(posedge clk_vga) begin
-        
-        hsync <= ~(x >= (H_VISIBLE + H_FRONT) &&
-                   x <  (H_VISIBLE + H_FRONT + H_SYNC));
-
+        if (!reset)
+            hsync <= 1'b1;
+        else
+            hsync <= ~(x >= (H_VISIBLE + H_FRONT) &&
+                       x <  (H_VISIBLE + H_FRONT + H_SYNC));
     end
 
     // =============== VSYNC ACTIVE LOW ===============
     always @(posedge clk_vga) begin
-        
-        vsync <= ~(y >= (V_VISIBLE + V_FRONT) &&
-                   y <  (V_VISIBLE + V_FRONT + V_SYNC));
-
+        if (!reset)
+            vsync <= 1'b1;
+        else
+            vsync <= ~(y >= (V_VISIBLE + V_FRONT) &&
+                       y <  (V_VISIBLE + V_FRONT + V_SYNC));
     end
 
-    assign video_on = (x < H_VISIBLE) && (y < V_VISIBLE);
+    // =============== VIDEO ON (registered — align với hsync/vsync pipeline) ===============
+    always @(posedge clk_vga) begin
+        if (!reset)
+            video_on <= 1'b0;
+        else
+            video_on <= (x < H_VISIBLE) && (y < V_VISIBLE);
+    end
 
 endmodule

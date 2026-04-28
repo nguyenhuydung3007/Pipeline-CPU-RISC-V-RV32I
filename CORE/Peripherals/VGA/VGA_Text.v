@@ -1,16 +1,19 @@
 // ============================================================
-// Module VGA Text
-// + Render nội dung CPU ghi vào RAM thành nội dung hiển thị
-// + Nhận tọa độ (x, y) từ VGA Control
-// + Nhận nội dung hiển thị từ VGA_RAM
-// + Nhận Font chữ từ Font_ROM
-// + Xuất dữ liệu dưới dạng R, G, B
-// ==> Render Text
+// Module VGA_Text (Production-grade rewrite)
+//
+// Pipeline 4-stage — tổng latency = 4 clock VGA:
+//   Stage 1  (T+0): text_addr → VGA_RAM, x/y/col/row/video propagate
+//   Stage 1b (T+1): chờ VGA_RAM registered output (1 cycle), propagate
+//   Stage 2  (T+2): text_data valid → capture + font_addr → Font_ROM
+//   Stage 2b (T+3): chờ Font_ROM registered output (1 cycle), propagate
+//   Output   (T+4): font_data valid → RGB
+//
+// Tất cả nhánh pipeline có độ trễ bằng nhau → không lệch pixel
 // ============================================================
 
 module VGA_Text (
 
-    input clk_vga,                  // Clock 25MHz
+    input clk_vga,
     input reset,
 
     input video_on,
@@ -18,14 +21,14 @@ module VGA_Text (
     input [9:0] y,
 
     // VGA RAM
-    input [15:0] text_data,         // Một ô text đọc từ VGA_RAM (màu chữ, màu nền, ASCII)
-    output reg [11:0] text_addr,        // Địa chỉ trong VGA_RAM
+    input  [15:0] text_data,
+    output reg [11:0] text_addr,
 
     // FONT ROM
-    input [7:0] font_data,
+    input  [7:0]  font_data,
     output reg [11:0] font_addr,
 
-    // VGA CONTROL REGISTER
+    // VGA CONTROL REGISTER (CPU domain — cần 2-FF sync)
     input [6:0] cursor_x,
     input [4:0] cursor_y,
     input [4:0] row_offset,
@@ -35,51 +38,35 @@ module VGA_Text (
     output reg [3:0] B
 );
 
-    // =============== COLUMN / ROW ===============
-    wire [6:0] col      = x[9:3];   // x/8
-    wire [4:0] row_raw  = y[8:4];   // y/16
+    // =============== CDC: cursor (CPU 50MHz → VGA 25MHz) ===============
+    reg [6:0] cursor_x_s1, cursor_x_vga;
+    reg [4:0] cursor_y_s1, cursor_y_vga;
 
-    // =======================================================================
-    // Cơ chế SCROLL bằng địa chỉ 
-    // + row_raw: hàng text mà màn hình đang quét thực tế
-    // + row_offset: số dòng muốn cuộn
-    // + row: hàng thực sự lấy dữ liệu từ VGA_RAM
-    // --> Màn hình vẫn quét từ dòng 0 -> 29, nhưng lấy dữ liệu từ dòng khác
-    // ========================================================================
-    wire [4:0] row = row_raw + row_offset;
+    always @(posedge clk_vga) begin
+        cursor_x_s1  <= cursor_x;     cursor_x_vga <= cursor_x_s1;
+        cursor_y_s1  <= cursor_y;     cursor_y_vga <= cursor_y_s1;
+    end
 
-    // ===============================================
-    // TEXT ADDRESS
-    // + Tạo ra địa chỉ để truy cập vào VGA_RAM
-    // + Chuyển địa chỉ thành mảng 1 chiều
-    // -----------------------------------------------
-    // - CÔNG THỨC MA TRẬN, LƯU TUYẾN TÍNH
-    // + Phần tử [row][col] lưu tuyến tính:
-    //      addr = row x N(col) + col
-    // + row % 30: Dùng trong scroll
-    //   * Nếu row > 30: lấy phần dư của %30
-    //   text_addr = (row % 30) * 80 + col;
-    // ===============================================
-    wire [4:0] row_wrap;
-    wire [11:0] row_base;
-    wire [11:0] text_addr_next;
+    // =============== STAGE 0: COMBINATIONAL ===============
+    wire [6:0] col     = x[9:3];
+    wire [4:0] row_raw = y[8:4];
 
-    assign row_wrap         = (row >= 5'd30) ? (row - 5'd30) : row;
+    // 6-bit tránh overflow khi row_raw + row_offset > 31
+    wire [5:0] row_sum  = {1'b0, row_raw} + {1'b0, row_offset};
+    wire [4:0] row_wrap = (row_sum >= 6'd30) ? (row_sum - 6'd30) : row_sum[4:0];
 
     // row * 80 = row * (64 + 16)
-    assign row_base         = (row_wrap << 6) + (row_wrap << 4);
+    wire [11:0] row_base       = (row_wrap << 6) + (row_wrap << 4);
+    wire [11:0] text_addr_next = row_base + {5'b0, col};
 
-    assign text_addr_next   = row_base + col;
-
-    // =============== PIPELINE STAGE 1 ===============
+    // =============== STAGE 1: text_addr → VGA_RAM ===============
     reg [2:0] x_s1;
     reg [3:0] y_s1;
     reg [6:0] col_s1;
     reg [4:0] row_s1;
-    reg video_on_s1;
+    reg       video_on_s1;
 
-    always @(posedge clk_vga or negedge reset) begin
-        
+    always @(posedge clk_vga) begin
         if (!reset) begin
             text_addr   <= 0;
             x_s1        <= 0;
@@ -88,7 +75,6 @@ module VGA_Text (
             row_s1      <= 0;
             video_on_s1 <= 0;
         end
-
         else begin
             text_addr   <= text_addr_next;
             x_s1        <= x[2:0];
@@ -97,112 +83,124 @@ module VGA_Text (
             row_s1      <= row_wrap;
             video_on_s1 <= video_on;
         end
-
     end
 
-    // =============== FONT ADDRESS ===============
-    wire [7:0] char_code = text_data[7:0];
+    // =============== STAGE 1b: chờ VGA_RAM registered output ===============
+    reg [2:0] x_s1b;
+    reg [3:0] y_s1b;
+    reg [6:0] col_s1b;
+    reg [4:0] row_s1b;
+    reg       video_on_s1b;
 
-    always @(posedge clk_vga or negedge reset) begin
-        
+    always @(posedge clk_vga) begin
         if (!reset) begin
-            font_addr <= 0;
+            x_s1b        <= 0;
+            y_s1b        <= 0;
+            col_s1b      <= 0;
+            row_s1b      <= 0;
+            video_on_s1b <= 0;
         end
-
         else begin
-            font_addr <= {char_code, y_s1};
+            x_s1b        <= x_s1;
+            y_s1b        <= y_s1;
+            col_s1b      <= col_s1;
+            row_s1b      <= row_s1;
+            video_on_s1b <= video_on_s1;
         end
-
     end
 
-    // =============== PIPELINE STAGE 2 ===============
-    reg [2:0] x_s2;
+    // =============== STAGE 2: text_data valid → capture + font_addr → Font_ROM ===============
+    // text_data là registered output của VGA_RAM, valid từ sau posedge Stage 1b
+    reg [2:0]  x_s2;
+    reg [6:0]  col_s2;
+    reg [4:0]  row_s2;
+    reg        video_on_s2;
     reg [15:0] text_s2;
-    reg [7:0] font_s2;
-    reg [6:0] col_s2;
-    reg [4:0] row_s2;
-    reg video_on_s2;
 
-    always @(posedge clk_vga or negedge reset) begin
-        
+    always @(posedge clk_vga) begin
         if (!reset) begin
+            font_addr   <= 0;
             x_s2        <= 0;
-            text_s2     <= 0;
-            font_s2     <= 0;
             col_s2      <= 0;
             row_s2      <= 0;
             video_on_s2 <= 0;
+            text_s2     <= 0;
         end
-
         else begin
-            x_s2        <= x_s1;
-            text_s2     <= text_data;
-            font_s2     <= font_data;
-            col_s2      <= col_s1;
-            row_s2      <= row_s1;
-            video_on_s2 <= video_on_s1;
-        end     
-
+            font_addr   <= {text_data[7:0], y_s1b};  // char_code * 16 + pixel_row ✓
+            x_s2        <= x_s1b;
+            col_s2      <= col_s1b;
+            row_s2      <= row_s1b;
+            video_on_s2 <= video_on_s1b;
+            text_s2     <= text_data;                 // valid tại đây ✓
+        end
     end
 
-    // =============== CURSOR BLINK ===============
+    // =============== STAGE 2b: chờ Font_ROM registered output ===============
+    reg [2:0]  x_s2b;
+    reg [6:0]  col_s2b;
+    reg [4:0]  row_s2b;
+    reg        video_on_s2b;
+    reg [15:0] text_s2b;
+
+    always @(posedge clk_vga) begin
+        if (!reset) begin
+            x_s2b        <= 0;
+            col_s2b      <= 0;
+            row_s2b      <= 0;
+            video_on_s2b <= 0;
+            text_s2b     <= 0;
+        end
+        else begin
+            x_s2b        <= x_s2;
+            col_s2b      <= col_s2;
+            row_s2b      <= row_s2;
+            video_on_s2b <= video_on_s2;
+            text_s2b     <= text_s2;
+        end
+    end
+
+    // =============== CURSOR BLINK (~1.5Hz @ 25MHz) ===============
     reg [23:0] blink_cnt;
-    reg blink;
+    reg        blink;
 
-    always @(posedge clk_vga or negedge reset) begin
-        
+    always @(posedge clk_vga) begin
         if (!reset) begin
-            blink_cnt   <= 0;
-            blink       <= 0;
+            blink_cnt <= 0;
+            blink     <= 0;
         end
-
         else begin
-            blink_cnt   <= blink_cnt + 1'b1;
-            blink       <= blink_cnt[23];
+            blink_cnt <= blink_cnt + 1'b1;
+            blink     <= blink_cnt[23];
         end
-
     end
 
-    // =============== PIXEL GENERATE ===============
-    wire pixel      = font_s2[7 - x_s2];
+    // =============== OUTPUT: font_data valid → RGB ===============
+    // font_data là registered output của Font_ROM, valid từ sau posedge Stage 2b
+    wire        pixel       = font_data[7 - x_s2b];
+    wire        cursor_hit  = (col_s2b == cursor_x_vga) && (row_s2b == cursor_y_vga);
+    wire        pixel_final = (cursor_hit && blink) ? ~pixel : pixel;
 
-    wire cursor_hit = (col_s2 == cursor_x) && (row_s2 == cursor_y);
+    wire [3:0] fg = text_s2b[15:12];
+    wire [3:0] bg = text_s2b[11:8];
 
-    wire pixel_final = (cursor_hit && blink) ? ~pixel : pixel;
-
-    // =============== COLOR ===============
-    wire [3:0] fg = text_s2[15:12];
-    wire [3:0] bg = text_s2[11:8];
-
-    // =============== OUTPUT REGISTER ===============
-    always @(posedge clk_vga or negedge reset) begin
-        
+    always @(posedge clk_vga) begin
         if (!reset) begin
-            R <= 0;
-            G <= 0;
-            B <= 0;
+            R <= 0; G <= 0; B <= 0;
         end
-
         else begin
-            if (video_on_s2) begin
+            if (video_on_s2b) begin
                 if (pixel_final) begin
-                    R <= fg;
-                    G <= fg;
-                    B <= fg;
+                    R <= fg; G <= fg; B <= fg;
                 end
                 else begin
-                    R <= bg;
-                    G <= bg;
-                    B <= bg;
+                    R <= bg; G <= bg; B <= bg;
                 end
             end
             else begin
-                R <= 0;
-                G <= 0;
-                B <= 0;
+                R <= 0; G <= 0; B <= 0;
             end
         end
-
     end
 
 endmodule
