@@ -1,0 +1,209 @@
+// ===========================================================
+// Moduel VGA_MMIO (TOP)
+// Intel MAX10 / DE10-Lite
+//
+// ----------------------------------------------------------
+// Memory Map
+// BASE = 0x3000_0000
+// + 0x3000_0000 ~ 0x3000_12BF -- Text RAM (2400 words x 16bit)
+// + 0x3000_2000               -- VGA_CTRL
+// + 0x3000_2004               -- VGA_STATUS
+//
+// ----------------------------------------------------------
+// Full VGA Text Display Subsystem
+// + PLL 50 MHz --> 25MHz
+// + VGA timing 640x480@60Hz
+// + Text mode 80x30
+// + Font 8x16
+// + VGA RAM double buffer
+// + Map Memory I/O Control Register
+//
+// -----------------------------------------------------------
+// VGA OUTPUT
+// + VGA_HS
+// + VGA_VS
+// + VGA_R
+// + VGA_G
+// + VGA_B
+// ===========================================================
+
+module VGA_MMIO (
+
+    input clk_cpu,
+    input reset,
+    
+    // BUS
+    input [31:0] addr,
+    input [31:0] wr_data,
+    input we,
+    input re,
+
+    output reg [31:0] rd_data,
+
+    // VGA OUTPUT
+    output VGA_HS,
+    output VGA_VS,
+    output [3:0] VGA_R,
+    output [3:0] VGA_G,
+    output [3:0] VGA_B
+);
+
+    // =============== ADDRESS MAP ===============
+    localparam BASE_ADDR    = 32'h3000_0000;
+    localparam CTRL_ADDR    = 32'h3000_2000;
+    localparam STAT_ADDR    = 32'h3000_2004;
+
+    wire sel_text = (addr >= BASE_ADDR) && (addr < BASE_ADDR + 32'd9600);   // 2400 x 4 bytes
+
+    wire sel_ctrl = (addr == CTRL_ADDR);
+    wire sel_stat = (addr == STAT_ADDR);
+
+    // =============== PLL 50MHz --> 25MHz ===============
+    wire clk_vga;
+    wire pll_locked;
+
+    pll u_pll (
+        
+        // Input
+        .areset     (~reset),
+        .inclk0     (clk_cpu),
+
+        // Output 
+        .c0         (clk_vga),
+        .locked     (pll_locked)
+    );
+
+    wire reset_sys = reset & pll_locked;
+
+    // =============== VGA CONTROL TIMING ===============
+    wire [9:0] x;
+    wire [9:0] y;
+    wire video_on;
+
+    VGA_Control vga_control (
+
+        // Input
+        .clk_vga        (clk_vga),
+        .reset          (reset_sys),
+
+        // Output
+        .hsync          (VGA_HS),
+        .vsync          (VGA_VS),
+
+        .video_on       (video_on),
+        .x              (x),
+        .y              (y)
+    );
+
+    // =============== CONTROL REGISTER ===============
+    wire [6:0] cursor_x;
+    wire [6:0] cursor_y;
+    wire [4:0] row_offset;
+    wire buffer_sel;
+
+    VGA_CTRL_REG ctrl_reg (
+
+        // Input
+        .clk_cpu        (clk_cpu),
+        .reset          (reset_sys),
+        .we             (we && sel_ctrl),
+        .data_in        (wr_data),
+
+        // Output
+        .cursor_x       (cursor_x),
+        .cursor_y       (cursor_y),
+        .row_offset     (row_offset),
+        .buffer_sel     (buffer_sel)
+    );
+
+    // =============== VGA RAM ===============
+    wire [11:0] text_addr;
+    wire [15:0] text_data;
+
+    wire [11:0] cpu_text_addr = (add - BASE_ADDR) >> 2;
+
+    VGA_RAM vga_ram (
+
+        // CPU PORT
+        .clk_cpu        (clk_cpu),
+        .we_cpu         (we && sel_text),
+        .addr_cpu       (cpu_text_addr),
+        .data_in_cpu    (wr_data[15:0]),
+
+        // VGA PORT
+        .clk_vga        (clk_vga),
+        .addr_vga       (text_addr),
+        .data_out_vga   (text_data),
+
+        .buffer_sel     (buffer_sel)
+    );
+
+    // =============== FONT ROM ===============
+    wire [11:0] font_addr;
+    wire [7:0] font_data;
+
+    Font_ROM font (
+
+        // Input
+        .clk_vga        (clk_vga),
+        .addr           (font_addr),
+
+        // Output
+        .data           (font_data)
+    );
+
+    // =============== VGA TEXT ===============
+    VGA_Text vga_text (
+
+        // Input
+        .clk_vga        (clk_vga),
+        .reset          (reset_sys),
+
+        .video_on       (video_on),
+        .x              (x),
+        .y              (y),
+
+        // VGA RAM
+        .text_data      (text_data),
+        .text_addr      (text_addr),
+
+        // FONT ROM
+        .font_data      (font_data),
+        .font_addr      (font_addr),
+
+        // VGA CONTROL REGISTER
+        .cursor_x       (cursor_x),
+        .cursor_y       (cursor_y),
+        .row_offset     (row_offset),
+
+        // Output
+        .R              (VGA_R),
+        .G              (VGA_G),
+        .B              (VGA_B)
+    );
+
+    // ===========================================
+    // READ BACK
+    // + CPU đọc ngược lại trạng thái của VGA
+    //  * VGA đang ở trạng thái gì ?
+    //  * Cursor đang ở đâu ?
+    //  * Buffer nào đang active
+    //  * PLL lock chưa ?
+    // ===========================================
+    always @(*) begin
+        
+        if (sel_ctrl) begin
+            rd_data = {14'd0, buffer_sel, row_offset, cursor_y, cursor_x};
+        end
+
+        else if (sel_stat) begin
+            rd_data = {31'd0, pll_locked};
+        end
+
+        else begin
+            rd_data = 32'd0;
+        end
+
+    end
+
+endmodule
