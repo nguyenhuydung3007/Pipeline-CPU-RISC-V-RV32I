@@ -43,8 +43,11 @@ module VGA_Text (
     reg [4:0] cursor_y_s1, cursor_y_vga;
 
     always @(posedge clk_vga) begin
-        cursor_x_s1  <= cursor_x;     cursor_x_vga <= cursor_x_s1;
-        cursor_y_s1  <= cursor_y;     cursor_y_vga <= cursor_y_s1;
+        cursor_x_s1  <= cursor_x;     
+        cursor_x_vga <= cursor_x_s1;
+
+        cursor_y_s1  <= cursor_y;     
+        cursor_y_vga <= cursor_y_s1;
     end
 
     // =============== STAGE 0: COMBINATIONAL ===============
@@ -177,28 +180,37 @@ module VGA_Text (
 
     // =============== OUTPUT: font_data valid → RGB ===============
     // font_data là registered output của Font_ROM, valid từ sau posedge Stage 2b
-    wire        pixel       = font_data[7 - x_s2b];
-    wire        cursor_hit  = (col_s2b == cursor_x_vga) && (row_s2b == cursor_y_vga);
-    wire        pixel_final = (cursor_hit && blink) ? ~pixel : pixel;
+    wire pixel       = font_data[7 - x_s2b];
+    wire cursor_hit  = (col_s2b == cursor_x_vga) && (row_s2b == cursor_y_vga);
+    wire pixel_final = (cursor_hit && blink) ? ~pixel : pixel;
 
-    wire [3:0] fg = text_s2b[15:12];
-    wire [3:0] bg = text_s2b[11:8];
+    wire [3:0] bg = text_s2b[15:12];
+    wire [3:0] fg = text_s2b[11:8];
+
+    wire [3:0] color_sel;
+
+    assign color_sel = pixel_final ? fg : bg;
+
+    wire [3:0] r_val = color_sel[2] ? (color_sel[3] ? 4'hF : 4'h8) : 4'h0;
+    wire [3:0] g_val = color_sel[1] ? (color_sel[3] ? 4'hF : 4'h8) : 4'h0;
+    wire [3:0] b_val = color_sel[0] ? (color_sel[3] ? 4'hF : 4'h8) : 4'h0;
 
     always @(posedge clk_vga) begin
         if (!reset) begin
-            R <= 0; G <= 0; B <= 0;
+            R <= 0;
+            G <= 0;
+            B <= 0;
         end
         else begin
             if (video_on_s2b) begin
-                if (pixel_final) begin
-                    R <= fg; G <= fg; B <= fg;
-                end
-                else begin
-                    R <= bg; G <= bg; B <= bg;
-                end
+                R <= r_val;
+                G <= g_val;
+                B <= b_val;
             end
             else begin
-                R <= 0; G <= 0; B <= 0;
+                R <= 0;
+                G <= 0;
+                B <= 0;
             end
         end
     end

@@ -1,89 +1,69 @@
-// ========================================================================
-// Module VGA_RAM (Text Buffer - 32bit)
-// + Bộ nhớ chưa nội dung sẽ hiển thị trên màn hình
-// + Nội dung hiển thị (CPU) --> VGA_RAM --> Display
-// 
-// ------------------------------------------------------------------------
-// CPU Port
-// + Dùng để ghi dữ liệu firmware muốn hiển thị
-// + Điều khiển bởi firmware
-// 
-// ------------------------------------------------------------------------
-// VGA Port
-// + Dùng để đọc dữ liệu muốn hiển thị ra display
-// + Quét theo pixel clock (25MHz)
-// + Điều khiển bởi VGA
+// =============================================================
+// Module VGA_RAM (DEBUG VERSION)
+// -------------------------------------------------------------
+// SINGLE BUFFER MODE
+// + CPU ghi đâu VGA đọc đó
+// + Xác minh CPU -> MMIO -> RAM -> VGA_Text
 //
-// ------------------------------------------------------------------------
-// Sử dụng dual port
-// + CPU ghi và VGA đọc hoàn toàn độc lập, tránh lỗi timing
-// 
-// ------------------------------------------------------------------------
-// Sử dụng dual buffer ảo (Tách từ 1 buffer M9K)
-// + CPU ghi vào một buffer, VGA đọc một buffer
-// --> Trong cùng một thời điểm CPU và VGA không làm việc trên 1 buffer
-// + Chuyển đổi qua lại giữa các buffer bằng swap
-// ========================================================================
+// 80 x 30 = 2400 cells
+// mỗi cell = 16-bit
+//
+// [15:12] FG
+// [11:8]  BG
+// [7:0]   ASCII
+// =============================================================
 
 module VGA_RAM (
 
-    // CPU PORT
-    input clk_cpu,                  // Clock 50MHz
-    input we_cpu,                   // Tín hiệu cho phép CPU ghi dữ liệu vào buffer
-    input [11:0] addr_cpu,          // Địa chỉ CPU muốn ghi vào buffer
-    input [15:0] data_in_cpu,       // Dữ liệu CPU muốn ghi vào buffer
+    // ================= CPU PORT =================
+    input clk_cpu,
+    input we_cpu,
+    input [11:0] addr_cpu,
+    input [15:0] data_in_cpu,
 
-    // VGA PORT
-    input clk_vga,                  // Clock 25MHz
-    input [11:0] addr_vga,          // Địa chỉ VGA muốn đọc ở buffer
-    output reg [15:0] data_out_vga, // Dữ liệu VGA đọc ra
+    // ================= VGA PORT =================
+    input clk_vga,
+    input [11:0] addr_vga,
+    output reg [15:0] data_out_vga,
 
-    input buffer_sel                // Chọn buffer để CPU và VGA xử lý dữ liệu
+    // giữ chân để tương thích top-level
+    input buffer_sel
 );
 
-    (* ramstyle = "M9K" *) 
-    reg [15:0] mem [0:4799];       
+    // =========================================================
+    // 2400 words x 16-bit
+    // =========================================================
+    (* ramstyle = "M9K" *)
+    reg [15:0] mem [0:2399];
 
-    // =============== CDC SYNCHRONIZER: buffer_sel (CPU domain → VGA domain) ===============
-    reg buf_sel_vga_s1, buf_sel_vga;
-    always @(posedge clk_vga) begin
-        buf_sel_vga_s1 <= buffer_sel;
-        buf_sel_vga    <= buf_sel_vga_s1;
+    // =========================================================
+    // Reset VGA_RAM
+    // =========================================================
+    integer i;
+
+    initial begin
+        for(i = 0; i < 2400; i = i + 1)
+            mem[i] = 16'h0000;
     end
 
-    // =============== CPU ADDRESS (CPU domain — dùng buffer_sel trực tiếp) ===============
-    reg [12:0] cpu_addr_real;
-    always @(*) begin
-        if (buffer_sel == 1'b0)
-            cpu_addr_real = (addr_cpu < 12'd2400) ? ({1'b0, addr_cpu} + 13'd2400) : 13'd0;
-        else
-            cpu_addr_real = {1'b0, addr_cpu};
-    end
-
-    // =============== VGA ADDRESS (VGA domain — dùng buf_sel_vga đã sync) ===============
-    reg [12:0] vga_addr_real;
-    always @(*) begin
-        if (buf_sel_vga == 1'b0)
-            vga_addr_real = {1'b0, addr_vga};
-        else
-            vga_addr_real = (addr_vga < 12'd2400) ? ({1'b0, addr_vga} + 13'd2400) : 13'd0;
-    end
-
-
-    // =============== CPU WRITE ===============
+    // =========================================================
+    // CPU WRITE
+    // =========================================================
     always @(posedge clk_cpu) begin
-        
         if (we_cpu) begin
-            mem[cpu_addr_real] <= data_in_cpu;
+            if (addr_cpu < 12'd2400)
+                mem[addr_cpu] <= data_in_cpu;
         end
-
     end
 
-    // =============== VGA READ ===============
+    // =========================================================
+    // VGA READ (sync read)
+    // =========================================================
     always @(posedge clk_vga) begin
-        
-        data_out_vga <= mem[vga_addr_real];
-
+        if (addr_vga < 12'd2400)
+            data_out_vga <= mem[addr_vga];
+        else
+            data_out_vga <= 16'h0000;
     end
 
 endmodule

@@ -13,33 +13,33 @@ RAM              0x00000000         0x00001000
 Linker script and memory map
 
 
-.text           0x00000000       0x34
+.text           0x00000000      0x128
  *(.text.start)
  .text.start    0x00000000        0xc ./start.o
                 0x00000000                start
  *(.text*)
  .text          0x0000000c        0x0 ./start.o
- .text          0x0000000c       0x28 ./main.o
+ .text          0x0000000c      0x11c ./main.o
                 0x0000000c                main
  *(.rodata*)
-                0x00000034                        . = ALIGN (0x4)
+                0x00000128                        . = ALIGN (0x4)
 
-.rela.dyn       0x00000034        0x0
+.rela.dyn       0x00000128        0x0
  .rela.text.start
-                0x00000034        0x0 ./start.o
+                0x00000128        0x0 ./start.o
 
-.data           0x00000034        0x0
+.data           0x00000128        0x0
  *(.data*)
- .data          0x00000034        0x0 ./start.o
- .data          0x00000034        0x0 ./main.o
-                0x00000034                        . = ALIGN (0x4)
+ .data          0x00000128        0x0 ./start.o
+ .data          0x00000128        0x0 ./main.o
+                0x00000128                        . = ALIGN (0x4)
 
-.bss            0x00000034        0x0
+.bss            0x00000128        0x0
  *(.bss*)
- .bss           0x00000034        0x0 ./start.o
- .bss           0x00000034        0x0 ./main.o
-                0x00000034                        . = ALIGN (0x4)
-                0x00000034                        . = ALIGN (0x4)
+ .bss           0x00000128        0x0 ./start.o
+ .bss           0x00000128        0x0 ./main.o
+                0x00000128                        . = ALIGN (0x4)
+                0x00000128                        . = ALIGN (0x4)
                 0x00001000                        . = (ORIGIN (RAM) + LENGTH (RAM))
                 0x00001000                        _stack_top = .
 LOAD ./start.o
